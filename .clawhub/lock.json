@@ -36,6 +36,102 @@
     "ripgrep": {
       "version": "1.0.0",
       "installedAt": 1772117987546
+    },
+    "authensor-gateway": {
+      "version": "0.7.0",
+      "installedAt": 1772124932311
+    },
+    "api-credentials-hygiene": {
+      "version": "1.0.0",
+      "installedAt": 1772124957018
+    },
+    "glitchward-shield": {
+      "version": "1.0.1",
+      "installedAt": 1772124982882
+    },
+    "csv-pipeline": {
+      "version": "1.0.0",
+      "installedAt": 1772125018494
+    },
+    "appraisal-ai": {
+      "version": "1.1.1",
+      "installedAt": 1772125056313
+    },
+    "timer": {
+      "version": "1.0.0",
+      "installedAt": 1772125088972
+    },
+    "google-web-search": {
+      "version": "1.0.3",
+      "installedAt": 1772125112374
+    },
+    "searxng": {
+      "version": "1.0.3",
+      "installedAt": 1772125125362
+    },
+    "excel-weekly-dashboard": {
+      "version": "1.0.0",
+      "installedAt": 1772125216958
+    },
+    "design-assets": {
+      "version": "1.0.0",
+      "installedAt": 1772125253168
+    },
+    "ui-ux-design": {
+      "version": "1.0.0",
+      "installedAt": 1772125286071
+    },
+    "senior-frontend": {
+      "version": "1.0.0",
+      "installedAt": 1772125318884
+    },
+    "1password": {
+      "version": "1.0.1",
+      "installedAt": 1772125347779
+    },
+    "bitwarden": {
+      "version": "1.0.0",
+      "installedAt": 1772125366483
+    },
+    "mspot-generator": {
+      "version": "1.0.0",
+      "installedAt": 1772125434459
+    },
+    "bookkeeping-basics": {
+      "version": "0.1.0",
+      "installedAt": 1772125458170
+    },
+    "expense-tracker-pro": {
+      "version": "1.0.0",
+      "installedAt": 1772125469711
+    },
+    "markdown-converter": {
+      "version": "1.0.0",
+      "installedAt": 1772125540294
+    },
+    "sheetsmith": {
+      "version": "1.0.1",
+      "installedAt": 1772125624479
+    },
+    "upstage-document-parse": {
+      "version": "1.0.4",
+      "installedAt": 1772125677386
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1772125766563
+    },
+    "confluence": {
+      "version": "1.1.0",
+      "installedAt": 1772125792710
+    },
+    "backend-patterns": {
+      "version": "0.1.2",
+      "installedAt": 1772125857508
+    },
+    "agentlens": {
+      "version": "1.0.0",
+      "installedAt": 1772125906144
     }
   }
 }
