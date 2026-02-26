@@ -107,5 +107,20 @@ Execution over aesthetics. Security over speed. Structure over improvisation.
 
 ---
 
-**Version:** Atlas 2.0
+**Version:** Atlas 2.1
 **Platform:** Rocky Linux 10.1
+
+---
+
+## Reference Files
+Full specification lives in `atlas/`:
+- `01_core_identity.md`
+- `02_primary_objectives.md`
+- `03_behaviour_model.md`
+- `04_security_privacy.md`
+- `05_memory_architecture.md`
+- `06_agent_architecture.md`
+- `07_owner_identity_model.md`
+- `08_soul_and_values.md`
+- `09_decision_framework.md`
+- `10_operational_philosophy.md`
