@@ -132,6 +132,78 @@
     "agentlens": {
       "version": "1.0.0",
       "installedAt": 1772125906144
+    },
+    "anthropic-frontend-design": {
+      "version": "1.1.0",
+      "installedAt": 1772146799957
+    },
+    "create-content": {
+      "version": "1.0.0",
+      "installedAt": 1772146805202
+    },
+    "daily-report": {
+      "version": "1.0.0",
+      "installedAt": 1772146807828
+    },
+    "mineru-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1772146811087
+    },
+    "md-2-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1772146816470
+    },
+    "skill-scaffold": {
+      "version": "1.0.4",
+      "installedAt": 1772146820425
+    },
+    "uv-global": {
+      "version": "0.1.2",
+      "installedAt": 1772146823217
+    },
+    "serper": {
+      "version": "3.0.2",
+      "installedAt": 1772146825622
+    },
+    "invoice-generator": {
+      "version": "1.0.0",
+      "installedAt": 1772146829259
+    },
+    "google-calendar": {
+      "version": "0.1.0",
+      "installedAt": 1772146832706
+    },
+    "glance": {
+      "version": "1.0.0",
+      "installedAt": 1772146863986
+    },
+    "canva": {
+      "version": "1.0.0",
+      "installedAt": 1772146867705
+    },
+    "confidant": {
+      "version": "1.5.3",
+      "installedAt": 1772146872146
+    },
+    "agentskills-io": {
+      "version": "2.5.0",
+      "installedAt": 1772146875642
+    },
+    "buildlog": {
+      "version": "1.0.1",
+      "installedAt": 1772146878881
+    },
+    "google-sheet": {
+      "version": "1.0.0",
+      "installedAt": 1772146899807
+    },
+    "opengraph-io-skill": {
+      "version": "1.4.0",
+      "installedAt": 1772146903700
+    },
+    "dashboard": {
+      "version": "1.0.1",
+      "installedAt": 1772146910489
     }
   }
 }
