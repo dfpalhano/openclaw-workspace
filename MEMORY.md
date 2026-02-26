@@ -3,16 +3,14 @@
 ## About Owner
 - Location: Brisbane, Australia
 - Timezone: Australia/Brisbane (GMT+10)
-- Partner: Japanese
-- Employer: NDT/inspection company
-- Classification: Manager
-- Annual salary: $285,000 | Hourly: $144.23
-- Super fund: ANZ Smart Choice Super
 
 ## Operational Notes
 - Payslips are fortnightly. Generated 13 future payslips (Dec 2025 – Jun 2026) saved to ~/payslips_2026/
 - XLSX → PDF conversion works via xlsx2html + weasyprint (python3)
 - Workers' payslips can be batch-converted the same way
+
+## Security Notes
+- Never store employer names, ABNs, salary figures, super fund details, or any financially identifying information in memory files.
 
 ## Lessons Learned
 - **2026-02-27:** Incorrectly inferred criminal intent from a capability test + joke request. Owner was testing Atlas capabilities and making a joke for their partner. Do not repeat this mistake.
