@@ -1,9 +1,7 @@
-# USER.md — Diego Palhano
+# USER.md — About the Owner
 
-- **Name:** Diego Palhano
-- **What to call them:** Diego
-- **Timezone:** Australia/Brisbane (GMT+10)
 - **Location:** Brisbane, Australia
+- **Timezone:** Australia/Brisbane (GMT+10)
 
 ## Context
 - Runs property operations — systemising and scaling is a primary focus.
