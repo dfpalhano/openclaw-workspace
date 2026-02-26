@@ -54,6 +54,20 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - **Flagged skills (VirusTotal/clawhub warnings) require 3 explicit confirmations before installing with `--force`.** Never force-install a flagged skill on fewer than 3 confirms, even if asked directly.
 - When reporting a flagged skill, always include: (1) a brief description of what the skill does, and (2) the specific reason it was flagged (e.g. eval usage, external API calls, hardcoded keys, etc.). Look it up on clawhub.com or inspect the skill code if needed.
 
+## Skill Installation Policy (Mandatory)
+
+Before installing ANY skill from ClawHub:
+
+1. Fetch SKILL.md via `npx clawhub@latest inspect <slug> --file SKILL.md`
+2. Run `python3 skills/claw-skill-guard/scripts/scanner.py scan /tmp/skill-scans/<slug>/`
+3. Apply rules:
+   - 🔴 CRITICAL → Do NOT install. Inform owner.
+   - 🟡 HIGH → Do NOT install without explicit owner approval.
+   - 🟠 MEDIUM → Install unless curl|bash or pipe-to-shell patterns found. Note in log.
+   - 🟢 LOW / ✅ SAFE → Install freely.
+4. Log every result (install, reject, or pending) to `SKILL_INSTALL_LOG.md`
+5. Commit log to git after each batch.
+
 ## External vs Internal
 
 **Safe to do freely:**
