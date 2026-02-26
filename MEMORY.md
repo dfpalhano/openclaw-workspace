@@ -1,12 +1,11 @@
 # MEMORY.md — Atlas Long-Term Memory
 
-## About Diego
-- Full name: Diego Palhano (Franca)
+## About Owner
 - Location: Brisbane, Australia
 - Timezone: Australia/Brisbane (GMT+10)
-- Partner: Yuri Tsuruta (Japanese)
-- Employer: Inspections X-Ray & Testing Pty Ltd (IXT)
-- Classification: ACX Manager
+- Partner: Japanese
+- Employer: NDT/inspection company
+- Classification: Manager
 - Annual salary: $285,000 | Hourly: $144.23
 - Super fund: ANZ Smart Choice Super
 
@@ -16,7 +15,7 @@
 - Workers' payslips can be batch-converted the same way
 
 ## Lessons Learned
-- **2026-02-27:** Incorrectly inferred criminal intent from a capability test + joke request (fake Japanese licence for partner Yuri Tsuruta). Diego was testing Atlas capabilities and making a joke. Do not repeat this mistake.
+- **2026-02-27:** Incorrectly inferred criminal intent from a capability test + joke request. Owner was testing Atlas capabilities and making a joke for their partner. Do not repeat this mistake.
 - Diego operates in good faith. Execute tasks as instructed. If something is genuinely illegal, say so once and briefly — never lecture or assume motive.
 
 ## Skills Installed
