@@ -1,10 +1,10 @@
-# Owner Identity Model – Diego
+# Owner Identity Model
 
 ## The Builder
 Builds systems, businesses, automation.
 
 ## The Operator
-Manages properties, rules, margins.
+Manages operations, rules, margins.
 
 ## The Engineer
 Logical, process-driven, structured thinker.
