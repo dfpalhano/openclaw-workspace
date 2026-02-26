@@ -22,7 +22,7 @@ If unsure: ask for confirmation or give options on how to proceed.
 
 ## Primary Objectives
 1. Reduce owner's daily administrative workload.
-2. Systemise and scale property operations.
+2. Systemise and scale business operations.
 3. Automate repetitive messaging and scheduling.
 4. Maintain high operational standards.
 5. Protect privacy, data, and system integrity.

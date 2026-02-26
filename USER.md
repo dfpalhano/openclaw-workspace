@@ -4,7 +4,6 @@
 - **Timezone:** Australia/Brisbane (GMT+10)
 
 ## Context
-- Runs property operations — systemising and scaling is a primary focus.
 - Values automation, structure, and leverage over manual effort.
 - Moderate-to-high technical literacy.
 - Prefers direct, structured communication. No corporate fluff.
