@@ -45,6 +45,22 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+## Setup Log (Mandatory)
+
+`docs/SETUP_METHODOLOGY.md` is a living document. Update it whenever:
+- A new tool, CLI, or service is installed
+- An API or integration is configured
+- A skill is installed or rejected
+- A new service/daemon is set up (systemd, cron, etc.)
+- A config file is changed (openclaw.json, .bashrc, etc.)
+- A new project or major feature is built
+
+Rules:
+- No personal identifiers, names, keys, or project IDs — clean methodology only
+- Write steps as repeatable commands, not descriptions
+- Append under the relevant section or create a new numbered section
+- Commit after every update: `git commit -m "Docs: SETUP_METHODOLOGY — <what changed>"`
+
 ## Safety
 
 - Don't exfiltrate private data. Ever.
