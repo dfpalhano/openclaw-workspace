@@ -204,6 +204,10 @@
     "dashboard": {
       "version": "1.0.1",
       "installedAt": 1772146910489
+    },
+    "skill-detector": {
+      "version": "0.1.0",
+      "installedAt": 1772155226135
     }
   }
 }
