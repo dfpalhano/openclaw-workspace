@@ -289,29 +289,49 @@ gcloud services enable calendar-json.googleapis.com
 
 ---
 
-## 9. Planned: Cloudflare Tunnel
+## 9. Cloudflare Tunnel
 
-> Remote access to Mission Control from overseas — no port forwarding, no VPN.
+> Remote access to Mission Control — no port forwarding, no VPN. Uses Cloudflare edge.
 
 ```bash
-# Install cloudflared
-curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.rpm -o cloudflared.rpm
-sudo rpm -i cloudflared.rpm
+# Install (no sudo needed)
+curl -L https://github.com/cloudflare/cloudflared/releases/download/2026.2.0/cloudflared-linux-amd64 -o ~/.local/bin/cloudflared
+chmod +x ~/.local/bin/cloudflared
 
-# Authenticate (opens browser)
+# Authenticate (opens browser — log in with Cloudflare account)
 cloudflared tunnel login
+# Saves cert to ~/.cloudflared/cert.pem
 
 # Create tunnel
 cloudflared tunnel create mission-control
+# Saves credentials to ~/.cloudflared/<tunnel-id>.json
 
-# Route to local server
-cloudflared tunnel route dns mission-control <your-subdomain>.yourdomain.com
+# Route subdomain (domain must be on Cloudflare)
+cloudflared tunnel route dns mission-control mc.<yourdomain>
 
-# Run tunnel
-cloudflared tunnel run --url http://localhost:8899 mission-control
+# Config file: ~/.cloudflared/config.yml
+# tunnel: <tunnel-id>
+# credentials-file: ~/.cloudflared/<tunnel-id>.json
+# ingress:
+#   - hostname: mc.<yourdomain>
+#     service: http://localhost:8899
+#   - service: http_status:404
 
-# Install as service
-sudo cloudflared service install
+# Run
+cloudflared tunnel run mission-control
+
+# Auto-start on reboot (systemd)
+sudo cp ~/projects/mission-control/cloudflared.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable cloudflared
+sudo systemctl start cloudflared
+```
+
+### Dashboard credentials
+- Stored hashed (SHA-256) in `~/.config/mission-control/credentials.json`
+- To generate hash for new password:
+```bash
+python3 -c "import hashlib,getpass; print(hashlib.sha256(getpass.getpass().encode()).hexdigest())"
 ```
 
 ---
