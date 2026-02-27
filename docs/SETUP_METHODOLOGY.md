@@ -380,3 +380,25 @@ git checkout checkpoint-name -- SOUL.md
 11. Enable required Google APIs
 12. Set up Cloudflare tunnel (pending)
 13. Configure Google Drive backup via rclone or Drive API (pending)
+
+---
+
+## 12. Tenants Module (Mission Control)
+
+Added to dashboard as **👥 Tenants** tab.
+
+### Features
+- Tenant profiles: name, identity/passport, nationality, phone, WhatsApp (number + active status)
+- Tenancy details: house code, house group, room, rent/week, bond, start date
+- Unique tenant number (auto-incremented: T001, T002…)
+- Payment history per tenant: week start, payment date, amount, method (cash/deposit)
+- Bank CSV import: each row = one entry, duplicates preserved as separate payments
+- Name matching from bank description field (partial name match scoring)
+- Manual tenant assignment for unmatched CSV rows
+- All data in localStorage key `mc.tenants`
+
+### CSV import rules
+- Every credit row in the CSV is treated as a unique, separate entry
+- Duplicate rows (same amount, same name, same date) are NOT deduplicated — each counts
+- Match confidence shown — low confidence flagged for manual review
+- Unmatched rows can be manually assigned before import
