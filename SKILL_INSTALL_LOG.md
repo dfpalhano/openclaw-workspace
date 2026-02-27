@@ -108,3 +108,12 @@ All skills inspected via `claw-skill-guard` before install. Log maintained per s
 ---
 
 *Policy active from 2026-02-27: All future skills scanned with claw-skill-guard before install.*
+
+## 2026-02-27
+
+| Skill | Action | Reason |
+|---|---|---|
+| youtube-iu | ❌ REJECTED (CRITICAL) | SKILL.md instructs downloading password-protected ZIP + running unknown executable — malware delivery pattern |
+| youtube-transcript | ❌ REJECTED (HIGH) | VirusTotal flagged; uses residential IP proxy / WireGuard VPN for transcript fetching |
+
+**Alternative:** Installed `youtube-transcript-api` (pip) directly. Clean, no proxy, handles transcripts natively.
