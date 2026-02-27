@@ -1,0 +1,362 @@
+# OpenClaw + Desktop Setup Methodology
+> Clean reference log — no personal identifiers, keys, or credentials.
+> Use this as a repeatable setup guide on any new machine.
+
+---
+
+## 1. Operating Environment
+
+- **OS:** Rocky Linux 10.x (x86_64)
+- **Node.js:** v22.x (via nvm or system package)
+- **Shell:** bash
+- **Package managers:** npm (global), pip3, brew (Linuxbrew)
+
+---
+
+## 2. OpenClaw Installation
+
+```bash
+npm install -g openclaw
+```
+
+### First-run setup
+- Run `openclaw init` to create workspace at `~/.openclaw/workspace/`
+- Workspace is a git repo — commit changes regularly
+- Connect messaging channel (Telegram or WhatsApp) via `openclaw gateway start`
+
+### Workspace files created
+| File | Purpose |
+|---|---|
+| `SOUL.md` | Agent identity, behaviour rules, operating philosophy |
+| `AGENTS.md` | Session startup rules, memory architecture, group chat rules |
+| `USER.md` | Owner profile, timezone, preferences |
+| `IDENTITY.md` | Agent name, version, vibe |
+| `MEMORY.md` | Long-term curated memory (main session only) |
+| `TOOLS.md` | Local notes — cameras, SSH, TTS preferences |
+| `HEARTBEAT.md` | Periodic check tasks |
+| `SKILL_INSTALL_LOG.md` | Audit log of all skill install/reject decisions |
+
+---
+
+## 3. Skills Installed
+
+### Installation policy (mandatory before any skill)
+1. Inspect SKILL.md: `npx clawhub@latest inspect <slug> --file SKILL.md`
+2. Scan: `python3 skills/claw-skill-guard/scripts/scanner.py scan /tmp/skill-scans/<slug>/`
+3. Rules:
+   - 🔴 CRITICAL → Do NOT install
+   - 🟡 HIGH → Owner approval required
+   - 🟠 MEDIUM → Install unless pipe-to-shell found
+   - 🟢 LOW / ✅ SAFE → Install freely
+4. Log every result to `SKILL_INSTALL_LOG.md`
+
+### Skills installed
+```
+claw-skill-guard     Security scanner — run before all installs
+agent-tinman         Agent framework utilities
+local-approvals      Human-in-the-loop approval workflow
+plansuite            Planning and project management
+super-skills         Skill management utilities
+soul-guardian        Identity and behaviour protection
+context-recovery     Session context recovery
+file-search          File search utilities
+ripgrep              Fast text search
+skill-detector       Passive workflow pattern detector — auto-drafts skills
+```
+
+### Skills rejected
+| Skill | Reason |
+|---|---|
+| `youtube-iu` | CRITICAL — SKILL.md instructs downloading password-protected ZIP + running unknown executable |
+| `youtube-transcript` | HIGH — VirusTotal flagged; routes traffic through residential proxy/WireGuard VPN |
+
+### Alternative (no skill needed)
+```bash
+pip3 install youtube-transcript-api
+# Pass YouTube URL to agent — transcript fetched natively, no proxy
+```
+
+---
+
+## 4. Python Tools
+
+```bash
+pip3 install youtube-transcript-api
+pip3 install xlsx2html weasyprint   # XLSX → PDF payslip conversion
+```
+
+---
+
+## 5. Local AI — Ollama
+
+### Install
+```bash
+curl -fsSL https://ollama.ai/install.sh | sh
+# OR on Rocky Linux via package manager
+```
+
+### Pull models
+```bash
+# Clear any corrupt blobs first if digest mismatch errors occur:
+rm -rf ~/.ollama/models/blobs/*
+
+ollama pull llama3.2:3b    # Heartbeat model (2GB, lightweight)
+# Fallback if registry issues:
+ollama pull qwen2.5:3b
+ollama pull tinyllama
+```
+
+### Test
+```bash
+ollama serve
+ollama run llama3.2:3b "respond with OK"
+```
+
+### Purpose in stack
+- Route OpenClaw heartbeats to local model (zero API cost)
+- Free health checks, alert routing, monitoring tasks
+
+---
+
+## 6. Token Optimisation (OpenClaw Config)
+
+Reference: @mattganzak OpenClaw Token Optimization Guide
+
+### Edit `~/.openclaw/openclaw.json`
+
+```json
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "anthropic/claude-haiku-4-5"
+      },
+      "cache": {
+        "enabled": true,
+        "ttl": "5m",
+        "priority": "high"
+      },
+      "models": {
+        "anthropic/claude-sonnet-4-5": { "alias": "sonnet", "cache": true },
+        "anthropic/claude-haiku-4-5": { "alias": "haiku", "cache": false }
+      }
+    }
+  },
+  "heartbeat": {
+    "every": "1h",
+    "model": "ollama/llama3.2:3b",
+    "session": "main",
+    "prompt": "Check: Any blockers, opportunities, or progress updates needed?"
+  }
+}
+```
+
+### System prompt rules to add to SOUL.md
+
+**Session initialization:**
+```
+On every session start, load ONLY: SOUL.md, USER.md, IDENTITY.md, memory/YYYY-MM-DD.md
+DO NOT auto-load: MEMORY.md, session history, prior tool outputs
+Use memory_search() on demand. Pull only relevant snippets.
+```
+
+**Model selection:**
+```
+Default: Haiku
+Switch to Sonnet ONLY for: architecture decisions, production code review,
+security analysis, complex debugging, strategic multi-project decisions
+```
+
+**Rate limits:**
+```
+5s minimum between API calls
+10s between web searches
+Max 5 searches per batch, then 2-minute break
+Batch similar work
+If 429 error: STOP, wait 5 minutes, retry
+Daily budget: $5 (warn at 75%)
+Monthly budget: $200 (warn at 75%)
+```
+
+### Expected cost impact
+| Period | Before | After |
+|---|---|---|
+| Daily | $2–3 | ~$0.10 |
+| Monthly | $70–90 | $3–5 |
+| Yearly | $800+ | $40–60 |
+
+---
+
+## 7. Mission Control Dashboard
+
+### Stack
+- `index.html` — single-file SPA (vanilla JS, no frameworks, glassmorphism dark theme)
+- `server.js` — Node.js local engine, port 8899, no npm deps
+- `mission-control.service` — systemd service for auto-start on reboot
+
+### Location
+```
+~/projects/mission-control/
+├── index.html
+├── server.js
+├── mission-control.service
+├── mc-data.json          # Dashboard state (auto-created)
+├── mc-activity.json      # Activity log (auto-created)
+└── logs/
+    └── server.log
+```
+
+### Features
+| Tab | Contents |
+|---|---|
+| 📊 Dashboard | Metric cards, activity feed, top priorities |
+| 📋 Projects | Kanban (drag-drop, Backlog/In Progress/Done) |
+| 📅 Timeline | Phase-based roadmap with milestone checkboxes |
+| 💰 Revenue | MRR gauge, bar chart, client list, projections (password gated) |
+| 📝 Notes | Text area + snippet library |
+| 🏢 Command Center | Agent cards, slide-out panel, task sending, executive decisions |
+| 📡 Intel | Category feed, daily brief, importance tags |
+
+### Access
+- Dashboard login: set on first load (stored hashed via SHA-256)
+- Revenue tab: separate password gate (resets each browser session)
+
+### Server REST API
+```
+GET  /mc/status     → uptime, node version, connection status
+GET  /mc/data       → full dashboard state
+POST /mc/data       → overwrite state (auto-backup from dashboard every 5min)
+GET  /mc/weather    → Brisbane weather via wttr.in
+GET  /mc/activity   → last 50 activity entries
+POST /mc/activity   → append activity entry
+```
+
+### Auto-start setup (Linux/systemd)
+```bash
+sudo cp ~/projects/mission-control/mission-control.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable mission-control
+sudo systemctl start mission-control
+```
+
+### Verify running
+```bash
+curl http://localhost:8899/mc/status
+```
+
+---
+
+## 8. Google Cloud CLI
+
+### Install
+```bash
+curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-linux-x86_64.tar.gz
+tar -xf google-cloud-cli-linux-x86_64.tar.gz
+./google-cloud-sdk/install.sh --quiet --path-update=true
+
+# Add to PATH permanently
+echo 'source ~/google-cloud-sdk/path.bash.inc' >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Authenticate with service account
+```bash
+# Store key securely (never in Downloads)
+mkdir -p ~/.config/gcloud/keys
+mv ~/Downloads/<your-key>.json ~/.config/gcloud/keys/
+
+# Activate
+gcloud auth activate-service-account --key-file=~/.config/gcloud/keys/<your-key>.json
+gcloud config set project <your-project-id>
+```
+
+### Enable required APIs
+```bash
+# Required first — enables API management
+# Enable via browser: console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com
+
+# Then via CLI:
+gcloud services enable drive.googleapis.com
+gcloud services enable calendar-json.googleapis.com
+```
+
+### APIs enabled
+| API | Purpose |
+|---|---|
+| `drive.googleapis.com` | Google Drive backup of dashboard + workspace files |
+| `calendar-json.googleapis.com` | Calendar integration for scheduling, inspections |
+| `cloudresourcemanager.googleapis.com` | Required to manage other API enables |
+
+---
+
+## 9. Planned: Cloudflare Tunnel
+
+> Remote access to Mission Control from overseas — no port forwarding, no VPN.
+
+```bash
+# Install cloudflared
+curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.rpm -o cloudflared.rpm
+sudo rpm -i cloudflared.rpm
+
+# Authenticate (opens browser)
+cloudflared tunnel login
+
+# Create tunnel
+cloudflared tunnel create mission-control
+
+# Route to local server
+cloudflared tunnel route dns mission-control <your-subdomain>.yourdomain.com
+
+# Run tunnel
+cloudflared tunnel run --url http://localhost:8899 mission-control
+
+# Install as service
+sudo cloudflared service install
+```
+
+---
+
+## 10. Git Checkpoints
+
+All workspace changes are committed to a private GitHub repo.
+
+### Create a checkpoint before major changes
+```bash
+cd ~/.openclaw/workspace
+git add -A
+git commit -m "Checkpoint: description"
+git tag -a "checkpoint-name" -m "description"
+git push origin checkpoint-name
+```
+
+### Restore from checkpoint
+```bash
+# Full restore
+git checkout checkpoint-name
+
+# Single file restore
+git checkout checkpoint-name -- SOUL.md
+```
+
+### Named checkpoints
+| Tag | Description |
+|---|---|
+| `checkpoint-pre-token-opt` | Stable baseline — Atlas 2.1 configured, 51 skills, before cost optimisation |
+
+---
+
+## 11. Sequence Summary (order of operations)
+
+1. Install Node.js + npm
+2. Install OpenClaw (`npm install -g openclaw`)
+3. `openclaw init` → configure workspace
+4. Install `claw-skill-guard` first (security scanner)
+5. Install remaining skills (scan each before install)
+6. Install Ollama + pull `llama3.2:3b`
+7. Configure `openclaw.json` (model routing + heartbeat)
+8. Build Mission Control dashboard (`~/projects/mission-control/`)
+9. Install as systemd service
+10. Install Google Cloud CLI + authenticate service account
+11. Enable required Google APIs
+12. Set up Cloudflare tunnel (pending)
+13. Configure Google Drive backup via rclone or Drive API (pending)
