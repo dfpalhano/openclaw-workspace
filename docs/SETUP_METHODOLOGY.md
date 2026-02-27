@@ -402,3 +402,30 @@ Added to dashboard as **👥 Tenants** tab.
 - Duplicate rows (same amount, same name, same date) are NOT deduplicated — each counts
 - Match confidence shown — low confidence flagged for manual review
 - Unmatched rows can be manually assigned before import
+
+---
+
+## 13. Houses, Managers & Maintenance (Mission Control)
+
+### Houses tab (🏠)
+- Register properties: code, name, address, bank account, WhatsApp group
+- Rooms: number, linked tenant, rent/wk, live payment status (Paid/Waiting/Missing)
+- Shows maintenance alerts + next inspection date per house card
+
+### Managers tab (👷) — owner password gated
+- Register managers: name, role, phone, email, assigned houses
+- Maintenance jobs: priority (High/Med/Low), assignee, due date, completion tracking
+- Inspection scheduling: date, time, inspector, notes
+- Recurring jobs tracker: predictive scheduling from history, snooze 1 week if unbooked
+
+### Recurring jobs predictive logic
+- Tracks history of each job completion date
+- Calculates average interval from ≥2 records
+- Predicts next date = last done + avg days
+- Status: green (on track), amber (due ≤3 days), red (overdue)
+- Snooze: defers reminder 7 days, resets when job is marked done
+- Check ✓ on job = records today as done, recalculates avg, updates prediction
+
+### Weather
+- Switched from wttr.in (blocked) to Open-Meteo API (free, no key needed)
+- Brisbane coords hardcoded: lat=-27.4705, lon=153.0260
