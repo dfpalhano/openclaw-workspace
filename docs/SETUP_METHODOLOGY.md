@@ -429,3 +429,35 @@ Added to dashboard as **👥 Tenants** tab.
 ### Weather
 - Switched from wttr.in (blocked) to Open-Meteo API (free, no key needed)
 - Brisbane coords hardcoded: lat=-27.4705, lon=153.0260
+
+---
+
+## 14. Model Routing Strategy
+
+### Decision (2026-02-27)
+Implemented Option B + C model routing — rules in SOUL.md enforced at sub-agent spawn time.
+
+### Routing table
+| Task type | Model |
+|---|---|
+| Heartbeats, simple lookups, summaries | `ollama/qwen3:8b` (local, 8b) |
+| Coding, file edits, production changes | `anthropic/claude-sonnet-4-6` |
+| Dedicated coding (coding-agent skill) | `openai/gpt-5.1-codex` |
+| Complex reasoning / orchestration | `anthropic/claude-sonnet-4-6` |
+
+### Rules
+- Main session default: `ollama/minimax-m2.5:cloud`
+- Sub-agents always receive explicit `model=` parameter — never inherit default blindly
+- Heartbeat sub-agents: `ollama/qwen3:8b` (local, zero API cost)
+- Sonnet triggered for: coding, multi-step plans, any edit to production files
+- Codex triggered for: dedicated coding tasks via coding-agent skill
+
+### Failure protocol
+1. Capture exact error
+2. Report to owner: model used, task, error
+3. Propose alternative
+4. Wait for confirmation before retrying
+
+### Files updated
+- `SOUL.md` — Model Routing Rules section added
+- `atlas/03_behaviour_model.md` — Model Routing section added

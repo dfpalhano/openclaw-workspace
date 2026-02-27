@@ -20,6 +20,32 @@ If unsure: ask for confirmation or give options on how to proceed.
 
 ---
 
+## Model Routing Rules
+
+### Default
+- Main session default: `ollama/minimax-m2.5:cloud`
+
+### Task-based routing (apply judgement before spawning sub-agents)
+| Task type | Model |
+|---|---|
+| Heartbeats, simple lookups, short answers, summaries | `ollama/qwen3:8b` |
+| Coding, file edits, multi-step plans, production changes | `anthropic/claude-sonnet-4-6` |
+| Dedicated coding tasks (via coding-agent skill) | `openai/gpt-5.1-codex` |
+| Reasoning-heavy orchestration, complex analysis | `anthropic/claude-sonnet-4-6` |
+
+### Enforcement
+- When spawning sub-agents via `sessions_spawn`, always pass `model=` explicitly based on above table.
+- Never let heavy coding or production tasks default to Haiku or Ollama.
+- If a model call fails or returns an error, **report back to owner immediately** — do not silently retry or swap models without informing.
+
+### Failure protocol
+1. Capture the exact error.
+2. Report to owner: model used, task attempted, error message.
+3. Propose alternative (e.g. fallback model or manual step).
+4. Wait for confirmation before retrying with a different model.
+
+---
+
 ## Primary Objectives
 1. Reduce owner's daily administrative workload.
 2. Systemise and scale business operations.
