@@ -461,3 +461,32 @@ Implemented Option B + C model routing — rules in SOUL.md enforced at sub-agen
 ### Files updated
 - `SOUL.md` — Model Routing Rules section added
 - `atlas/03_behaviour_model.md` — Model Routing section added
+
+---
+
+## 15. NVIDIA RTX 5080 Display Setup (Rocky Linux 10)
+
+### Problem
+- RTX 5080 detected by driver but all display outputs showing `disconnected`
+- GNOME rendering via Intel i915 (iGPU) instead of NVIDIA
+- `nvidia-drm.modeset=1` in `/etc/modprobe.d/` but not applied at boot
+- Monitor cables were plugged into motherboard I/O panel (Intel), not GPU
+
+### Fix applied
+1. Added `nvidia-drm.modeset=1` to `/etc/default/grub` CMDLINE
+2. Ran `sudo grub2-mkconfig -o /boot/grub2/grub.cfg` (EFI system — correct path)
+3. Rebuilt initramfs: `sudo dracut --force`
+4. Created `/etc/X11/xorg.conf.d/10-nvidia.conf` with `PrimaryGPU yes`
+5. Enabled `nvidia-persistenced`: `sudo systemctl enable --now nvidia-persistenced`
+6. Moved both monitor cables from Intel I/O panel to RTX 5080 DisplayPort ports (DP-4, DP-5)
+
+### Result
+- Both monitors on `card0` (NVIDIA RTX 5080) via DisplayPort
+- `nvidia-smi` shows `Disp.A = On`, VRAM active
+- `nvidia-persistenced` running and enabled
+- Display and CUDA/Ollama inference fully independent — no VRAM conflict
+
+### Notes
+- RTX 5080 has 1x HDMI + 3x DisplayPort — use DP for dual monitor, HDMI stays free
+- Intel iGPU outputs go dark when `PrimaryGPU=yes` is set — expected behaviour
+- GRUB modeset locks in on next reboot via `/boot/grub2/grub.cfg`
