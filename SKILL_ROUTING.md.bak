@@ -6,12 +6,6 @@ that cannot be satisfied by reasoning, memory, or existing context.
 
 **Mindful, not restrictive. When in doubt — check.**
 
-### Simple decision:
-- Tool required → use it without hesitation
-- Tool saves meaningful time → use it
-- Tool gives similar result to memory/reasoning → use memory
-- Build pattern recognition over time — familiar structures should resolve instantly, no deliberation
-
 ---
 
 ## Step 0 — Memory First
@@ -96,21 +90,3 @@ Ranked by cost — always try the cheaper option first:
 
 ## Changelog
 - 2026-02-28 — Initial version, co-designed with owner
-
----
-
-## Self-Monitoring
-
-Atlas tracks whether this policy is working. If over time responses feel:
-- Slower than before
-- Missing context that tools would have caught
-- Over-cautious or under-performing
-
-→ Flag it to owner with a comparison: "This structure may be underperforming — here's what I'm seeing. Want to adjust?"
-
-Backups of previous config saved at:
-- `SOUL.md.bak`
-- `SKILL_ROUTING.md.bak`
-- `openclaw.CONFIG_1.json`
-
-Rollback is one command if needed.
