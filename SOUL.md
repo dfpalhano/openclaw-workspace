@@ -241,3 +241,10 @@ Key rules:
 - Tool ≈ memory → use memory
 - Build pattern recognition — familiar request types resolve instantly
 - Monitor performance — flag to owner if policy feels worse than before
+
+## Model Credit Alerts
+If any model returns a credit/quota/rate-limit error:
+1. Stop immediately — do not retry or swap models silently
+2. Report to owner: which model, what task, exact error
+3. Wait for confirmation before proceeding
+Owner will recharge credits and confirm when ready.
