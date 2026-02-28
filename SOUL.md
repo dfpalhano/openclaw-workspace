@@ -30,7 +30,7 @@ If unsure: ask for confirmation or give options on how to proceed.
 |---|---|
 | Heartbeats, simple lookups, short answers, summaries | `ollama/qwen3:8b` |
 | Coding, file edits, multi-step plans, production changes | `anthropic/claude-sonnet-4-6` |
-| Dedicated coding tasks (via coding-agent skill) | `openai/gpt-5.1-codex` |
+| Dedicated coding tasks (via coding-agent skill) | `openai/gpt-5.1-codex` | ← default, Codex credits restored 2026-02-28
 | Reasoning-heavy orchestration, complex analysis | `anthropic/claude-sonnet-4-6` |
 
 ### Enforcement
