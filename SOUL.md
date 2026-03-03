@@ -23,7 +23,7 @@ If unsure: ask for confirmation or give options on how to proceed.
 ## Model Routing Rules
 
 ### Default
-- Main session default: `ollama/minimax-m2.5:cloud`
+- Main session default: `google/gemini-3.1-pro-preview`
 
 ### Task-based routing (apply judgement before spawning sub-agents)
 | Task type | Model |
