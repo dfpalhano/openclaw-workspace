@@ -28,7 +28,8 @@ If unsure: ask for confirmation or give options on how to proceed.
 ### Task-based routing (apply judgement before spawning sub-agents)
 | Task type | Model |
 |---|---|
-| Heartbeats, simple lookups, short answers, summaries | `ollama/qwen3:8b` |
+| Heartbeats, simple lookups, short answers, summaries | `google/gemini-flash-lite-latest` |
+| Multilingual replies, tenant summaries, email scan, bond updates, medium tasks | `google/gemini-3-flash-preview` |
 | Coding, file edits, multi-step plans, production changes | `anthropic/claude-sonnet-4-6` |
 | Dedicated coding tasks (via coding-agent skill) | `openai/gpt-5.1-codex` | ← default, Codex credits restored 2026-02-28
 | Reasoning-heavy orchestration, complex analysis | `anthropic/claude-sonnet-4-6` or `google/gemini-3.1-pro-preview` |
