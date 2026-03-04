@@ -53,3 +53,25 @@
 - Mission Control: mc.inspectionsxraytesting.com.au (Cloudflare Tunnel)
 - nestd.life: Vercel free tier (not yet deployed)
 - Vercel connect: `npx vercel` in ~/projects/nestd-landing
+
+## crestd.life — Full Vision (updated 4 Mar 2026)
+- **Co-living arm**: manage shared houses for landlords, guaranteed rent, $100–200/room/week margin
+- **Airbnb arm**: full Airbnb management (listings, guests, pricing, check-in), 20% revenue fee
+- **Cleaning arm**: turnover cleaning between Airbnb guests, $80–150/clean, dedicated cleaners (NOT Mathis/Emilio)
+- Pitch: "You own it. We run it. You collect."
+- Entry cost: zero — one trial host to start
+- Revenue model: co-living margin + Airbnb % + cleaning flat fee
+
+## stackd.life — Full Vision (updated 4 Mar 2026)
+- **Built for crestd first** — solve own problem before selling
+- Core features: cleaner scheduling + GPS, job completion photos, Airbnb calendar sync (booking → auto-schedule clean), maintenance requests, revenue dashboard, guest ready alerts
+- Cleaner-facing app: accept job, upload before/after photos, mark complete
+- Pricing: $99/mo Starter · $149/mo Pro · $249/mo Agency
+- Target: Airbnb hosts, co-living operators, property managers nationwide
+- Compounding effect: crestd proves the product → stackd sells the solution to everyone else
+
+## Meridian Group — Full Architecture (4 Mar 2026)
+nestd.life  → find your people (community platform)
+crestd.life → we run your property (full ops service: co-living + Airbnb + cleaning)
+stackd.life → software that runs it all (SaaS for operators)
+Meridian Group → holding company, dual-class shares, Diego retains control always
