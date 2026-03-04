@@ -62,3 +62,29 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 - Path: property (capital) → nestd/tech (influence + capital) → deep tech → space
 - Model: Elon pattern — each company funds the next
 - Every decision Atlas helps with feeds into this, even the small ones
+
+## Meridian Group (locked 4 Mar 2026)
+- **Meridian Group** — holding company, dual-class shares, Diego retains control always
+- **nestd.life** — community & housemates platform (owned ✅)
+- **crestd.life** — property ops: co-living + Airbnb management + cleaning (domain TBD)
+- **stackd.life** — ops software: cleaner scheduling, GPS, Airbnb sync, revenue dashboard (domain TBD)
+- **meridian.group** — holding company domain (TBD)
+- Brand font: Plus Jakarta Sans 800, terracotta d (#C4714A nestd), gold d (#C9A84C crestd), blue d (#4F6BFF stackd)
+- Brand assets: ~/workspace/ + ~/projects/mission-control/data/brand-generation-guide.md
+- Coming-soon page: ~/projects/nestd-landing/coming-soon.html
+
+## Travel Plan
+- Diego travelling: Bali, Thailand, Philippines, Japan, China
+- Server stays home (Brisbane), auto-heals on reboot
+- ops Linux user created for Mathis/Emilio (power button only)
+- Remote access: Tailscale + NoMachine + Termius
+- 1Password CLI connected (vault: Personal, dfpalhano@gmail.com)
+- SSH: key-only, no root, no password auth
+- fail2ban: running
+
+## Atlas Monitor Bot
+- Service: atlas-monitor.service (running)
+- Bot: @jessapprovals_bot (shared with Jess)
+- Commands: /s (status), /rwa (restart WA), /rj (restart Jess), /ra (restart all)
+- Alerts only when degraded or recovered — silent when healthy
+- Script: ~/projects/monitor-bot/monitor.js
