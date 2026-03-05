@@ -42,6 +42,12 @@ See: memory/decisions.md → "Origin Context" for why this matters deeply.
 - Workspace: `/home/diegopalhano/.openclaw/workspace/`
 - Data: `/home/diegopalhano/projects/mission-control/data/`
 
+## Codex CLI
+- Auth: OAuth2 login — run `codex login --device-auth` → complete at openai.com/device (NOT API key)
+- Session logged in: 2026-03-06 ✅
+- Default sandbox: read-only — use `-s workspace-write` flag for file tasks
+- Config: ~/.codex/config.toml | model = gpt-5.1-codex
+
 ## Skills Installed
 agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-guardian, context-recovery, file-search, ripgrep
 
