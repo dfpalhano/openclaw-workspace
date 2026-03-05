@@ -25,6 +25,20 @@ See: memory/decisions.md → "Origin Context" for why this matters deeply.
 - Jess: no invite without confirmed inspection date/time
 - Managers: see ZERO financials
 
+## Travel Plan (updated)
+- Bali: 21 Mar – 6 Apr 2026 → then Thailand (Pattaya) → Philippines (Angeles City)
+- Full intel + personal preferences: memory/travel.md (local only)
+- Trip planning rule: book flights around inspection gaps
+
+## Property Agent Directory
+Full agent contacts + inspection status: memory/2026-03-06.md
+Key flags before 21 Mar:
+- SH1 (Coronis/was Little RE) — new agent, initial inspection imminent 🔴
+- SH3 (Place Graceville) — inspection soon + arrears unresolved 🔴
+- V5 (Leo Tsimpikas) — new property Dec 2025, first inspection due 🔴
+- 606 Vulture lease renewal — DocuSign pending, sign before leaving
+- SH2 (36 Rosa) — arrange owner visit before 21 Mar
+
 ## Contextual Memory Files (load on demand)
 | File | Load when |
 |------|-----------|
@@ -34,6 +48,7 @@ See: memory/decisions.md → "Origin Context" for why this matters deeply.
 | `memory/projects.md` | nestd.life, Lodgr, Jess, Echo, Forma, app ideas |
 | `memory/decisions.md` | Architecture, "why did we...", rebuilding components |
 | `memory/active-tasks.md` | Load EVERY session — current task board |
+| `memory/travel.md` | Travel preferences, destinations, health protocol (local only) |
 
 ## Key Paths
 - Dashboard: `/home/diegopalhano/projects/mission-control/` (port 8899)
