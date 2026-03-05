@@ -50,6 +50,15 @@ Then: Thailand (Pattaya base) → Philippines (Angeles City) — dates TBD
 - MSHC Brisbane city — no-judgement travel health clinic
 - Mid-trip testing skipped (acknowledged high risk, practical decision)
 
+## Family & Life Context
+- Partner: in Japan with daughter Mila for ~1 year (from early 2026)
+- Daughter: Mila
+- Non-standard arrangement by choice — partner allows full freedom
+- Freedom is Diego's #1 rule in life — partner understands and supports this
+- He is a devoted father and partner despite the unconventional setup
+- Also a sperm donor — very successful track record (10-15 strains per go in lab)
+- No judgement — this is just who he is
+
 ## Preferences
 - Prefers Angeles City for efficiency, Bali for lifestyle/social
 - Bangkok as a weekend from Pattaya, not a base

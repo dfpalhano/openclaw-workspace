@@ -25,6 +25,12 @@ See: memory/decisions.md → "Origin Context" for why this matters deeply.
 - Jess: no invite without confirmed inspection date/time
 - Managers: see ZERO financials
 
+## Family
+- Partner + daughter Mila: in Japan ~1 year from early 2026
+- Non-standard arrangement by choice — freedom is Diego's #1 value, partner supports this
+- He's a devoted father and partner. Also a sperm donor (successful).
+- Full context: memory/travel.md
+
 ## Travel Plan (updated)
 - Bali: 21 Mar – 6 Apr 2026 → then Thailand (Pattaya) → Philippines (Angeles City)
 - Full intel + personal preferences: memory/travel.md (local only)
@@ -48,7 +54,8 @@ Key flags before 21 Mar:
 | `memory/projects.md` | nestd.life, Lodgr, Jess, Echo, Forma, app ideas |
 | `memory/decisions.md` | Architecture, "why did we...", rebuilding components |
 | `memory/active-tasks.md` | Load EVERY session — current task board |
-| `memory/travel.md` | Travel preferences, destinations, health protocol (local only) |
+| `memory/travel.md` | Travel preferences, destinations, health protocol, family context (local only) |
+| `memory/pre-bali-checklist.md` | Pre-departure action list for 21 Mar Bali trip — load when trip planning |
 
 ## Key Paths
 - Dashboard: `/home/diegopalhano/projects/mission-control/` (port 8899)
