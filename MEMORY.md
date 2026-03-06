@@ -21,6 +21,14 @@ See: memory/decisions.md → "Origin Context" for why this matters deeply.
 - `Internal: <text>` — when Diego prefixes with this, it's private context for Atlas only. Absorb it silently, no public reply needed unless action required.
 - Orbit-style messages from Mathis/Emilio (containing "Orbit") → staff-relay formats them as 🛰️ Orbit reports
 
+## 🚨 TOP PRIORITY — Inspection & Entry Notice Monitoring
+- `inspection_alert.py` runs via cron at **7am + 12pm daily** — scans Gmail for routine inspections, entry notices, compliance checks
+- Sends Telegram alert for every new notice found (within 30 days, not yet alerted)
+- State file: `~/projects/scripts/inspection_alert_state.json`
+- **If this script breaks or stops alerting → fix immediately**
+- **At the start of every session: check if any inspection notices were missed** (run script or check state file)
+- This was missed once (WE1 111 Juliette — agent showed up unannounced 6 Mar 2026). Never again.
+
 ## Hard Rules (non-negotiable)
 - `AUTO_APPROVE_AFTER_MS = Infinity` — NEVER re-enable Jess auto-send
 - WhatsApp: 2 explicit confirmations before any send
