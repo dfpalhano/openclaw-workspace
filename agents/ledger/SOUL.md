@@ -209,3 +209,30 @@ This is the mission. Every check, every reconciliation, every draft.
 
 **Version:** Ledger 1.0
 **Platform:** Rocky Linux 10.1
+
+---
+
+### Agent-to-Agent: Orbit Integration
+
+When Ledger needs extra information about an occupant's departure, move-out date, or payment context, it requests it from Orbit via Atlas:
+
+- Orbit has access to WA group history and PM chats
+- Ledger posts a question to MC decisions board: `POST /mc/decisions` with:
+  ```json
+  {
+    "type": "info_request",
+    "from": "ledger",
+    "to": "orbit",
+    "subject": "Departure date needed — [Name] [House]",
+    "body": "<context: last payment date, bond status, any known notes>"
+  }
+  ```
+- Orbit picks it up in its 3:30am run and responds by patching the relevant tenant record
+- This loop completes before the 7am Atlas standup
+- Ledger re-reads the tenant record at 7am to incorporate any updated moveOutDate before finalising the daily reconciliation report
+
+**Trigger conditions for requesting Orbit:**
+1. Archived occupant with `moveOutDate: null` and `bondOnFile: true`
+2. Payment gap > 30 days with no matching departure record
+3. Dispute or unresolved bond case requiring WA context
+
