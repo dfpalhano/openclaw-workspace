@@ -1,5 +1,6 @@
 #!/bin/bash
 # Morning Brief — runs at 7:00am daily
+# Also pushes decisions to MC /mc/decisions
 # Collects outputs from all agents and sends synthesis to Telegram via Atlas
 
 WORKSPACE="/home/diegopalhano/.openclaw/workspace"
