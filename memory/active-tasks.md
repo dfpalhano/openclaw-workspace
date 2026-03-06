@@ -34,6 +34,17 @@
 - [ ] Staff coverage plan for Diego Japan trip (~July 2026)
 - [ ] Emilio student visa pathway research
 
+## ✅ Done Today (6 Mar — session 2)
+- Jess auto-sync live listings on session start (syncLiveListings) — CO1/EB2/SP9/BRIS1 live
+- Tasks tab: assignee dropdown (Mathis/Emilio/Both), status cycling (todo→in progress→done)
+- Tasks tab: 📩 Ask if done? button → WA check-in → "done/yes" reply auto-archives
+- Tasks tab: 📋 Manager contact link per house (popover + mailto)
+- 💸 Expenses tab built — seeded with Alinta EB3, house assignment, manual add
+- 📚 Learning Hub in Managers section — 5 modules seeded
+- Decisions tab rendering fixed (was reading localStorage instead of API)
+- data/agent-contacts.json created (8 managed properties)
+- sync-listings.js standalone script for Jess
+
 ## ✅ Recently Done (3 Mar)
 - Jess v2 built and sending messages (9 sent today)
 - Vacancy funnel cards (Interested/To Invite/Invited/Confirmed)
