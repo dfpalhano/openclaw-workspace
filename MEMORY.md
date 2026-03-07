@@ -44,7 +44,7 @@ See: memory/decisions.md → "Origin Context" for why this matters deeply.
 - Full context: memory/travel.md
 
 ## Travel Plan (updated)
-- Bali: 21 Mar – 6 Apr 2026 → then Thailand (Pattaya) → Philippines (Angeles City)
+- Pattaya (Thailand): 21 Mar – 6 Apr 2026 → then Philippines (Angeles City) → Philippines (Angeles City)
 - Full intel + personal preferences: memory/travel.md (local only)
 - Trip planning rule: book flights around inspection gaps
 
@@ -67,7 +67,7 @@ Key flags before 21 Mar:
 | `memory/decisions.md` | Architecture, "why did we...", rebuilding components |
 | `memory/active-tasks.md` | Load EVERY session — current task board |
 | `memory/travel.md` | Travel preferences, destinations, health protocol, family context (local only) |
-| `memory/pre-bali-checklist.md` | Pre-departure action list for 21 Mar Bali trip — load when trip planning |
+| `memory/pre-bali-checklist.md` | Pre-departure action list for 21 Mar Pattaya trip — load when trip planning |
 
 ## Key Paths
 - Dashboard: `/home/diegopalhano/projects/mission-control/` (port 8899)
@@ -114,7 +114,7 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 - Coming-soon page: ~/projects/nestd-landing/coming-soon.html
 
 ## Travel Plan
-- Diego travelling: Bali, Thailand, Philippines, Japan, China
+- Diego travelling: Thailand (Pattaya first), Philippines, Japan, China
 - Server stays home (Brisbane), auto-heals on reboot
 - ops Linux user created for Mathis/Emilio (power button only)
 - Remote access: Tailscale + NoMachine + Termius
