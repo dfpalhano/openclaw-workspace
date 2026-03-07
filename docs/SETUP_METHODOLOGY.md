@@ -565,3 +565,10 @@ sudo visudo -c
 ### Trace
 - File: `/etc/sudoers.d/atlas-speedup`
 - Scope: `systemctl --user`, `systemctl is-active`, `fuser`
+
+
+### Incident note — sudoers rollback
+- `sudo rm /etc/sudoers.d/atlas-speedup`
+- `sudo visudo -c` reported: `/etc/sudoers.d/atlas-services: bad permissions, should be mode 0440`
+- Fix: `sudo chmod 440 /etc/sudoers.d/atlas-services`
+- Re‑check: `sudo visudo -c`
