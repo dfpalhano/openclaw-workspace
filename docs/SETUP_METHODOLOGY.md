@@ -490,3 +490,30 @@ Implemented Option B + C model routing — rules in SOUL.md enforced at sub-agen
 - RTX 5080 has 1x HDMI + 3x DisplayPort — use DP for dual monitor, HDMI stays free
 - Intel iGPU outputs go dark when `PrimaryGPU=yes` is set — expected behaviour
 - GRUB modeset locks in on next reboot via `/boot/grub2/grub.cfg`
+
+---
+
+## OpenClaw — Sub-agent Allowlist (Host)
+
+**Goal:** Allow spawning Thor/Warden/Ledger/Jess/Orbit as sub-agents.
+
+### Config change
+```bash
+# Edit OpenClaw config
+nano ~/.openclaw/openclaw.json
+```
+
+Add under `tools`:
+```json
+"subagents": {
+  "allowAny": true,
+  "allow": ["main","jess","orbit","ledger","warden","thor"]
+}
+```
+
+### Apply
+```bash
+openclaw gateway restart
+```
+
+> Note: Tool allowlist may also be enforced at the host/policy layer.
