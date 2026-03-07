@@ -43,7 +43,7 @@
 
 ### Tech
 - [ ] Ensure server auto-heals on reboot (already set up ✅)
-- [ ] Tailscale + NoMachine + Termius working for remote access ✅
+- [x] Tailscale + NoMachine + Termius working for remote access ✅ (confirmed 7 Mar)
 - [ ] Telegram notifications active for urgent alerts ✅
 
 ## 📋 ATLAS WILL MONITOR WHILE YOU'RE AWAY
