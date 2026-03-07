@@ -517,3 +517,51 @@ openclaw gateway restart
 ```
 
 > Note: Tool allowlist may also be enforced at the host/policy layer.
+
+---
+
+## Sudoers Speed‑up (Revertible)
+
+**Purpose:** Allow passwordless sudo for a narrow set of commands.
+
+### Apply
+```bash
+sudo tee /etc/sudoers.d/atlas-speedup >/dev/null <<'EOF'
+diegopalhano ALL=(ALL) NOPASSWD: /usr/bin/systemctl --user *, /usr/bin/systemctl is-active *, /usr/sbin/fuser *
+
+---
+
+## Sudoers Speed‑up (Revertible)
+
+**Purpose:** Allow passwordless sudo for a narrow set of commands.
+
+### Apply
+```bash
+sudo tee /etc/sudoers.d/atlas-speedup >/dev/null <<'EOF'
+diegopalhano ALL=(ALL) NOPASSWD: /usr/bin/systemctl --user *, /usr/bin/systemctl is-active *, /usr/sbin/fuser *
+
+
+---
+
+## Sudoers Speed‑up (Revertible)
+
+**Purpose:** Allow passwordless sudo for a narrow set of commands.
+
+### Apply
+```bash
+sudo tee /etc/sudoers.d/atlas-speedup >/dev/null <<'EOT'
+diegopalhano ALL=(ALL) NOPASSWD: /usr/bin/systemctl --user *, /usr/bin/systemctl is-active *, /usr/sbin/fuser *
+EOT
+sudo chmod 440 /etc/sudoers.d/atlas-speedup
+sudo visudo -cf /etc/sudoers.d/atlas-speedup
+```
+
+### Rollback
+```bash
+sudo rm /etc/sudoers.d/atlas-speedup
+sudo visudo -c
+```
+
+### Trace
+- File: `/etc/sudoers.d/atlas-speedup`
+- Scope: `systemctl --user`, `systemctl is-active`, `fuser`
