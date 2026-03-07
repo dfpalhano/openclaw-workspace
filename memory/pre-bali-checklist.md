@@ -1,4 +1,4 @@
-# Pre-Bali Checklist — Depart 21 March 2026
+# Pre-Bali Checklist — Depart 20 March 2026
 # Update this file as items are completed
 
 ## 🔴 URGENT — Do this week
@@ -6,7 +6,7 @@
 ### Property
 - [ ] **Sign 606 Vulture lease renewal** — Tim Altass resending DocuSign, check email and sign
 - [ ] **Resolve 41 Park (SH3) invoice arrears** — Place Graceville, you replied but it's unresolved. Call or email placegraceville@email.propertyme.com
-- [ ] **Arrange SH2 (36 Rosa) owner visit** — she's pushing to come and have a look, do it before 21 Mar. Self-managed, contact owner directly.
+- [ ] **Arrange SH2 (36 Rosa) owner visit** — she's pushing to come and have a look, do it before 20 Mar. Self-managed, contact owner directly.
 
 ### Emails to send (awaiting your approval to send)
 - [ ] SH1 (40 Rosa) → Coronis (operations@little.com.au) — confirm next inspection date
@@ -21,7 +21,7 @@
 ## 🟡 BOOK ONCE INSPECTIONS CONFIRMED
 
 ### Flights
-- [ ] BNE → Bali (depart 21 Mar 2026)
+- [ ] BNE → Bali (depart 20 Mar 2026)
 - [ ] Build return windows around inspection dates (Atlas will map them once agents reply)
 - [ ] Bali → Thailand (depart ~6 Apr or after any inspection return)
 - [ ] Thailand → Philippines (TBD)
