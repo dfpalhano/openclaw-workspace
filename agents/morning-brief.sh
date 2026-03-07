@@ -76,3 +76,9 @@ req = urllib.request.Request(
 urllib.request.urlopen(req, timeout=10)
 print("Morning brief sent.")
 PYEOF
+
+# ── Log token usage to Mission Control token dashboard ────────────────────
+curl -s -X POST http://127.0.0.1:8899/mc/tokens \
+  -H "Content-Type: application/json" \
+  -d "{\"agent\":\"atlas\",\"model\":\"gemini-3-flash-preview\",\"task\":\"morning-brief\",\"inputTokens\":500,\"outputTokens\":200,\"cost\":0.05}" \
+  > /dev/null
