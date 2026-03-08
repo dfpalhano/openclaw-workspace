@@ -1,73 +1,99 @@
-# memory/decisions.md — Architecture & Key Decisions
-# Load when: "why did we...", architecture questions, rebuilding components
+# memory/decisions.md — Architecture Decisions Log
+# Append-only. Never delete entries. Add new decisions at the bottom.
 
-## Jess Bot Architecture
-- Jess = Flatmates.com.au ONLY (enquiries → profile → viewing_pending → invited → confirmed)
-- Echo = WhatsApp ONLY (read/draft/approve flow, `...` activation per chat)
-- AUTO_APPROVE_AFTER_MS = Infinity — PERMANENTLY DISABLED. Never re-enable. No exceptions.
-- Jess approvals: MC list view only; Telegram sends single summary ping
-- No inspection slot → ask_profile only (NEVER invite without confirmed date/time)
-- savePending() protects approved/skipped/sent — Jess never overwrites these statuses
-- queueForApproval() skips if conversationId already has any status (pending/approved/sent/skipped)
-- managers.json = single source of truth for staff/assistants
+---
 
-## WhatsApp Bridge
-- Library: whatsapp-web.js (npm)
-- Browser: Playwright Chromium at ~/.cache/ms-playwright/chromium-1208/chrome-linux64/chrome
-- Port: 8890 (IPv4 only: 127.0.0.1)
-- Session: ~/.whatsapp-session; backup: ~/.whatsapp-session-backup
-- Patches required on Client.js (in node_modules, NOT committed):
-  1. retry loop (8 attempts, 10s apart) around requestPairingCode call
-  2. page.on('console', ...) listener after this.pupPage = page
-  3. currentPairingCode at MODULE SCOPE (not inside initClient)
-- EADDRINUSE fix: `lsof -ti:8890 | xargs kill -9`
-- CompanionHelloError = code expired, enter immediately when it appears
-- protocolTimeout: 600000 (10 min)
-- DO NOT use: --no-zygote, --single-process, Flatpak Chromium (sandbox issues)
+## 2026-03-08 — Jess v3 Architecture
+**Decision:** Replace Playwright browser automation with Chrome extension + relay server
+**Why:** Flatmates.com.au uses Kasada anti-bot — blocks headless browsers and CDP regardless of stealth. Extension runs as normal page JS, undetectable.
+**Architecture:** Chrome extension (manifest v3) → relay server (port 3847) → Jess v3 (pure HTTP client)
+**Status:** Live ✅
 
-## Model Routing
-- Main session: google/gemini-3.1-pro-preview
-- Coding/production sub-agents: anthropic/claude-sonnet-4-6 or openai/gpt-5.1-codex
-- Mid-tier tasks: google/gemini-3-flash-preview
-- Heartbeats (simple): ollama/qwen3:8b | (processing): google/gemini-flash-lite-latest
-- Chinese models (GLM-5/DeepSeek): OK for internal tasks; NOT for tenant data
-- Failure protocol: stop → report model/task/error → wait for confirmation before retry
+---
 
-## Mission Control
-- Single-file HTML, no external JS frameworks, vanilla JS only
-- Dark glassmorphism theme; accent #7C3AED
-- Port 8899 (localhost), remote: mc.inspectionsxraytesting.com.au
-- DO NOT reveal dashboard URL to tenants
-- Server: server.js (Node.js); service: mission-control.service
-- Finance tab password: see finances.md
+## 2026-03-08 — Agent Orchestration Model
+**Decision:** Atlas is orchestrator only. All implementation → delegate to team agents.
+**Rule:** DIN (Do It Now) appended by Diego = Atlas executes directly. Without DIN = delegate.
+**Why:** Owner loses time when Atlas is buried in implementation. Must always be responsive.
+**Status:** Locked in PROTOCOLS.md ✅
 
-## Data Rules
-- Excel Payments.xlsx = source of truth for payment history
-- Bank filename = house code (e.g. CO1.csv)
-- CSV: no deduplication, double payments same day = valid
-- bond-tracker.json keys: onNotice, pending, resolved, updatedAt (NOT recentlyLeft)
+---
 
-## Keyboard
-- Logitech G915X LIGHTSPEED — known hardware chattering defect
-- Fix: keyd v2.6.0 (built from source), debounce_timeout = 40ms
-- Config: /etc/keyd/default.conf
-- Solaar does NOT support LIGHTSPEED — uninstall when convenient
+## 2026-03-08 — Permission Chain
+**Decision:** Diego → Atlas → Team agents → Their sub-agents
+**Rule:** No agent self-authorises beyond what was granted. Atlas must ask Diego if scope is unclear.
+**Revocation:** Diego can revoke any agent's permission at any time.
+**Status:** Locked in PROTOCOLS.md ✅
 
-## Backup Strategy
-- Google Drive: 3am Brisbane daily (0 17 * * * UTC), folder: Atlas Mission Control/Daily Logs
-- Service account key: /home/diegopalhano/.config/gcloud/keys/openclaw2-488610-957214e91a4a.json
-- Local git: all repos committed, no remote except atlas-mission-control (private GitHub)
-- Session backup: ~/.whatsapp-session-backup (auto on each WA auth)
+---
 
-## Security Hard Rules
-- NEVER send WhatsApp without explicit 2x confirmation
-- NEVER send emails without explicit owner command
-- Jess AUTO_APPROVE = Infinity, forever
-- Echo: every message requires Telegram approval
-- Managers see zero financials
+## 2026-03-08 — Property Memory Structure
+**Decision:** Per-property memory files at `memory/properties/<CODE>.md`
+**Why:** Loading all 15 properties every session wastes tokens. Load on demand.
+**Structure:** `index.md` (50-line overview) + one file per property
+**Status:** Live ✅
 
-## Origin Context
-- Atlas 1 + 2: lost twice due to migration mistakes and driver failures
-- Atlas 3 = current (Rocky Linux 10); every backup/commit is earned through real pain
-- Owner has invested 70+ hours across multiple total rebuilds
-- Goal: "I think and you know what to do"
+---
+
+## 2026-03-08 — Registration Archive
+**Decision:** Confirmed + rejected registrations auto-archived to `data/registrations-archive/YYYY-MM/<id>.json`
+**Why:** Live file stays clean (pending only). Archive is traceable by date and status.
+**Rule:** Never delete archived records — they are the paper trail.
+**Status:** Live ✅
+
+---
+
+## 2026-03-08/09 — Canonical Data Model & PaymentID System
+**Decision:** Full data architecture redesign (Ledger + Atlas recommendation, Diego approved)
+
+### Primary key: `waId`
+- Use `614XXXXXXXX@c.us` as system-wide primary key for all occupant + financial records
+- Already stable, unique, used for photo folders
+
+### PaymentID (privacy-first bank reference)
+- Formula: each digit of phone number +1 mod 10
+- Example: `61416775321` → `72527886432`
+- Bank reference: `<PaymentID> <HouseCode>` — e.g. `72527886432 CO1`
+- Reversible by MC automatically
+- Privacy: Australian government cannot link bank description to phone number without knowing the rule
+- Shown to occupant at end of registration form
+- Stored as `paymentId` in occupant record
+
+### Canonical occupant record
+- Collapse `tenants.json` + `residents.json` → `occupants.json`
+- Keep originals as `.bak` until migration confirmed clean
+- Fields: id, waId, waNumber, paymentId, name, houseCode, room, phone, email, nationality, moveInDate, moveOutDate, weeklyRent, status, bondAmount, bondStatus, idType, selfieFile, registrationId, source, addedAt, updatedAt
+
+### Bank reconciliation
+- `POST /mc/bank/reconcile` — decodes PaymentID from transaction description
+- Fallback: last 4 digits of PaymentID + houseCode
+- Unmatched → `bank-unmatched.json`
+
+### SQLite threshold
+- Migrate when: 1,500+ occupants OR 10,000+ transactions
+- Schema ready to run (designed by Ledger)
+- Tables: occupants, bank_transactions, payments, bonds, houses
+- DB: `data/mission-control.db`
+
+**Status:** Smith building PaymentID + reconciler. Ledger building SQLite schema. ✅
+
+---
+
+## 2026-03-09 — Echo v1 Scope
+**Decision:** Echo v1 = template-only WA dispatcher. No AI replies.
+**Why:** AI drafts can go wrong. Templates are safe, predictable, auditable. Build trust first.
+**Templates:** welcome (new occupant), move-out checklist, group welcome, add/remove from group, broadcast
+**Rule:** Nothing sends without Diego's explicit ✅ in Telegram
+**Built by:** Thor (Diego-authorised)
+**Status:** Thor building ✅
+
+---
+
+## 2026-03-09 — Orbit v1 Scope
+**Decision:** Orbit = standalone WA message classifier service
+**Why:** Separate service means WA bridge crash doesn't take Orbit down. Independent restart.
+**Architecture:** `orbit.service` → taps WA bridge → classifies messages → POSTs to MC `/mc/messages`
+**Tags:** maintenance, move-out, payment, registration, general
+**Alerts:** move-out and maintenance → Telegram alert to Diego
+**Manager portal:** `mc.housemates.online/manager` — Mathis + Emilio, zero financials
+**Status:** Built by Smith ✅ (needs sudo service install)
