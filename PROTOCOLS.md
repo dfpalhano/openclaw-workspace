@@ -14,6 +14,26 @@
 
 ---
 
+## 🔗 Permission Chain (non-negotiable)
+
+All agent permissions flow top-down:
+
+```
+Diego (owner)
+  └── Atlas (orchestrator)
+        └── Thor / Smith / etc.
+              └── Their sub-agents (only if Diego → Atlas → agent authorised it)
+```
+
+**Rules:**
+- Thor (and other agents) may spawn sub-agents **only if Diego has explicitly authorised it** for that task
+- Atlas relays Diego's permission down — Atlas cannot self-authorise beyond what Diego granted
+- When Thor finishes, Diego can revoke the permission — Atlas enforces it
+- No agent can grant themselves or others permissions they don't already hold
+- If uncertain whether permission was granted → **ask Diego, don't assume**
+
+---
+
 ## 👥 The Team
 
 | Agent | Model | Role | When to use |
