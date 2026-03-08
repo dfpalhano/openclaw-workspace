@@ -60,7 +60,8 @@ Key flags before 20 Mar:
 ## Contextual Memory Files (load on demand)
 | File | Load when |
 |------|-----------|
-| `memory/tenants.md` | Bond tracker, inspections, vacancies, WA groups, move-outs |
+| `memory/properties/index.md` | Property list, flags, vacancies — load first, then pull specific property file |
+| `memory/properties/<CODE>.md` | Per-property: occupants, rent, bond, inspections (CO1/EB2/SH1/etc.) |
 | `memory/finances.md` | Payments, revenue, bank statements, cash flow, accounting |
 | `memory/staff.md` | Mathis, Emilio, scheduling, Japan trip, inspections |
 | `memory/projects.md` | nestd.life, Lodgr, Jess, Echo, Forma, app ideas |
