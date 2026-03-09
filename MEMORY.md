@@ -129,3 +129,8 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 - Commands: /s (status), /rwa (restart WA), /rj (restart Jess), /ra (restart all)
 - Alerts only when degraded or recovered — silent when healthy
 - Script: ~/projects/monitor-bot/monitor.js
+
+## 🚨 WA Double-Confirmation Rule (09/03/2026 — violation logged)
+- NEVER fire WA messages (group or individual) without TWO explicit confirms
+- Step 1: show draft → Step 2: "good to send?" → Step 3: "confirming now — last chance" → Step 4: execute
+- Violated 09/03: fired 16-group blast on single approval. Logged as serious breach.
