@@ -322,3 +322,86 @@ curl -X POST http://localhost:8899/mc/wa-threads/61412345678/command \
 curl -X POST http://localhost:8899/mc/wa-threads/ANY/command \
   -d '{"command":"escalate-all-for-house","houseCode":"SB1"}'
 ```
+
+---
+
+## WhatsApp Bridge — New Endpoints (2026-03-10)
+
+All new endpoints accept connections from **127.0.0.1 only** (403 otherwise).
+
+### Inbox Scanner
+```bash
+# Recent chats enriched with tenant data (tenantName, houseCode, isKnownOccupant)
+curl http://127.0.0.1:8890/chats?limit=200
+
+# Messages for a specific chat
+curl "http://127.0.0.1:8890/chats/61412345678@c.us/messages?limit=50"
+
+# Inbox keyword analysis (notice/leaving, substitution, inquiry)
+curl -X POST http://127.0.0.1:8890/chats/analyse
+```
+
+### Contact / Group Resolution
+```bash
+# Resolve a phone to WA identity (JID, displayName, groups)
+curl http://127.0.0.1:8890/contacts/resolve/61412345678
+
+# All groups with members (JID + phone per participant)
+curl http://127.0.0.1:8890/groups
+```
+
+### Group Membership (Scheduler Executors — never call directly)
+```bash
+# Called by Vox group-schedule on/after scheduledDate only
+curl -X POST http://127.0.0.1:8890/groups/120363..@g.us/add    -d '{"phone":"+61412345678"}'
+curl -X POST http://127.0.0.1:8890/groups/120363..@g.us/remove -d '{"phone":"+61412345678"}'
+```
+
+---
+
+## Vox — Date-Gated Group Schedule (2026-03-10)
+
+Group membership changes are **never immediate**. Scheduled via `lib/bridge.js → scheduleGroupChange()`.
+
+Persistence: `/home/diegopalhano/projects/wa-ops-bot/data/group-schedule.json`
+
+Scheduler fires:
+- **On startup** — immediately if `lastRunDate != today` (idempotent)
+- **Daily at 08:00 Brisbane** — processes any due items
+
+### Management API (port 8892)
+```bash
+# List all scheduled changes
+curl http://127.0.0.1:8892/group-schedule
+curl "http://127.0.0.1:8892/group-schedule?status=pending"
+
+# Schedule a new change
+curl -X POST http://127.0.0.1:8892/group-schedule \
+  -H 'Content-Type: application/json' \
+  -d '{"phone":"+61412345678","groupJid":"120363..@g.us","action":"add","scheduledDate":"2026-03-15","reason":"new occupant BRIS1"}'
+
+# Cancel a pending item
+curl -X DELETE http://127.0.0.1:8892/group-schedule/gs_1234_abcdef
+
+# Reschedule (for remove: warns + requires confirmed=true if moving earlier)
+curl -X POST http://127.0.0.1:8892/group-schedule/gs_1234_abcdef/override \
+  -d '{"date":"2026-03-20"}'
+# Force early removal (owner must explicitly confirm):
+curl -X POST http://127.0.0.1:8892/group-schedule/gs_1234_abcdef/override \
+  -d '{"date":"2026-03-10","confirmed":true}'
+
+# Force run all due items now
+curl -X POST http://127.0.0.1:8892/group-schedule/run-now
+```
+
+### Vox lib/bridge.js — Available Functions
+```javascript
+const bridge = require('./lib/bridge');
+
+bridge.resolveContact(phone)           // GET /contacts/resolve/:phone
+bridge.getGroups(query?)               // GET /groups
+bridge.fetchChats(limit?)              // GET /chats?limit=
+bridge.fetchMessages(jid, limit?)      // GET /chats/:jid/messages
+bridge.scheduleGroupChange(            // writes to schedule, never immediate
+  phone, groupJid, action, scheduledDate, reason?)
+```
