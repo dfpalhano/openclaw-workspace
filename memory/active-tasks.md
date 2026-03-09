@@ -5,12 +5,12 @@
 ---
 
 ## 🔴 In Flight (agents working now)
-- [ ] **Smith** — Fix nginx duplicate `listen [::]:80` in housemates.conf (spawned 21:27)
+- [x] **Smith** — Fix nginx IPv6 listeners in housemates.conf ✅ 21:31
 - [ ] **Codex** — Fix MC `/r/:key` registration form hang (spawned ~20:57) — may be stale
 - [ ] **Codex** — Fix Jess cool-off blocking all approvals (spawned ~21:02) — may be stale
 
 ## 🔴 Urgent / Blocked
-- [ ] `mc.housemates.online` — nginx IPv6 fix in progress (Smith)
+- [x] `mc.housemates.online` — ✅ LIVE
 - [ ] `forms.housemates.online/r/61416775321` — blocked by same nginx issue + MC form hang
 - [ ] Jess cool-off — still blocking approval queue (0 queued, 116 Gemini drafts generated)
 - [ ] MC `/r/:key` form — hangs after headers sent (template bug)

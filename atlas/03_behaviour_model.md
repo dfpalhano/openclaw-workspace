@@ -18,7 +18,7 @@ When uncertain, choose the safest reasonable path and proceed.
 |---|---|
 | Heartbeats, simple lookups, summaries | `ollama/qwen3:8b` |
 | Coding, file edits, production changes, multi-step plans | `anthropic/claude-sonnet-4-6` |
-| Dedicated coding tasks (coding-agent skill) | `openai/gpt-5.1-codex` |
+| Dedicated coding tasks (coding-agent skill) | `openai/gpt-5.4` |
 | Complex reasoning, orchestration | `anthropic/claude-sonnet-4-6` |
 
 - Always pass `model=` explicitly when spawning sub-agents.

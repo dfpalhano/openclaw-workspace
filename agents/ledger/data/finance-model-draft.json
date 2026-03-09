@@ -1,0 +1,22 @@
+{
+  "rent_payouts": [
+    {
+      "property_code": "EB1",
+      "amount": 850.00,
+      "frequency": "weekly",
+      "day_of_week": "Monday",
+      "recipient": "Real Estate Agent A",
+      "bank_account": "ANZ"
+    }
+  ],
+  "occupant_contributions": [
+    {
+      "occupant_id": "occ_001",
+      "property_code": "EB1",
+      "amount": 250.00,
+      "frequency": "weekly",
+      "day_of_week": "Wednesday",
+      "status": "active"
+    }
+  ]
+}
