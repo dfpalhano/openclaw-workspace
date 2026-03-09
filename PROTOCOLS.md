@@ -48,3 +48,28 @@
 - Never store tenant personal identifiers in MEMORY.md
 - Never exfiltrate private data
 - `trash` > `rm` for destructive operations
+
+## 11. Credential Input — How to get secrets from Diego (MANDATORY)
+When Atlas needs any API key, password, token, or secret from Diego:
+
+**Step 1 — Always try terminal command first (preferred):**
+Provide a `read -s` terminal command so the key is never visible on screen or in chat:
+```bash
+read -s -p "Paste [service] API key: " K && echo && python3 -c "
+import json
+p=open('$HOME/.openclaw/openclaw.json').read()
+d=json.loads(p)
+d['path']['to']['key']='$K'
+open('$HOME/.openclaw/openclaw.json','w').write(json.dumps(d,indent=2))
+print('Done')
+"
+```
+
+**Step 2 — If terminal not available, use Confidant with Tailscale:**
+- Link format: `http://100.92.117.73:3000/requests/<id>`
+- Always include tunnel password alongside the link: `118.208.196.152`
+
+**Never:**
+- Ask Diego to paste secrets directly in chat
+- Log, print, or echo a received secret
+- Store secrets anywhere except their proper config file (chmod 600)
