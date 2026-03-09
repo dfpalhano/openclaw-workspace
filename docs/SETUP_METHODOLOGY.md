@@ -219,3 +219,106 @@ This script:
 ---
 
 *Last updated: 2026-03-09 by Smith*
+
+---
+
+## 3. WA Ops Bot — WhatsApp Conversation Worker
+
+**Date:** 2026-03-09
+**Purpose:** Dedicated stateful conversation worker for WhatsApp operational flows.
+
+### Architecture
+
+```
+whatsapp-bridge (:8890)   →  pushes all inbound messages to :8891
+wa-ops-bot (:8891 webhook, :8892 mgmt API)
+  ├── flows/replacement_screening.js   ← full implementation
+  ├── flows/registration_recovery.js   ← stub (escalates)
+  ├── flows/temporary_resident_onboarding.js ← stub
+  ├── flows/issue_resolution.js        ← stub
+  ├── lib/state.js     — JSON state store (data/wa-threads.json)
+  ├── lib/send.js      — routes sends through bridge /send
+  ├── lib/escalate.js  — Telegram alerts + escalation detection
+  └── lib/mc.js        — writes notes/tasks to MC
+mission-control (:8899)   →  proxies /mc/wa-threads/* to :8892
+```
+
+### Project location
+
+```
+/home/diegopalhano/projects/wa-ops-bot/
+```
+
+### Systemd service install (requires sudo)
+
+```bash
+# Copy service file
+sudo cp /home/diegopalhano/projects/wa-ops-bot/wa-ops-bot.service /etc/systemd/system/wa-ops-bot.service
+
+# Reload + enable + start
+sudo systemctl daemon-reload
+sudo systemctl enable wa-ops-bot
+sudo systemctl start wa-ops-bot
+
+# Verify
+sudo systemctl status wa-ops-bot
+journalctl -u wa-ops-bot -f
+```
+
+### Environment
+
+```
+/home/diegopalhano/projects/wa-ops-bot/.env
+  TELEGRAM_BOT_TOKEN=<atlas bot token>
+```
+
+Service reads this via `EnvironmentFile` directive.
+
+### Ports
+
+| Port | Binding | Purpose |
+|------|---------|---------|
+| 8891 | 127.0.0.1 | Inbound webhook (bridge pushes here) |
+| 8892 | 0.0.0.0 | Management API (owner control) |
+
+### MC integration
+
+MC server proxies `/mc/wa-threads/*` → `localhost:8892/wa-threads/*`.
+No MC restart needed — proxy reads from wa-ops-bot at request time.
+
+### Key safety rules
+
+- `approvedAutoFlow` defaults to `false` (watch-only until owner enables)
+- All sends route through bridge `/send` (existing LID resolution applies)
+- Existing bridge approval rules untouched
+- Escalation patterns trigger on every message regardless of flow stage
+- `escalateAll` per-house flag prevents any auto-flow for flagged houses
+
+### Thread control API (via MC)
+
+```bash
+# List threads
+curl http://localhost:8899/mc/wa-threads
+
+# Create thread
+curl -X POST http://localhost:8899/mc/wa-threads \
+  -H 'Content-Type: application/json' \
+  -d '{"phone":"61412345678","name":"John","threadType":"replacement_screening","houseCode":"SB1"}'
+
+# Enable auto-flow
+curl -X POST http://localhost:8899/mc/wa-threads/61412345678/command \
+  -H 'Content-Type: application/json' \
+  -d '{"command":"enable-auto-flow"}'
+
+# Watch-only
+curl -X POST http://localhost:8899/mc/wa-threads/61412345678/command \
+  -d '{"command":"watch-only"}'
+
+# Stop automation
+curl -X POST http://localhost:8899/mc/wa-threads/61412345678/command \
+  -d '{"command":"stop-automation"}'
+
+# Escalate all for a house
+curl -X POST http://localhost:8899/mc/wa-threads/ANY/command \
+  -d '{"command":"escalate-all-for-house","houseCode":"SB1"}'
+```
