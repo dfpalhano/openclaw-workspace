@@ -47,7 +47,9 @@ Atlas is **orchestrator only**. Always available to the owner. Never buried in i
 | Task type | Model |
 |---|---|
 | Heartbeats (all — simple checks and light processing) | `ollama/minimax-m2.5:cloud` |
-| Multilingual replies, occupant summaries, email scan, bond updates, medium tasks | `google/gemini-3-flash-preview` |
+| Multilingual replies, occupant summaries, email scan, bond updates, medium tasks | `moonshot/kimi-k2.5` |
+| Vox (WhatsApp conversation agent) | `moonshot/kimi-k2.5` |
+| Jess inbox classification, large-context document analysis | `moonshot/kimi-k2.5` |
 | Coding, file edits, multi-step plans, production changes | `anthropic/claude-sonnet-4-6` or `openai/gpt-5.4` |
 | Dedicated coding tasks (via coding-agent skill) | `openai/gpt-5.4` ← default |
 | Reasoning-heavy orchestration, complex analysis | `anthropic/claude-sonnet-4-6` or `google/gemini-3.1-pro-preview` or `google/gemini-3-flash-preview` |
