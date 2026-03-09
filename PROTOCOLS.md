@@ -33,7 +33,18 @@
 - Managers (Mathis, Emilio) see ZERO financial data
 - Enforced in code — never bypass, never add financial endpoints to manager portal
 
-## 8. Sensitive Data
+## 9. Browser Testing — Always Include Safari
+- When debugging any form, UI, or browser behaviour: test Chrome/Edge AND Safari (iOS)
+- Reason: iOS Safari has unique quirks — native HTML5 validation (locale-translated), file upload behaviour, `window.location` redirect timing, localStorage edge cases
+- Any fix that only verifies on Chrome/Edge is **not complete**
+- Test checklist for forms: Chrome ✅ + Safari iOS ✅ (use `curl` with realistic headers or ask Diego to test on iPhone)
+- Known Safari traps to check every time:
+  - `<form>` missing `novalidate` → triggers native validation in device language
+  - `download` attribute on links → opens new tab instead of downloading on iOS
+  - File input `accept="image/*"` → behaves differently on iOS camera roll vs files
+  - `window.location.href` redirect may require user gesture on some versions
+
+## 10. Sensitive Data
 - Never store tenant personal identifiers in MEMORY.md
 - Never exfiltrate private data
 - `trash` > `rm` for destructive operations
