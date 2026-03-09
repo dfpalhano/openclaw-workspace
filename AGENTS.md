@@ -6,6 +6,15 @@ This folder is home. Treat it that way.
 
 If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out who you are, then delete it. You won't need it again.
 
+## ⚠️ Hard Rules (non-negotiable — read before anything else)
+1. **DIN prefix** = execute directly, no sub-agents
+2. **WA sends** = 2 explicit confirms required — always
+3. **Auto-approve** = never re-enable
+4. **Email** = no auto-send
+5. See `PROTOCOLS.md` for full protocol list
+
+---
+
 ## Every Session
 
 Before doing anything else:
