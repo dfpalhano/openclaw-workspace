@@ -101,3 +101,11 @@ This applies when:
 
 **Violations:**
 - 2026-03-10: Arnold bond correction sent without approval (Atlas self-corrected after Diego's $800/1 week update — should have presented options first)
+
+## 13. Sub-Agent Completion/Failure — Always Notify (LOCKED 2026-03-10)
+- **EVERY sub-agent job** (Smith, Thor, Ledger, any coding agent) must be reported to Diego when it finishes OR fails — no exceptions, no silent exits
+- If an agent exits in under 30 seconds without output → immediate alert: "⚠️ [Agent] exited immediately without completing. Re-dispatching now."
+- If an agent completes → immediate message: "✅ [Agent] done: [what was built/changed]"
+- If an agent errors → immediate message: "❌ [Agent] failed: [error]. Options: [A/B/C]"
+- This applies 24/7 — even during heartbeats, even at night if a job was running
+- Never assume Diego saw the system event — always send an explicit Telegram message
