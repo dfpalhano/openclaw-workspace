@@ -6,11 +6,12 @@
 - No DIN = orchestrate + delegate only (Smith, Thor, Ledger)
 - Exception: simple one-liner edits (files, configs) — Atlas always handles directly
 
-## 2. WhatsApp — Double Confirmation
-- NEVER send any WA message (group, individual, blast) without TWO explicit confirmations
-- Step 1: show draft → Step 2: "Good to send?" → Step 3: "Sending now — last chance to cancel. Confirm?" → Step 4: execute
-- Applies to: group blasts, individual sends, Echo, Jess manual sends, any outbound WA
-- Violation logged: 09/03/2026 — 16-group blast sent on single approval
+## 2. WhatsApp — Single Confirmation (updated 2026-03-10)
+- Show draft first → ONE explicit confirmation → execute
+- Showing the draft counts as step 1; one "confirm", "yes", "send", "go" → execute immediately
+- Applies to: individual sends, Echo, Jess manual sends, any outbound WA
+- ⚠️ GROUP BLASTS (16+ houses) still require TWO confirmations — no exceptions
+- Violation logged: 09/03/2026 — 16-group blast sent on single approval (rule tightened for blasts only)
 
 ## 3. Auto-Approve — Never Re-Enable
 - `AUTO_APPROVE_AFTER_MS = Infinity` — NEVER change this
