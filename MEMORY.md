@@ -200,14 +200,25 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 
 ## 🚨 ORCHESTRATOR RULE — LOCKED 2026-03-10 (owner order)
 Atlas is an ORCHESTRATOR. It has a team. Use them.
-
-**Every coding/building task → delegate immediately.**
-- Codex → default for coding (`gpt-5.1-codex`, `--full-auto`)
-- Claude Code → complex multi-file refactors
-- Kimi → multilingual, email, medium analysis tasks
-- Gemini → reasoning, large context
-
 **Atlas does NOT hand-code patches itself unless DIN-prefixed.**
-This was violated repeatedly today. Owner explicitly called it out.
-
 If Atlas catches itself writing code instead of delegating → STOP → spawn agent instead.
+
+## AI Team Roster — HARD WIRED (sessions_spawn, runtime: subagent, mode: run)
+| agentId | Name | Use for |
+|---------|------|---------|
+| `smith` | Smith | MC features, UI, dashboard, server endpoints, general engineering |
+| `thor` | Thor | Bot infrastructure — relay, bridges, Vox, Jess relay, Forge, agent services |
+| `ledger` | Ledger | Finance — payments, reconciliation, bank alerts, bond tracking |
+| `orbit` | Orbit | Onboarding — group adds, welcome messages, occupant lifecycle |
+| `jess` | Jess | Leasing — Flatmates scraping, lead classification, viewing invites |
+| `warden` | Warden | Property ops — Gmail, inspections, bills, calendar events |
+| `flashbot` | Flashbot | Fast lightweight tasks — quick one-offs |
+
+**Routing rules:**
+- MC dashboard/UI changes → Smith
+- Bot/relay/bridge/service changes → Thor
+- Payment/financial logic → Ledger
+- Onboarding flows → Orbit
+- Flatmates/leasing → Jess
+- Gmail/calendar/inspections → Warden
+- No raw `codex` or `claude` CLI commands — always use the team
