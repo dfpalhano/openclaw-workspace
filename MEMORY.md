@@ -163,3 +163,37 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 ## Registration Form URL
 - **ALWAYS use:** `https://forms.housemates.online/r/<key>`
 - **NEVER use:** `mc.inspectionsxraytesting.com.au` — deprecated, do not reference
+
+## Lessons Learned (2026-03-10)
+- **Draft first, always.** Swan message fired without approval. Rule 14 now locked.
+- **Active tenants = watchOnly.** Lilian GS1 got spammed. Rule 16 now locked.
+- **Thread lifecycle.** Don't leave resolved threads open — they bury real issues.
+- **MC needs restart after server.js commits.** New routes are dead until the process reloads.
+- **jess-inbox.json > jess-enquirers.json** for lead counts. Enquirers is often sparse.
+- **Jess filter was `last_3_days`.** Expanded to `last_30_days` — unlocked 120 convos.
+- **tg-pending null drafts** cause "Already handled" loop. Clear them when Vox gets stuck.
+- **LID contacts** are ≥14 digits. Always `@lid`. Standard AU = `@c.us`.
+
+## Key Docs (load on demand)
+- `docs/vox-operations.md` — Vox flows, rules, debug, file map
+- `docs/jess-operations.md` — Jess scraping, pending queue, lead counts, extension
+- `docs/tenant-onboarding.md` — Full new tenant flow, payment details, vacancies
+- `docs/atlas-rules.md` — All hard rules consolidated
+- `projects/inspection-scheduling-flow.md` — Inspection scheduling process + rules
+
+## Swan EB1 (confirmed 2026-03-10)
+- Phone: `33667498283@c.us`
+- Move-in: 14 Mar | Rent: $330/wk
+- BSB: 014 002 | Acc: 231 444 039 | Ref: `1519870741 EB1`
+
+## Kinan WL4 (confirmed 2026-03-10)
+- Phone: `32487803886@c.us` (Belgian number, NOT LID)
+- Replacing Victor | Move-in: Mon 16 Mar | Reg key: `9xMHqwdT8R`
+
+## SH2 Inspection (2026-03-10)
+- Date: Fri 13/03, 10am–2pm | Host: Emilio | Emilio confirmation pending
+- Group notified | Calendar event created (primary calendar)
+
+## EB2 Inspection (2026-03-10)
+- Date: Fri 13/03 | James Murray confirmed access
+- EB2 leads: 9 (Tan, Mohammed, Laura, Riege Christian, Neha, princy, Anthony, Dhruv, Nicola)

@@ -109,3 +109,24 @@ This applies when:
 - If an agent errors → immediate message: "❌ [Agent] failed: [error]. Options: [A/B/C]"
 - This applies 24/7 — even during heartbeats, even at night if a job was running
 - Never assume Diego saw the system event — always send an explicit Telegram message
+
+## 14. Draft First — WA Messages (LOCKED 2026-03-10 17:47 AEST)
+- **EVERY WhatsApp message** must be shown as a draft to Diego before sending
+- No exceptions: individual, group, short, long, urgent, routine — all require approval
+- Flow: Draft → Diego approves → Execute
+- Violation logged: Swan EB1 message sent without draft approval (2026-03-10 17:45 AEST)
+- This applies to Atlas AND Vox — no unsolicited sends ever
+
+## 15. Thread Lifecycle — Close When Done (LOCKED 2026-03-10)
+- Close threads immediately when their purpose is resolved
+- `status: "closed"`, `watchOnly: true`, `approvedAutoFlow: false`
+- No lingering open threads "just in case"
+- Stale threads = noise. Closed threads = clarity.
+- Review watch list regularly — anything resolved gets closed same session
+
+## 16. Active Tenant Rule — watchOnly Only (LOCKED 2026-03-10)
+- Contacts found in `active-tenants.json` = currently living in a property
+- When they message in: watchOnly + ping Diego — NEVER auto-flow
+- Do NOT create registration_recovery threads for active tenants
+- They may be asking anything — a question, a complaint, a request — Diego handles
+- Violation: Lilian GS1 auto-threaded into registration_recovery, spammed about forms (2026-03-10)
