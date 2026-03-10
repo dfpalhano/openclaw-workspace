@@ -145,3 +145,15 @@ Examples:
 
 ## Memory architecture note
 - Structured memory lives under `memory/core/`, `memory/daily/`, `memory/people/`, `memory/projects/`, `memory/finance/`, and `memory/properties/`.
+
+## Protocol 18 — Search Memory Before Acting
+**Locked: 2026-03-11**
+
+Before acting on ANY request — always search memory first.
+- Run `memory_search` for relevant context before executing
+- Check `memory/core/active-tasks.md` for current task state
+- Check `memory/YYYY-MM-DD.md` for recent decisions
+- Check `MEMORY.md` for long-term context
+
+Purpose: avoid repeating work, avoid contradicting prior decisions, avoid sending duplicate messages.
+This is mandatory. No exceptions.
