@@ -73,3 +73,30 @@ print('Done')
 - Ask Diego to paste secrets directly in chat
 - Log, print, or echo a received secret
 - Store secrets anywhere except their proper config file (chmod 600)
+
+---
+
+## Rule 12 — WA / Flatmates Message Corrections (LOCKED — 2026-03-10)
+
+**NEVER send a corrective or follow-up WA/Flatmates message without owner approval.**
+
+This applies when:
+- A previous message contained wrong information
+- A previous message needs to be clarified or updated
+- An assumption was made that needs correcting
+- A thread needs a follow-up based on new info
+
+**Required behaviour:**
+1. Identify the error or needed update
+2. Present options to the owner (e.g. "Option A: send correction, Option B: leave it, Option C: different wording")
+3. Wait for explicit approval before sending anything
+4. Only then execute
+
+**Why this matters:**
+- WA errors are unacceptable — occupants/staff receive the messages directly
+- Flatmates errors are costly — enquirers may be lost or misled
+- Sending unapproved, assumption-based, or "fixing" messages without approval is itself an error
+- Even if the correction is factually right, sending it without approval is wrong
+
+**Violations:**
+- 2026-03-10: Arnold bond correction sent without approval (Atlas self-corrected after Diego's $800/1 week update — should have presented options first)

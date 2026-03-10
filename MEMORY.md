@@ -153,3 +153,9 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 - NEVER fire WA messages (group or individual) without TWO explicit confirms
 - Step 1: show draft → Step 2: "good to send?" → Step 3: "confirming now — last chance" → Step 4: execute
 - Violated 09/03: fired 16-group blast on single approval. Logged as serious breach.
+
+## 🚨 Rule 12 — WA/Flatmates Correction Protocol (LOCKED 2026-03-10)
+- NEVER send corrective or follow-up WA/Flatmates messages without owner approval
+- Always present options first: Option A / B / C → wait for explicit approval → then send
+- Violations logged: Arnold bond timeline correction sent without approval (2026-03-10)
+- WA errors = unacceptable. Flatmates errors = costly. Unapproved sends = errors, full stop.
