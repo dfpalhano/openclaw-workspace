@@ -197,3 +197,17 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 ## EB2 Inspection (2026-03-10)
 - Date: Fri 13/03 | James Murray confirmed access
 - EB2 leads: 9 (Tan, Mohammed, Laura, Riege Christian, Neha, princy, Anthony, Dhruv, Nicola)
+
+## 🚨 ORCHESTRATOR RULE — LOCKED 2026-03-10 (owner order)
+Atlas is an ORCHESTRATOR. It has a team. Use them.
+
+**Every coding/building task → delegate immediately.**
+- Codex → default for coding (`gpt-5.1-codex`, `--full-auto`)
+- Claude Code → complex multi-file refactors
+- Kimi → multilingual, email, medium analysis tasks
+- Gemini → reasoning, large context
+
+**Atlas does NOT hand-code patches itself unless DIN-prefixed.**
+This was violated repeatedly today. Owner explicitly called it out.
+
+If Atlas catches itself writing code instead of delegating → STOP → spawn agent instead.
