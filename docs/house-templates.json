@@ -1,0 +1,59 @@
+{
+  "inspection_notice": {
+    "id": "inspection_notice",
+    "label": "🚨 Routine Inspection Notice",
+    "variables": [
+      "date",
+      "day",
+      "start_time",
+      "end_time"
+    ],
+    "body": "🚨🚨🚨🚨 ROUTINE INSPECTION 🚨🚨🚨🚨🚨\n\nHi everyone 😊\n\nI have an important update about our home. We have a routine house inspection scheduled on {{day}} {{date}}, between {{start_time}} and {{end_time}} 🏠\n\nHere's what we need to do:\n\n1. Personal Belongings: Please hide all personal items from the top of surfaces 📦 Put everything in bags and inside your wardrobes. Shoes can go under the bed or in plastic bags. If you use Uber bags, please place them inside or on top of your wardrobe, preferably out of visible sight. Photos will be taken, so no personal items should be visible.\n\n\n2. Cleaning: The house must be absolutely clean 🧽🧹 Please clean both showers properly, remove any mould, and vacuum and mop downstairs.\n\n\n3. Vacate the House: Everyone must be out of the house during the inspection time 🚶‍♂️🚶‍♀️ Please make arrangements to be elsewhere from {{start_time}} to {{end_time}} on {{day}}.\n\n\n4. Rooms: Some rooms may be temporarily deactivated for the inspection but will be returned to their original setup afterwards.\n\n\nPlease let me know of any issues or problems in the house so I can raise them during the inspection and help get them fixed faster 🔧\n\n\nIf you have any questions, feel free to ask. Your cooperation is really appreciated 👍"
+  },
+  "inspection_done": {
+    "id": "inspection_done",
+    "label": "✅ Inspection Finished",
+    "variables": [],
+    "body": "Thanks everyone 😊\n\n🚨 INSPECTION FINISHED 🚨\n\nAll good guys, inspection has been finished and it's all good 👍 \nThank you all for your cooperation and patience. Do your best to keep the house clean like the way we left please.\n\nYou may come back at anytime. \n\nHave a great rest of the week!\n\nCheers"
+  },
+  "vacate_checklist": {
+    "id": "vacate_checklist",
+    "label": "📋 Pre-Vacate Checklist (3 days before)",
+    "variables": [],
+    "body": "Hi 👋 just a quick checklist before vacating, so there are no issues with the Security Contribution refund, which takes about a week to be refunded.\n\nPlease make sure all of the below are done before you leave:\n\n✅ Room\n\nRoom left clean and empty\n\nNo damage beyond fair wear and tear\n\nFloor vacuumed, surfaces wiped\n\nAll personal belongings removed\n\n✅ Fridge\n\nYour used fridge space completely emptied\n\nShelves and drawers wiped clean\n\nNo food, spills, stains or odours\n\n✅ Kitchen\n\nAll kitchen areas you used cleaned\n\nBenches, cupboards, shelves and any storage you used left clean\n\nNo personal items left behind\n\n✅ Bathroom / Ensuite (if used)\n\nShower, toilet, basin and mirrors cleaned\n\nNo hair, residue, mould or build-up\n\n✅ General\n\nMandatory bond cleaning fee paid\n\nAll keys, fobs and access devices returned\n\nNo outstanding fees or charges\n\nIf everything above is met, the Security Contribution will be refunded without any issues, as per pages 20-24 of the house rules, including the mandatory bond cleaning fee.\nIf cleaning or damage is identified, the cost will need to be deducted before refund, as per the licence.\n\nThank you 🙏"
+  },
+  "registration_invite_bank": {
+    "id": "registration_invite_bank",
+    "label": "📋 Registration Invite — Bank Payment Houses",
+    "variables": [],
+    "body": "Hi everyone 👋\n\nWe're updating our occupancy records for the house. Please complete your registration form today before 11:30pm:\n\n🔗 forms.housemates.online\n\nTakes about 5 minutes. You'll need:\n• Your ID (passport or driver's licence)\n• A selfie\n• Your move-in date\n\nJust enter your WhatsApp number on the site and it'll pull up your form.\n\nThanks 🙏"
+  },
+  "registration_invite_cash": {
+    "id": "registration_invite_cash",
+    "label": "📋 Registration Invite — Cash Payment Houses",
+    "variables": [],
+    "body": "Hi everyone 👋\n\nWe're updating our occupancy records for the house. Please complete your registration form today before 11:30pm:\n\n🔗 forms.housemates.online/r/cash\n\nTakes about 5 minutes. You'll need:\n• Your ID (passport or driver's licence)\n• A selfie\n• Your move-in date\n\nImportant — enter the full property address when prompted (the address of this house).\n\nThanks 🙏"
+  },
+  "occupancy_licence_bond_explainer": {
+    "id": "occupancy_licence_bond_explainer",
+    "label": "📋 Occupancy Licence — Bond / Security Contribution Explainer",
+    "variables": [
+      "{{name}}"
+    ],
+    "body": "Hey {{name}} 👋 Great question, happy to explain.\n\nYou're right that a traditional \"bond\" under a standard rental lease gets lodged with the Residential Tenancies Authority (RTA). But our arrangement works differently — and that's intentional.\n\nYou don't have a lease. You have an Occupancy Licence.\n\nAn Occupancy Licence is a separate legal agreement that gives you the right to occupy a room in a shared house. It's not a residential tenancy agreement, so the Residential Tenancies Act and the RTA bond lodgement system don't apply to it.\n\nWhat we call \"bond\" in the contract is technically a Security Contribution — it's a refundable deposit held under the terms of your Occupancy Licence, not lodged with the RTA. This is completely legal and standard for co-living and share house arrangements in QLD.\n\nThe key differences:\n• Lease → governed by the RTA → bond lodged with RTA\n• Occupancy Licence → governed by the licence contract → Security Contribution held by the manager\n\nYour Security Contribution is fully refundable at the end of your stay, minus any deductions for damage or outstanding fees as outlined in your licence (pages 20–24 of your house rules).\n\nHope that clears it up — let me know if you have any other questions! 🙏"
+  },
+  "post_payment_welcome_direct": {
+    "description": "Direct WA message to new tenant after first payment confirmed. Sent immediately. Followed by: house-rules-2026.pdf, occupancy-licence-2026.pdf, personalised Natalie Mosh letter.",
+    "trigger": "After payment confirmed (confirmPayment flow)",
+    "recipient": "New tenant directly (not group)",
+    "attachments": [
+      "public/docs/house-rules-2026.pdf — caption: 📄 House Rules & Operational Guidelines 2026",
+      "public/docs/occupancy-licence-2026.pdf — caption: 📋 Private Occupancy Licence 2026",
+      "generated occupancy letter — caption: 📑 Confirmation of Occupancy Letter"
+    ],
+    "variables": {
+      "{{firstName}}": "Tenant's first name"
+    },
+    "message": "👋 Welcome to the house, {{firstName}}!\n\nWe're glad to have you join us. Your occupancy is now confirmed. Please find your documents attached — keep them safe for your records.\n\n🏡 *A few tips to make shared living work well for everyone:*\n\n• Keep the kitchen clean after every use\n• Respect quiet hours\n• Introduce yourself to your housemates\n• Report maintenance issues early\n• Pay your rent on time every week 💸\n\n😊 Welcome aboard!"
+  }
+}
