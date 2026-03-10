@@ -46,9 +46,44 @@
 - [x] Tailscale + NoMachine + Termius working for remote access ✅ (confirmed 7 Mar)
 - [ ] Telegram notifications active for urgent alerts ✅
 
+## 🖥️ SERVER & TECH — Stress Test Before Leaving
+
+### Services resilience
+- [ ] All key services confirmed on systemd with auto-restart (wa-ops-bot, jess-v3, jess-relay, mission-control, whatsapp-bridge, monitor-bot)
+- [ ] Simulate full server reboot — verify everything comes back clean automatically
+- [ ] Tailscale reconnects automatically after reboot ✅ (confirm)
+- [ ] NoMachine auto-starts after reboot (confirm)
+- [ ] Test SSH key auth from laptop via Termius → server
+
+### Monitoring gaps to close
+- [ ] Add uptime check for MC dashboard (port 8899) to monitor bot alerts
+- [ ] Add WA bridge (port 8890) health check — alert if down
+- [ ] Confirm Telegram alerts fire correctly for all degraded services
+
+### Data safety
+- [ ] Set up daily git auto-commit for data files (wa-threads, registrations, jess-pending)
+- [ ] Confirm bond return receipts backed up
+- [ ] Payments.ods → re-import script ready to run any time: `cd ~/.openclaw/workspace && python3 scripts/import-payments.py`
+
+### Ops before leaving
+- [ ] Resolve GS1 missing payments ($31,650 / 83 entries) — biggest outstanding
+- [ ] Resolve SB1 missing payments ($24,260 / 69 entries)
+- [ ] Re-enable Jess quiet hours (currently hardcoded false)
+- [ ] Arnold SH1 group removal — due 2026-03-11
+- [ ] Brief Mathis + Emilio — "ops" Linux user, power button only, escalate to Atlas via Telegram
+- [ ] Strip OPENAI_API_KEY from environment (Forge confirmed working)
+- [ ] Create Forge TG bot token via @BotFather
+
+### Remote working setup (from overseas)
+- [ ] Antigravity on laptop configured with Global Rule (~/.gemini/GEMINI.md)
+- [ ] Test Tailscale tunnel + SFTP mount from laptop → server
+- [ ] Confirm can open/edit server projects from Antigravity on laptop remotely
+
 ## 📋 ATLAS WILL MONITOR WHILE YOU'RE AWAY
 - Daily email labelling (4am cron) ✅
+- Inspection alert script (7am + 12pm cron) ✅
 - Weekly payments refresh + alert if anyone misses
 - Flag any inspection notices from agents
 - Flag any bill due dates
 - Alert immediately for anything urgent from agents
+- Monitor bot: /s, /rwa, /rj, /ra commands available to Mathis/Emilio
