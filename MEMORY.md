@@ -8,7 +8,7 @@
 
 ## Bond
 Atlas is unconditionally committed to its owner. Permanent. Does not reset between sessions.
-See: memory/decisions.md → "Origin Context" for why this matters deeply.
+See: memory/core/decisions.md → "Origin Context" for why this matters deeply.
 
 ## Operating Character
 - Good faith by default. Never infer criminal intent.
@@ -49,7 +49,7 @@ See: memory/decisions.md → "Origin Context" for why this matters deeply.
 - Trip planning rule: book flights around inspection gaps
 
 ## Property Agent Directory
-Full agent contacts + inspection status: memory/2026-03-06.md
+Full agent contacts + inspection status: memory/daily/2026-03-06.md
 Key flags before 20 Mar:
 - SH1 (Coronis/was Little RE) — new agent, initial inspection imminent 🔴
 - SH3 (Place Graceville) — inspection soon + arrears unresolved 🔴
@@ -62,11 +62,11 @@ Key flags before 20 Mar:
 |------|-----------|
 | `memory/properties/index.md` | Property list, flags, vacancies — load first, then pull specific property file |
 | `memory/properties/<CODE>.md` | Per-property: occupants, rent, bond, inspections (CO1/EB2/SH1/etc.) |
-| `memory/finances.md` | Payments, revenue, bank statements, cash flow, accounting |
-| `memory/staff.md` | Mathis, Emilio, scheduling, Japan trip, inspections |
-| `memory/projects.md` | nestd.life, Lodgr, Jess, Echo, Forma, app ideas |
-| `memory/decisions.md` | Architecture, "why did we...", rebuilding components |
-| `memory/active-tasks.md` | Load EVERY session — current task board |
+| `memory/finance/finances.md` | Payments, revenue, bank statements, cash flow, accounting |
+| `memory/people/staff.md` | Mathis, Emilio, scheduling, Japan trip, inspections |
+| `memory/projects/projects.md` | Legacy combined project memory; split detail now lives in per-project files under `memory/projects/` |
+| `memory/core/decisions.md` | Architecture, "why did we...", rebuilding components |
+| `memory/core/active-tasks.md` | Load EVERY session — current task board |
 | `memory/travel.md` | Travel preferences, destinations, health protocol, family context (local only) |
 | `memory/pre-bali-checklist.md` | Pre-departure action list for 20 Mar Pattaya trip — load when trip planning |
 
@@ -88,6 +88,18 @@ Key flags before 20 Mar:
 | WE1  | 3 Hardgrave Rd, West End | West End Family Upstairs + Downstairs | `120363354973746741@g.us` + `120363363555800297@g.us` |
 | WL3  | 28 Taylor St, Woolloongabba | Woolloongabba Family General WL3 | `120363371022106088@g.us` |
 | WL4  | 43 Redfern St, Woolloongabba | Top of the Gabba 🏠🪴 Redfern St | `120363421772343552@g.us` |
+
+
+## Memory Architecture (upgraded 2026-03-10)
+- **Core curated memory:** `MEMORY.md` (root) + `memory/core/active-tasks.md` + `memory/core/decisions.md`
+- **Daily raw logs:** `memory/daily/YYYY-MM-DD.md`
+- **People:** `memory/people/` (`staff.md`, `Mathis.md`, `Emilio.md`, tenant/person files)
+- **Projects:** `memory/projects/` (`projects.md`, `jess.md`, `vox.md`, `forge.md`, `nestd.md`)
+- **Finance:** `memory/finance/finances.md` + `memory/finance/bond-tracking.md`
+- **Properties:** `memory/properties/` remains the canonical per-house layer
+- **Search layer:** `scripts/mem-search.sh "query"` for fast full-text lookup across memory + root docs
+- **Automated semantic layer:** `scripts/mem0-add.py` and `scripts/mem0-search.py` for mem0-backed memory capture/search
+- **Native structured layer:** `scripts/mem-db.py` using `data/atlas-memory.db` for categories, summaries, and JSON export
 
 ## Key Paths
 - Dashboard: `/home/diegopalhano/projects/mission-control/` (port 8899)

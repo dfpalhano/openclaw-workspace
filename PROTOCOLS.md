@@ -141,3 +141,7 @@ Examples:
 - Phone number given but house code doesn't match the contact in records → flag it
 
 **When context makes it unambiguous** (e.g. name+phone clearly identifies one person), proceed. But if there's genuine doubt, ask once. One question beats one wrong send.
+
+
+## Memory architecture note
+- Structured memory lives under `memory/core/`, `memory/daily/`, `memory/people/`, `memory/projects/`, `memory/finance/`, and `memory/properties/`.
