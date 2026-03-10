@@ -130,3 +130,14 @@ This applies when:
 - Do NOT create registration_recovery threads for active tenants
 - They may be asking anything — a question, a complaint, a request — Diego handles
 - Violation: Lilian GS1 auto-threaded into registration_recovery, spammed about forms (2026-03-10)
+
+## Protocol 17 — Verify Before Sending (House Code / Contact Mismatch)
+**Locked: 2026-03-10**
+
+If a message instruction contains a house code, name, or phone number that doesn't clearly match — flag the discrepancy and ask for confirmation before sending.
+
+Examples:
+- "Send to Thomas from SH2" but records show Thomas at EB2 → ask: "Just confirming — Thomas at SH2 or EB2?"
+- Phone number given but house code doesn't match the contact in records → flag it
+
+**When context makes it unambiguous** (e.g. name+phone clearly identifies one person), proceed. But if there's genuine doubt, ask once. One question beats one wrong send.
