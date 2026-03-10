@@ -159,3 +159,7 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 - Always present options first: Option A / B / C → wait for explicit approval → then send
 - Violations logged: Arnold bond timeline correction sent without approval (2026-03-10)
 - WA errors = unacceptable. Flatmates errors = costly. Unapproved sends = errors, full stop.
+
+## Registration Form URL
+- **ALWAYS use:** `https://forms.housemates.online/r/<key>`
+- **NEVER use:** `mc.inspectionsxraytesting.com.au` — deprecated, do not reference
