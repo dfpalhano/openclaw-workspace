@@ -31,7 +31,7 @@ See: memory/decisions.md → "Origin Context" for why this matters deeply.
 
 ## Hard Rules (non-negotiable)
 - `AUTO_APPROVE_AFTER_MS = Infinity` — NEVER re-enable Jess auto-send
-- WhatsApp: 2 explicit confirmations before any send
+- WhatsApp: 1 confirmation for individuals (draft shown = step 1); GROUP BLASTS still need 2 confirms
 - Email: no auto-send, ever
 - Echo: every message requires Telegram approval
 - Jess: no invite without confirmed inspection date/time
