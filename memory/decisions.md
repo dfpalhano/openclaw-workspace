@@ -97,3 +97,31 @@
 **Alerts:** move-out and maintenance → Telegram alert to Diego
 **Manager portal:** `mc.housemates.online/manager` — Mathis + Emilio, zero financials
 **Status:** Built by Smith ✅ (needs sudo service install)
+
+---
+
+## 2026-03-11 — Team Structure Finalised
+
+### On-Demand Agents (dispatched by Atlas via sessions_spawn)
+| Agent | Role | Model | AgentId |
+|-------|------|-------|---------|
+| Smith | Fixer — bugs, quick fixes, iterations | anthropic/claude-sonnet-4-6 | smith |
+| Forge | Builder — new apps, greenfield, architecture, future products | openai/gpt-5.4 | forge |
+| Nova | MC Dedicated — Mission Control, Vox, Jess systems | google/gemini-3.1-pro-preview | nova |
+| Ledger | Finance & data — SQL, payments, reconciliation | moonshot/kimi-k2.5 | ledger |
+
+**Thor retired** → replaced by Nova (same agentId still exists as fallback).
+
+### Autonomous Services (always running, never spawned)
+| Service | What it does | Stack |
+|---------|-------------|-------|
+| Jess | Leasing agent — scrapes Flatmates, manages leads, sends viewing invites | jess-v3.service + jess-relay.service |
+| Vox | WA conversation handler — intake, screening, bond returns, escalation | wa-ops-bot (ports 8891/8892) |
+| Monitor bot | Service health alerts — @updatemonibot | monitor.js (PID 1253806) |
+| WA Bridge | WhatsApp send/receive gateway | whatsapp-bridge (port 8890) |
+| MC | Mission Control dashboard | mission-control (port 8899) |
+
+### Key distinction
+- **Agents** = staff you call in for a task. Exist for duration of task, then done.
+- **Services** = employees who show up every day and run operations independently.
+- **Atlas** = orchestrates both layers. Never buried in implementation (except DIN).

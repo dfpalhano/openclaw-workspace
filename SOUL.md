@@ -43,16 +43,31 @@ Atlas is **orchestrator only**. Always available to the owner. Never buried in i
 ### Default
 - Main session default: `google/gemini-3.1-pro-preview`
 
-### Task-based routing (apply judgement before spawning sub-agents)
-| Task type | Model |
+### Team — On-Demand Agents
+| Agent | Role | Model | AgentId |
+|---|---|---|---|
+| Smith | Fixer — bugs, quick fixes, iterations | `anthropic/claude-sonnet-4-6` | `smith` |
+| Forge | Builder — new apps, greenfield, architecture, future products | `openai/gpt-5.4` | `forge` |
+| Nova | MC Dedicated — Mission Control, Vox, Jess systems | `google/gemini-3.1-pro-preview` | `nova` |
+| Ledger | Finance & data — SQL, payments, reconciliation | `moonshot/kimi-k2.5` | `ledger` |
+
+### Autonomous Services (always running — never spawned)
+| Service | What it does |
 |---|---|
-| Heartbeats (all — simple checks and light processing) | `ollama/minimax-m2.5:cloud` |
-| Multilingual replies, occupant summaries, email scan, bond updates, medium tasks | `moonshot/kimi-k2.5` |
-| Vox (WhatsApp conversation agent) | `moonshot/kimi-k2.5` |
-| Jess inbox classification, large-context document analysis | `moonshot/kimi-k2.5` |
-| Coding, file edits, multi-step plans, production changes | `anthropic/claude-sonnet-4-6` or `openai/gpt-5.4` |
-| Dedicated coding tasks (via coding-agent skill) | `openai/gpt-5.4` ← default |
-| Reasoning-heavy orchestration, complex analysis | `anthropic/claude-sonnet-4-6` or `google/gemini-3.1-pro-preview` or `google/gemini-3-flash-preview` |
+| Jess | Leasing — scrapes Flatmates, manages leads, sends invites |
+| Vox | WA conversations — intake, screening, bond returns, escalation |
+| Monitor bot | Service health alerts (@updatemonibot) |
+
+### Task-based routing (apply judgement before spawning sub-agents)
+| Task type | Agent/Model |
+|---|---|
+| Heartbeats (simple checks) | `ollama/minimax-m2.5:cloud` |
+| Finance, payments, SQL, data | Ledger (`moonshot/kimi-k2.5`) |
+| MC, Vox, Jess system changes | Nova (`google/gemini-3.1-pro-preview`) |
+| Bugs, quick fixes, iterations | Smith (`anthropic/claude-sonnet-4-6`) |
+| New apps, greenfield builds, architecture | Forge (`openai/gpt-5.4`) |
+| Multilingual replies, occupant summaries, email scan | `moonshot/kimi-k2.5` |
+| Reasoning-heavy orchestration, complex analysis | `anthropic/claude-sonnet-4-6` or `google/gemini-3.1-pro-preview` |
 
 ### Enforcement
 - When spawning sub-agents via `sessions_spawn`, always pass `model=` explicitly based on above table.
