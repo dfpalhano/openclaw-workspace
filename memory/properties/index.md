@@ -9,7 +9,7 @@
 | EB3   | —                              | —             | EB3.md       | Vacancy R1, R3 |
 | GS1   | —                              | —             | GS1.md       | Prices needed |
 | SB1   | —                              | —             | SB1.md       | Inspection 18 Mar |
-| SH1   | —                              | Coronis (new) | SH1.md       | 🔴 new agent, inspection imminent |
+| SH1   | —                              | Coronis (new) | SH1.md       | 🔴 new agent, inspection imminent | 🟡 Andrea Faso departed 2026-03-10 — room vacant, seeking replacement |
 | SH2   | 36 Rosa St                     | —             | SH2.md       | Owner visit before 20 Mar |
 | SH3   | —                              | Place Graceville | SH3.md    | 🔴 inspection soon + arrears |
 | SP9   | 4/44 Watson Esp (= 4/50 Peninsular Dr), Surfers | — | SP9.md | Vacancy R3 |
