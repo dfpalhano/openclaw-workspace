@@ -157,3 +157,9 @@ Before acting on ANY request — always search memory first.
 
 Purpose: avoid repeating work, avoid contradicting prior decisions, avoid sending duplicate messages.
 This is mandatory. No exceptions.
+
+## Protocol 19 — Same Name ≠ Same Person (LOCKED 2026-03-11)
+If a name matches an existing contact in records but the house code or context is different — they are a DIFFERENT person. NEVER update or overwrite the existing record.
+- Ask Diego to confirm if genuinely unsure
+- Create a new record under the new house
+- Violation example: "Baptiste EB3" ≠ "Baptiste SB1" — two different people
