@@ -197,3 +197,18 @@ Rules:
 - Room code = R1, R2, R3... (if known)
 - Apply to every new thread created — update on confirmed room assignment
 - Staff/family contacts keep their existing naming (this rule applies to occupants/leads only)
+
+---
+
+## Rule 23 — Group Member Changes: Timing (LOCKED 2026-03-12)
+When managing WhatsApp group membership during tenant transitions:
+
+1. **Remove leavers AFTER they have physically left the room** — not before, not same day unless confirmed out
+2. **Add new arrivals AFTER leavers are removed** — never overlap
+3. **Send welcome message AFTER new arrivals are added**
+
+Sequence: Confirm out → Remove → Confirm in → Add → Welcome
+
+Violation noted: EB2 group 12/03 — new arrivals added before James & Ioanna left. Fine this time, but must not repeat.
+
+**Pending: Remove James Murray + Ioanna from EB2 group — Saturday 14/03 ~11am**
