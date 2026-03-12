@@ -125,3 +125,21 @@
 - **Agents** = staff you call in for a task. Exist for duration of task, then done.
 - **Services** = employees who show up every day and run operations independently.
 - **Atlas** = orchestrates both layers. Never buried in implementation (except DIN).
+
+---
+
+## PaymentID Quick Reference (PROCEDURE)
+**When you need someone's bank reference:**
+1. Take their phone number (digits only, no +, no spaces) — e.g. `33649443117`
+2. Add 1 to each digit, mod 10 (9→0) — e.g. `44750554228`
+3. Append house code — e.g. `44750554228 WL4`
+
+**One-liner (Node):**
+```js
+const ref = (phone, house) => phone.replace(/\D/g,'').split('').map(d=>(+d+1)%10).join('') + ' ' + house;
+```
+
+**Examples:**
+- Elage WL4: `33649443117` → `44750554228 WL4`
+- Swan EB1: `33667498283` → `44778509394 EB1`
+- Diego AU: `61416775321` → `72527886432`
