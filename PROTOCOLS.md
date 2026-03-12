@@ -163,3 +163,17 @@ If a name matches an existing contact in records but the house code or context i
 - Ask Diego to confirm if genuinely unsure
 - Create a new record under the new house
 - Violation example: "Baptiste EB3" ≠ "Baptiste SB1" — two different people
+
+---
+
+## Rule 21 — Occupancy Substitution Exception (LOCKED 2026-03-12)
+When an occupant finds their own back-to-back replacement (new person moves in as they move out), Diego makes an exception to the formal notice requirement. No notice period enforced.
+
+**Process:**
+1. Confirm the replacement is real (has messaged, interested, ready to sign)
+2. Send replacement the registration form + additional considerations
+3. Once replacement is registered AND paid → send outgoing occupant the exit template
+4. Exit template: `vacate_checklist` in `/home/diegopalhano/projects/mission-control/data/house-templates.json`
+5. No bond return until exit checklist is met
+
+**Rule:** Back-to-back only. Gap between contracts = no exception. Overlapping = no exception. Exact handover = exception applies.
