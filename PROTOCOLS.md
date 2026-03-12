@@ -177,3 +177,23 @@ When an occupant finds their own back-to-back replacement (new person moves in a
 5. No bond return until exit checklist is met
 
 **Rule:** Back-to-back only. Gap between contracts = no exception. Overlapping = no exception. Exact handover = exception applies.
+
+---
+
+## Rule 22 — WhatsApp Contact Naming Convention (LOCKED 2026-03-12)
+All occupant/lead contacts must be named in this format:
+
+**`Firstname Lastname MM.YYYY HouseCode RoomCode`**
+
+Examples:
+- `Nathan Laws 03.2026 WL4 R2`
+- `Maxime 03.2026 EB2 R4`
+- `Colin 03.2026 EB2 R1`
+
+Rules:
+- Surname only if known/available
+- Month.Year = move-in month (or current month for new leads)
+- House code = 2-4 char code (WL4, EB2, SH1, etc.)
+- Room code = R1, R2, R3... (if known)
+- Apply to every new thread created — update on confirmed room assignment
+- Staff/family contacts keep their existing naming (this rule applies to occupants/leads only)
