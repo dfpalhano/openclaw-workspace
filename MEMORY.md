@@ -101,6 +101,11 @@ Key flags before 20 Mar:
 - **Automated semantic layer:** `scripts/mem0-add.py` and `scripts/mem0-search.py` for mem0-backed memory capture/search
 - **Native structured layer:** `scripts/mem-db.py` using `data/atlas-memory.db` for categories, summaries, and JSON export
 
+## Diego WA Identity
+- Diego's WhatsApp display name: **Strooooong**
+- Phone: `61416775321@c.us`
+
+
 ## Key Paths
 - Dashboard: `/home/diegopalhano/projects/mission-control/` (port 8899)
 - Jess: `/home/diegopalhano/projects/jess-bot/jess-v2.js`
