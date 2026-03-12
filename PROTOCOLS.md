@@ -212,3 +212,19 @@ Sequence: Confirm out → Remove → Confirm in → Add → Welcome
 Violation noted: EB2 group 12/03 — new arrivals added before James & Ioanna left. Fine this time, but must not repeat.
 
 **Pending: Remove James Murray + Ioanna from EB2 group — Saturday 14/03 ~11am**
+
+---
+
+## Rule 24 — New Tenant Contact Saving Procedure (LOCKED 2026-03-12)
+When a new tenant is confirmed (paid + form submitted):
+
+1. **Save to Diego's phone contacts** using Rule 22 naming convention:
+   `Firstname Lastname MM.YYYY HouseCode RoomCode`
+2. WhatsApp will automatically pick up the name from the phone contact
+3. Atlas cannot save to the phone directly — present the contact card (name + number) to Diego for manual save
+4. Once the `/contacts/save` endpoint is live in the WA bridge, Atlas will handle this automatically
+
+**Pending manual saves (12/03/2026):**
+- `Tom Ross 03.2026 EB2 R7` — +33 6 03 17 70 94
+- `Colin 03.2026 EB2 R1` — +33 6 10 81 71 96
+- `Pablo 03.2026 EB2 R1` — +33 7 68 19 95 31
