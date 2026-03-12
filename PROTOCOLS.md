@@ -228,3 +228,26 @@ When a new tenant is confirmed (paid + form submitted):
 - `Tom Ross 03.2026 EB2 R7` — +33 6 03 17 70 94
 - `Colin 03.2026 EB2 R1` — +33 6 10 81 71 96
 - `Pablo 03.2026 EB2 R1` — +33 7 68 19 95 31
+
+---
+
+## Rule 25 — Occupancy Offer / Additional Considerations Template (LOCKED 2026-03-12)
+When sending occupancy details to a new tenant, ALWAYS use the template at:
+`/home/diegopalhano/projects/mission-control/data/occupancy-offer-template.json`
+
+**Mandatory inclusions (non-negotiable bullet points):**
+- 4 months minimum stay
+- No division of weeks, no exceptions
+- Bond = 2.5 weeks (based on bondBase, not always weeklyRent)
+- Mattress protector mandatory ($40 damage charge)
+- No street shoes in carpeted areas
+- Notice to leave: as per House Rules pages 20-24
+- **House Rules & Occupancy Licence clause:** "By moving in, you agree to the House Rules and Private Occupancy Licence, which govern payments, shared living, and vacating procedures. Please read them carefully."
+
+**Format rules:**
+- Registration links go at the BOTTOM of the message
+- Bank account shown at end of registration link (NOT in message body)
+- Bond = 2.5 × bondBase (confirm bondBase with Diego — may differ from weeklyRent)
+- Always personalise: moveInDate, address, room, weeklyRent, bondBase, bond, occupancyType
+
+**Template last updated:** 2026-03-12
