@@ -70,14 +70,15 @@ Key flags before 20 Mar:
 | `memory/travel.md` | Travel preferences, destinations, health protocol, family context (local only) |
 | `memory/pre-bali-checklist.md` | Pre-departure action list for 20 Mar Pattaya trip — load when trip planning |
 
-## House WA Groups — SOURCE OF TRUTH: `MC/data/house-wa-groups.json` (locked 2026-03-10)
+## House WA Groups — SOURCE OF TRUTH: `MC/data/house-wa-groups.json` (corrected 2026-03-13)
+⚠️ Previous version had EB1/EB3 and SH1/SH2 JIDs swapped — now fixed.
 | Code | Address | Group Name | JID |
 |------|---------|-----------|-----|
 | BRIS1 | 79 Albert St, Brisbane CBD | 🏢 Superior Brisbane 79 Albert 🌆 | `120363408294551957@g.us` |
 | CO1  | 37 Marian St, Coorparoo | Entertainers Paradise Coorparoo 🏡 | `120363300299462258@g.us` |
-| EB1  | 553 Vulture St E, East Brisbane | 🌴East Brisbane Resort family🌴 | `120363403136537362@g.us` |
+| EB1  | 553 Vulture St E, East Brisbane | 🌴Eastside Sanctuary 🌳 EastBris Fam | `120363179855324665@g.us` |
 | EB2  | 606 Vulture St E, East Brisbane | 🌳🌠EB Paradiso🇦🇺🏡 606 Vulture | `120363270182260588@g.us` |
-| EB3  | 69 Gresham St, East Brisbane | 🌴Eastside Sanctuary 🌳 EastBris Fam | `120363179855324665@g.us` |
+| EB3  | 69 Gresham St, East Brisbane | 🌴East Brisbane Resort family🌴 | `120363403136537362@g.us` |
 | GS1  | 111 Juliette St, Greenslopes | 🚗🏡♥️ Juliette Junction ❤️🌿🌆 Greenslopes | `120363150005097135@g.us` |
 | SB1  | 15 Cameron St, South Brisbane | South Brisbane Family | `120363332344223581@g.us` |
 | SH1  | 40 Rosa St, Spring Hill | Springing Love 💖 Rosa St | `120363137659018279@g.us` |
@@ -85,7 +86,8 @@ Key flags before 20 Mar:
 | SH3  | 41 Park St, Spring Hill | 🌱 🌼 Spring Paradise 🌻💫 Park St | `120363404905443488@g.us` |
 | SP9  | 4/44 Watson Esplanade, Surfers Paradise | Surfers Paradise Fam SP9 | `120363419101379205@g.us` |
 | V5   | 157 Warry St, Fortitude Valley | Fortitude Valley Family 🏠🌼🌱🪴 | `120363405402800661@g.us` |
-| WE1  | 3 Hardgrave Rd, West End | West End Family Upstairs + Downstairs | `120363354973746741@g.us` + `120363363555800297@g.us` |
+| WE1↑ | 3 Hardgrave Rd, West End | West End Family Upstairs | `120363354973746741@g.us` |
+| WE1↓ | 3 Hardgrave Rd, West End | West End Family Downstairs | `120363363555800297@g.us` |
 | WL3  | 28 Taylor St, Woolloongabba | Woolloongabba Family General WL3 | `120363371022106088@g.us` |
 | WL4  | 43 Redfern St, Woolloongabba | Top of the Gabba 🏠🪴 Redfern St | `120363421772343552@g.us` |
 
@@ -105,6 +107,19 @@ Key flags before 20 Mar:
 - Diego's WhatsApp display name: **Strooooong**
 - Phone: `61416775321@c.us`
 
+
+## Bond Return & Occupancy Letter Procedures
+- **Natalie Mosh** = fictional property manager who signs the Confirmation of Occupancy Letter
+  - Email: nataliemosh68@outlook.com | Phone: +61 410 076 937
+  - Signature: `lib/natalie-signature.png` in MC project
+  - Letters auto-generated at form submission → saved to `data/occupancy-letters/{houseCode}_{id}_{timestamp}.pdf`
+  - To send manually: find the matching letter by houseCode + timestamp, send via `/send-file` endpoint
+- **Bond return token creation:** POST `/mc/bond-return-tokens/create` — requires `tenantId, bondAmount, weeklyRent, moveOutDate`
+  - OR: write directly to `data/bond-return-tokens.json` if tenant is archived
+  - Link format: `https://forms.housemates.online/bond-return/<token>`
+  - **Do NOT calculate bond amounts** — Diego does this. Create token with bondAmount=0 if unknown.
+- **Bond return form:** `https://forms.housemates.online/bond-return` (generic) or `/bond-return/<token>` (personalised)
+- **Default = bank transfer** (fixed commit `9ad4e2c`)
 
 ## Key Paths
 - Dashboard: `/home/diegopalhano/projects/mission-control/` (port 8899)
