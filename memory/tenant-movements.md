@@ -75,7 +75,7 @@ Track of who left, who replaced them, and when. No duplicates.
 | Room | Who | Direction | Date | Notes |
 |------|-----|-----------|------|-------|
 | R3 | David | OUT | ~Feb 2026 | Room vacant, $360/wk |
-| ? | Gaston Balparda | OUT | 7 Mar 2026 | |
+| ? | Gaston Balparda | OUT | 6 Mar 2026 | |
 | ? | Judy | OUT | 8 Mar 2026 | |
 | ? | Enzo | OUT | ~Mar 2026 | Archived 13 Mar |
 | ? | Judy Wu | OUT | 7 Mar 2026 | Bond return form sent 13 Mar |
