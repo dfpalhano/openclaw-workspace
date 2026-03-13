@@ -77,6 +77,23 @@ print('Done')
 
 ---
 
+## Rule 29 — Notice Period & Move-Out Date (LOCKED 2026-03-13)
+- Minimum notice: 2 weeks
+- Move-out date = **second Sunday on or after (notice date + 14 days)**
+- As soon as notice is given → set move-out date immediately in tenants.json + paydb
+- Room is considered "on notice" only if move-out date is set
+
+## Rule 28 — Bond Return Payment Verification (LOCKED 2026-03-13)
+- NEVER send bond return amounts, deduction breakdowns, or return figures to any occupant until Diego has personally verified all payments for that person
+- Always hold bond return drafts until Diego explicitly confirms: "payments checked, ready to send"
+- Applies to all bond returns: Arnold, Valentin, Andrea, and any future cases
+
+## Rule 27 — Inspection Announcement Buffer (LOCKED 2026-03-13)
+- Inspection announcements to WA groups: always announce **1 hour before** real start and **1 hour after** real end
+- Example: real inspection 10am–12pm → announce 9am–1pm
+- Always use the `inspection_notice` template from house-templates.json
+- Never announce the exact agent arrival time
+
 ## Rule 12 — WA / Flatmates Message Corrections (LOCKED — 2026-03-10)
 
 **NEVER send a corrective or follow-up WA/Flatmates message without owner approval.**
@@ -251,3 +268,28 @@ When sending occupancy details to a new tenant, ALWAYS use the template at:
 - Always personalise: moveInDate, address, room, weeklyRent, bondBase, bond, occupancyType
 
 **Template last updated:** 2026-03-12
+
+---
+
+## Rule 29 — Tenant Movements Log (LOCKED 2026-03-13)
+
+**Every time someone moves in or out, update `memory/tenant-movements.md` immediately.**
+
+**On departure:**
+1. Archive the tenant in `active-tenants.json` + `tenants.json` (set `status: archived`, `moveOutDate`)
+2. Send bond return form with personalised token (do NOT calculate bond — Diego does that)
+3. Add row to `memory/tenant-movements.md` under the correct house — OUT direction, date, notes
+4. Add to Bond Returns Tracker at bottom of file
+
+**On arrival:**
+1. Add reg key + send invite with "bugs fixed" note if they had issues
+2. Add to `active-tenants.json` if not already there
+3. Add row to `memory/tenant-movements.md` — IN direction, date, room (if known), notes
+
+**Replacement:**
+- Always apply Protocol 21 (substitution exception rules)
+- Link the OUT row and IN row under the same house section
+- Note which room is now vacant vs filled
+
+**File location:** `memory/tenant-movements.md`
+**Also referenced in:** `MEMORY.md` → Contextual Memory Files table

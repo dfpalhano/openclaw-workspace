@@ -67,6 +67,7 @@ Key flags before 20 Mar:
 | `memory/projects/projects.md` | Legacy combined project memory; split detail now lives in per-project files under `memory/projects/` |
 | `memory/core/decisions.md` | Architecture, "why did we...", rebuilding components |
 | `memory/core/active-tasks.md` | Load EVERY session — current task board |
+| `memory/tenant-movements.md` | Every departure, arrival, replacement + bond returns tracker — UPDATE whenever someone moves in/out (Protocol 29) |
 | `memory/travel.md` | Travel preferences, destinations, health protocol, family context (local only) |
 | `memory/pre-bali-checklist.md` | Pre-departure action list for 20 Mar Pattaya trip — load when trip planning |
 
