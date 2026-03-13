@@ -78,7 +78,7 @@ Track of who left, who replaced them, and when. No duplicates.
 | ? | Gaston Balparda | OUT | 7 Mar 2026 | |
 | ? | Judy | OUT | 8 Mar 2026 | |
 | ? | Enzo | OUT | ~Mar 2026 | Archived 13 Mar |
-| ? | Judy Wu | OUT | ~Mar 2026 | Bond return form sent 13 Mar |
+| ? | Judy Wu | OUT | 7 Mar 2026 | Bond return form sent 13 Mar |
 | ? | Max | IN | Mar 2026 | Confirmed in EB3 |
 
 ---
