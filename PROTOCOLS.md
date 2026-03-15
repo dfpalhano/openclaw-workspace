@@ -321,7 +321,8 @@ When sending occupancy details to a new tenant, ALWAYS use the template at:
 Draft must include:
 - Friendly greeting
 - Security Contribution paid amount
-- Cleaning fee deduction (with clause reference if room issue)
+- Cleaning fee deduction — always include clause reference: "as per House Rules & Occupancy Licence (pages 20–24)"
+- Room condition deductions — cite specific clause: Clause 19.3 (room condition standard) & 19.4 (fixed charge)
 - Total refund amount
 - If bank details known → "I'll transfer now"
 - If bank details unknown → personalised form link to collect them
