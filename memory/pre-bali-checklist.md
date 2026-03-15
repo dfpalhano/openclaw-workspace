@@ -4,9 +4,9 @@
 ## 🔴 URGENT — Do this week
 
 ### Property
-- [ ] **Sign 606 Vulture lease renewal** — Tim Altass resending DocuSign, check email and sign
+- [x] **Sign 606 Vulture lease renewal** — SIGNED — Tim Altass resending DocuSign, check email and sign
 - [ ] **Resolve 41 Park (SH3) invoice arrears** — Place Graceville, you replied but it's unresolved. Call or email placegraceville@email.propertyme.com
-- [ ] **Arrange SH2 (36 Rosa) owner visit** — she's pushing to come and have a look, do it before 20 Mar. Self-managed, contact owner directly.
+- [x] **Arrange SH2 (36 Rosa) owner visit** — DONE — she's pushing to come and have a look, do it before 20 Mar. Self-managed, contact owner directly.
 
 ### Emails to send (awaiting your approval to send)
 - [ ] SH1 (40 Rosa) → Coronis (operations@little.com.au) — confirm next inspection date
