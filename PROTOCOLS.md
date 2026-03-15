@@ -352,3 +352,16 @@ Draft must include:
 - Cash payment receipts: "Week of Sun DD Mon YYYY"
 - Never use Monday or any other day as week start
 - Applies to all rent calculations, receipts, and week references
+
+---
+
+## Rule 32 — Welcome Package Duplicate Check (LOCKED 2026-03-15)
+
+Before sending any welcome package (welcome message + house rules + licence + occupancy letter):
+
+1. Check `welcomeSent` flag in resident-registrations.json
+2. **Also check the WA chat history** — look for prior welcome messages, house rules PDFs, or occupancy letters already sent
+3. Only send if BOTH checks confirm it hasn't been sent
+4. Never rely on the flag alone — it may not be set if the welcome was sent manually or via a different flow
+
+**Lesson (2026-03-15):** Sent Fiona's welcome package again because `welcomeSent` was null, but messages were already in her WA chat. Caused duplicate sends.
