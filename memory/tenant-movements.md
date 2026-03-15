@@ -119,7 +119,8 @@ Track of who left, who replaced them, and when. No duplicates.
 | R2 | Mathias (Noémie's ex-room) | OUT | ~Mar 2026 | Was staying in Raphaël's room |
 | R2 | Nathan Law-Soune | IN | 13 Mar 2026 | |
 | R2 | Mariane Piron | IN | 13 Mar 2026 | |
-| ? | Kinan Kasabi | IN | 16 Mar 2026 | $300/wk, bond $750 due before 16 Mar |
+| ? | Victor | OUT | 16 Mar 2026 | Bond return pending — payments to verify |
+| ? | Kinan Kasabi | IN | 16 Mar 2026 | $300/wk, bond $750 |
 | ? | Noémie | IN | ~Mar 2026 | Wants Victor's room from 16 Mar |
 
 ---
