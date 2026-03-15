@@ -93,24 +93,46 @@ _Updated: 2026-03-10 18:25 AEST_
 ## 👶 New Baby — July 2026 (Japan)
 
 **Parents:** Diego (Australian citizen) + Yuri (Japanese citizen, partner visa AU)
+**Relationship:** Not married — paternity must be established officially
 **Due:** July 2026, Japan
 
-### Australian Citizenship by Descent checklist
+### 🇯🇵 Japanese Registration (within 14 days of birth)
 
 | Step | Task | Status |
 |------|------|--------|
-| 1 | Get Japanese birth certificate (apostilled) | ⏳ after birth |
-| 2 | Register birth at Australian Embassy Tokyo | ⏳ after birth |
-| 3 | Apply for citizenship by descent — Form 119 | ⏳ after birth |
-| 4 | Apply for Australian passport for baby (at embassy) | ⏳ ~4-6 weeks after citizenship |
-| 5 | Baby holds dual AU + JP citizenship until age 22 (Japan policy) | ✅ no action needed now |
-| 6 | Back in AU — update Medicare, Centrelink, family benefits | ⏳ on return |
+| 1 | Register birth at local ward office (役所) | ⏳ after birth |
+| 2 | **Get Diego listed as father on Japanese birth register** — Yuri declares paternity at ward office | ⏳ critical step |
+| 3 | Get Japanese birth certificate (apostilled + certified English translation) | ⏳ after birth |
+| 4 | Apply for Japanese passport for baby (optional but useful) | ⏳ after birth |
 
-**Docs needed:**
-- Diego's Australian passport / citizenship certificate
+### 🇦🇺 Australian Citizenship by Descent (Form 119)
+
+| Step | Task | Status |
+|------|------|--------|
+| 5 | Book appointment at Australian Embassy Tokyo (book early) | ⏳ after birth |
+| 6 | Prepare statutory declaration from both Diego + Yuri confirming paternity | ⏳ after birth |
+| 7 | Submit Form 119 + all docs at embassy | ⏳ processing 4-8 weeks |
+| 8 | Apply for Australian passport for baby at same appointment | ⏳ ~4-6 weeks |
+| 9 | Baby holds dual AU + JP citizenship until age 22 | ✅ no action needed now |
+
+### ✈️ Return to Australia
+
+| Step | Task | Status |
+|------|------|--------|
+| 10 | Baby travels on Australian passport (no visa needed) | ⏳ on return |
+| 11 | Confirm Yuri's partner visa valid for re-entry | ⏳ check before leaving Japan |
+| 12 | Register baby with Medicare | ⏳ on return |
+| 13 | Apply for Family Tax Benefit A+B via Centrelink (within 52 weeks) | ⏳ on return |
+
+### Docs needed for Embassy (unmarried parents)
+
+- Diego's Australian passport + citizenship certificate
 - Yuri's Japanese passport
-- Marriage certificate (apostilled)
-- Japanese birth certificate + certified English translation
-- Evidence Diego lived in Australia (genuine connection requirement)
+- **Japanese birth register showing Diego as father** ← key paternity evidence
+- **Statutory declaration** signed by both Diego + Yuri confirming paternity
+- Japanese birth certificate (apostilled + certified English translation)
+- Evidence Diego lived in Australia (tax returns, utility bills, etc.)
+- Baby passport photos (white background)
 
+**Key deadlines:** JP registration within 14 days | AU citizenship lodgement within 3 months (strongly recommended)
 **Key contact:** Australian Embassy Tokyo — japan.embassy.gov.au / +81 3 5232 4111
