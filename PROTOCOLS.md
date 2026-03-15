@@ -293,3 +293,48 @@ When sending occupancy details to a new tenant, ALWAYS use the template at:
 
 **File location:** `memory/tenant-movements.md`
 **Also referenced in:** `MEMORY.md` → Contextual Memory Files table
+
+---
+
+## Rule 30 — Bond Return Standard Procedure (LOCKED 2026-03-15)
+
+**Every bond return follows these steps in order:**
+
+### Step 1 — Verify payments (Protocol 28)
+- Diego personally confirms all payments are up to date before any figures are shared
+- Do NOT calculate or share amounts until Diego says "payments verified"
+
+### Step 2 — Calculate the return amount
+- **Bond amount** = 2.5 × weekly rent
+- **Cleaning fee** = $70 per person (always applied, no exceptions)
+  - Single: $70 | Couple/shared: $140
+- **Room deductions** = only if Diego confirms damage charges
+- **Formula:** `Bond − cleaning fee − room deductions = return amount`
+
+### Step 3 — Check for bank details
+1. Check bond return requests JSON for submitted form details
+2. Check WA PM chat for any bank details sent directly
+3. If details found → go to Step 4
+4. If NO details → generate a personalised bond return token and send with breakdown
+
+### Step 4 — Send the message
+Draft must include:
+- Friendly greeting
+- Security Contribution paid amount
+- Cleaning fee deduction (with clause reference if room issue)
+- Total refund amount
+- If bank details known → "I'll transfer now"
+- If bank details unknown → personalised form link to collect them
+- Tone: warm, friendly, not formal
+
+### Step 5 — Mark as done
+- Update `bond-return-requests.json` → status: paid
+- Update `memory/tenant-movements.md` → bond return tracker
+- Note the transfer amount and date
+
+### Key rules
+- **Never send via Revolut** — Diego always sends via bank transfer
+- **Never send figures** until payments verified (Protocol 28)
+- **Always use personalised token** — never the generic `/bond-return` URL
+- **Couple/shared room** = one return to one person (whoever receives)
+- **Form captures payment proof** — if old form, re-issue token to collect return bank details
