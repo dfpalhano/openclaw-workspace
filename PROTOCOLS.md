@@ -327,6 +327,8 @@ Draft must include:
 - If bank details unknown → personalised form link to collect them
 - Tone: warm, friendly, not formal
 
+**ALWAYS include the full breakdown — even if bank details were received via chat instead of the form. The breakdown message is mandatory in all cases, no exceptions.**
+
 ### Step 5 — Mark as done
 - Update `bond-return-requests.json` → status: paid
 - Update `memory/tenant-movements.md` → bond return tracker
