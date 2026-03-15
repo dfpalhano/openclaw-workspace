@@ -87,3 +87,30 @@ _Updated: 2026-03-10 18:25 AEST_
 |------|--------|
 | Email WL4 real estate agent | Fan remote — upstairs, left side room off balcony. Asked multiple times. Escalate firmly. |
 
+
+---
+
+## 👶 New Baby — July 2026 (Japan)
+
+**Parents:** Diego (Australian citizen) + Yuri (Japanese citizen, partner visa AU)
+**Due:** July 2026, Japan
+
+### Australian Citizenship by Descent checklist
+
+| Step | Task | Status |
+|------|------|--------|
+| 1 | Get Japanese birth certificate (apostilled) | ⏳ after birth |
+| 2 | Register birth at Australian Embassy Tokyo | ⏳ after birth |
+| 3 | Apply for citizenship by descent — Form 119 | ⏳ after birth |
+| 4 | Apply for Australian passport for baby (at embassy) | ⏳ ~4-6 weeks after citizenship |
+| 5 | Baby holds dual AU + JP citizenship until age 22 (Japan policy) | ✅ no action needed now |
+| 6 | Back in AU — update Medicare, Centrelink, family benefits | ⏳ on return |
+
+**Docs needed:**
+- Diego's Australian passport / citizenship certificate
+- Yuri's Japanese passport
+- Marriage certificate (apostilled)
+- Japanese birth certificate + certified English translation
+- Evidence Diego lived in Australia (genuine connection requirement)
+
+**Key contact:** Australian Embassy Tokyo — japan.embassy.gov.au / +81 3 5232 4111
