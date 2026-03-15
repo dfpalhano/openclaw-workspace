@@ -10,7 +10,7 @@ Track of who left, who replaced them, and when. No duplicates.
 |------|-----|-----------|------|-------|
 | R1 | Mathias | OUT | 21 Feb 2026 | Bond return pending (weekly rent + deductions not confirmed) |
 | Middle upstairs | Andrea Fasana | OUT | 28 Feb 2026 | Bond return ✅ $855 sent 15 Mar |
-| R1 | Arnold | OUT | 8 Mar 2026 | Bond return $710 — awaiting Diego payment verify (Protocol 28) |
+| R1 | Arnold | OUT | 8 Mar 2026 | Bond return ✅ $710 sent 15 Mar 2026 |
 | R3 | Sacha | IN | Mar 2026 | Phone `33689437848` |
 | R5 | Chloe + Dylan | IN | 13 Mar 2026 | Couple, $430/wk, bond $1,075. Reg forms sent (Chloe `VO86Ombv3a`, Dylan `bvpBpv0nBw`) |
 
@@ -188,7 +188,7 @@ Track of who left, who replaced them, and when. No duplicates.
 | Belinda | V5 | ✅ Returned via Wise 9 Feb | $830 |
 | Mathilde | SH2 | Form sent 12 Mar | Protocol 28 — awaiting payment verify |
 | Valentine (Val) | SH2 | Form sent 12 Mar | Protocol 28 |
-| Arnold | SH1 | ⏳ $710 agreed | Protocol 28 — awaiting payment verify |
+| Arnold | SH1 | ✅ $710 sent 15 Mar 2026 |
 | Valentin Chaussier | SH3 | Form sent 13 Mar | Protocol 28 |
 | Andrea Fasana | SH1 | ✅ $855 sent 15 Mar 2026 |
 | Gretel Lay | SH2 | Form sent 13 Mar | Protocol 28 |
