@@ -70,3 +70,13 @@ _Updated: 2026-03-10 18:25 AEST_
 | WA Bridge | ✅ port 8890 |
 | Jess relay | ✅ extension connected, 120 convos loaded |
 | wa-ops-bot system unit | ❌ still crashing (user unit is active — OK) |
+
+## Payment Reconciliation View — MC (queued 2026-03-13)
+Build a per-house payment reconciliation page in MC:
+- Shows every tenant (active + archived) for the house
+- Expected weekly rent per person
+- Payment status: ✅ paid / ⚠️ partial / ❌ missing / 📲 cash (manual)
+- Bank transfer houses: auto-populate from imported statements
+- Cash houses (CO1, EB3): manual tick-off with optional note/receipt ref
+- Include bond returns per house
+- Accessible from the house directory page

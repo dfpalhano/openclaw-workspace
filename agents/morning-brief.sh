@@ -5,7 +5,7 @@
 
 WORKSPACE="/home/diegopalhano/.openclaw/workspace"
 BRIEF_FILE="/tmp/morning-brief-$(date +%Y%m%d).md"
-TG_TOKEN="8758803508:AAGVnQv_a1Nn2aL5BWV5qURULSQzhMKXBr8"
+TG_TOKEN="8788866437:AAElp1-FUBUdMb18sD5Ks9HUBmcLGBf0Bsc"
 DIEGO_ID="1267601160"
 
 python3 << PYEOF
@@ -71,7 +71,7 @@ brief = f"""🗺️ <b>Atlas Morning Brief</b>
 # Send to Telegram
 payload = json.dumps({'chat_id': '1267601160', 'text': brief, 'parse_mode': 'HTML'}).encode()
 req = urllib.request.Request(
-    f'https://api.telegram.org/bot8758803508:AAGVnQv_a1Nn2aL5BWV5qURULSQzhMKXBr8/sendMessage',
+    f'https://api.telegram.org/bot8788866437:AAElp1-FUBUdMb18sD5Ks9HUBmcLGBf0Bsc/sendMessage',
     data=payload, headers={'Content-Type': 'application/json'})
 urllib.request.urlopen(req, timeout=10)
 print("Morning brief sent.")
