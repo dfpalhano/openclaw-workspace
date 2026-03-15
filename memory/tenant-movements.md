@@ -8,7 +8,7 @@ Track of who left, who replaced them, and when. No duplicates.
 
 | Room | Who | Direction | Date | Notes |
 |------|-----|-----------|------|-------|
-| R1 | Mathias | OUT | 21 Feb 2026 | Bond return pending (weekly rent + deductions not confirmed) |
+| R1 | Mathias | OUT | 21 Feb 2026 | ✅ $805 sent |
 | Middle upstairs | Andrea Fasana | OUT | 28 Feb 2026 | Bond return ✅ $855 sent 15 Mar |
 | R1 | Arnold | OUT | 8 Mar 2026 | Bond return ✅ $710 sent 15 Mar 2026 |
 | R3 | Sacha | IN | Mar 2026 | Phone `33689437848` |
@@ -196,7 +196,7 @@ Track of who left, who replaced them, and when. No duplicates.
 | Charlène Gillard | WL4 | Form sent 13 Mar | Protocol 28 |
 | Emma Charlo | WL4 | Form sent 13 Mar | Protocol 28 |
 | Max SH3 | SH3 | Form sent 13 Mar | Protocol 28 |
-| Mathias SH1 | SH1 | ⏳ Pending | Weekly rent + deductions not confirmed |
+| Mathias SH1 | SH1 | ✅ $805 sent |
 | Chloé + Hugo Pain | V5 | ⏳ Pending | $70/person cleaning fee applied |
 | Benjamin Dubois | EB2 | ✅ Paid | |
 | Egon | EB2 | ✅ Paid | |
