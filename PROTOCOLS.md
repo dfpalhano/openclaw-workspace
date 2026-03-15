@@ -341,3 +341,14 @@ Draft must include:
 - **Always use personalised token** — never the generic `/bond-return` URL
 - **Couple/shared room** = one return to one person (whoever receives)
 - **Form captures payment proof** — if old form, re-issue token to collect return bank details
+
+---
+
+## Rule 31 — Occupancy Week Start Day (LOCKED 2026-03-15)
+
+**Occupancy weeks always start on Sunday.**
+
+- Week references must always use Sunday as the start date
+- Cash payment receipts: "Week of Sun DD Mon YYYY"
+- Never use Monday or any other day as week start
+- Applies to all rent calculations, receipts, and week references
