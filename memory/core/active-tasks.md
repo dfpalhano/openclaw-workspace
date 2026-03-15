@@ -70,3 +70,20 @@ _Updated: 2026-03-10 18:25 AEST_
 | WA Bridge | ✅ port 8890 |
 | Jess relay | ✅ extension connected, 120 convos loaded |
 | wa-ops-bot system unit | ❌ still crashing (user unit is active — OK) |
+
+---
+
+## 🔧 Work Group Tasks (Mathis + Emilio)
+
+| Task | House | Detail |
+|------|-------|--------|
+| Dyson vacuum maintenance | WL4 | Check/service the Dyson vacuum cleaner |
+
+---
+
+## 📝 Diego Personal Reminders
+
+| Task | Detail |
+|------|--------|
+| Email WL4 real estate agent | Fan remote — upstairs, left side room off balcony. Asked multiple times. Escalate firmly. |
+
