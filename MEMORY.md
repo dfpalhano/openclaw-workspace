@@ -264,3 +264,10 @@ If Atlas catches itself writing code instead of delegating → STOP → spawn ag
 ## Work Group JIDs
 - 💼 WORK - General chat: `120363424849467954@g.us`
 - 💼 WORK - Checklist - Houses: `120363405280591139@g.us`
+
+## House Bank Accounts (per house — use when sending occupancy cards)
+| House | Account Name | BSB | Account | Notes |
+|-------|-------------|-----|---------|-------|
+| SH1 | Diego Franca Palhano | 063 097 | 8801 1500 | Dedicated SH1 account |
+| SH2 | SH2 Account | 084 391 | 7878 04 909 | Dedicated SH2 account |
+| Default (other houses) | Diego Franca Palhano | 063 097 | 8801 1500 | Diego personal account |
