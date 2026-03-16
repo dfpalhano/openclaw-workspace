@@ -209,3 +209,8 @@ Track of who left, who replaced them, and when. No duplicates.
 | R1 | James Murray + Ioana Virag | OUT | 15 Mar 2026 | Couple $450/wk, bond $1,125. Return $985 — form sent 16 Mar |
 
 | R5 | Kevin (+ Noélie) | IN | 17 Mar 2026 | Couple $430/wk, replacing Gisleine |
+
+### SH3 R4 — Possible swap (to investigate)
+- **Henri + Pierre** — move-in 16 Feb 2026. Pierre no reg form. Henri welcomed.
+- **Xavier + Raphaëlle** — move-in 9 Mar 2026. Both with reg forms. Same room description (terrace downstairs).
+- **Flag:** May be a replacement — Henri + Pierre left, Xavier + Raphaëlle took over R4. Mathis/Emilio to verify in person.
