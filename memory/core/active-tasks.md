@@ -313,3 +313,5 @@
 | Add Stan (+33 6 60 75 12 32) to WE1 Downstairs group | `33660751232@c.us` — check LID first |
 | Add Gabrielle to WE1 group | Find her contact, add to correct group (up/down) |
 | Work group message WE1 | Ask team to confirm who is living at WE1 (full list — missing people) |
+
+| V5 group cleanup | Remove Lexane + Hugo Pain (left). Add Angelique Thierry (61435558261). Identify unknown 33624906824. |
