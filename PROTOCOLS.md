@@ -407,3 +407,19 @@ Whenever debugging or rebuilding Jess extension/scraping logic, **always check f
 **File location:** `/home/diegopalhano/Documents/Jess.txt` (original) + `memory/jess-dom-selectors.md` (workspace copy)
 
 **Before dispatching any Jess extension fix:** read this file and include relevant selectors in the task spec.
+
+---
+
+## Rule 35 — Jess Scope (LOCKED 2026-03-16)
+
+**Jess handles Flatmates marketing ONLY.**
+
+Jess does NOT:
+- Control any MC data or functionality
+- Provide occupant/room/house data to MC
+- Manage payments, registrations, or bond returns
+- Sync data into MC's core files (active-tenants.json, tenants.json, etc.)
+
+**jess-rooms.json, jess-inbox.json, jess-pending.json** = Jess's own marketing data only.
+MC must never pull house, room, or occupant data from Jess files.
+All MC data comes from MC's own sources: active-tenants.json, resident-registrations.json, house-details, etc.
