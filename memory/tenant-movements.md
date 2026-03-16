@@ -216,3 +216,5 @@ Track of who left, who replaced them, and when. No duplicates.
 - **Flag:** May be a replacement — Henri + Pierre left, Xavier + Raphaëlle took over R4. Mathis/Emilio to verify in person.
 
 | ? | Michael O'Brien | OUT | 22 Mar 2026 | WE1 downstairs. Notice given early. Bond return pending. |
+
+| ? | Elage | OUT | 16 Mar 2026 | WL4. Scammer — NO bond return. Outstanding $147. |
