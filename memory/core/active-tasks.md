@@ -309,3 +309,7 @@
 | Add Mark Parkinson to WE1 Upstairs group | `61467235402@c.us` — check if he has LID first |
 | Maxime WL4 bond return | Submitted form 10 Mar but no refund bank details — ask him |
 | Louis WL4 bond return | Bank details in WA (BSB 732 135 / Acc 784 117) — $935 pending payment verify |
+
+| Add Stan (+33 6 60 75 12 32) to WE1 Downstairs group | `33660751232@c.us` — check LID first |
+| Add Gabrielle to WE1 group | Find her contact, add to correct group (up/down) |
+| Work group message WE1 | Ask team to confirm who is living at WE1 (full list — missing people) |
