@@ -201,3 +201,7 @@ Track of who left, who replaced them, and when. No duplicates.
 | Chloé + Hugo Pain | V5 | ⏳ Pending | $70/person cleaning fee applied |
 | Benjamin Dubois | EB2 | ✅ Paid | |
 | Egon | EB2 | ✅ Paid | |
+
+### SH2 — R5 update (16 Mar 2026)
+| R5 | Thomas | OUT | 30 Mar 2026 | Notice given 16 Mar |
+| R5 | Anne Boulare | IN | 30 Mar 2026 | Single $360/wk, bond $900. Offer sent, reg link: 6fuCwjNhhK |
