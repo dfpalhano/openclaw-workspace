@@ -315,3 +315,5 @@
 | Work group message WE1 | Ask team to confirm who is living at WE1 (full list — missing people) |
 
 | V5 group cleanup | Remove Lexane + Hugo Pain (left). Add Angelique Thierry (61435558261). Identify unknown 33624906824. |
+
+| Generate occupancy roster PDFs | Per house: room number, selfie, name. Mark missing rooms. Send to Diego WA for approval before sending to work group. 67/105 have selfies. |
