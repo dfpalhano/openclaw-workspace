@@ -283,3 +283,13 @@
 |------|--------|
 | Group membership cleanup | Add 10 missing occupants to groups + remove 5+ who left. Full list at `/tmp/group-audit.json` |
 | EB3 inspection | Need time + agent details from Diego to create calendar event + announce to group |
+
+## 🔮 Future: Manager View
+- Mathis + Emilio will NOT have direct MC access
+- Design a separate limited dashboard for them:
+  - Their assigned houses only
+  - Inspection schedules
+  - Pending tasks
+  - Occupant names (NO financials, NO bond returns, NO registrations)
+- Gated by separate URL or login
+- To design when Diego is ready
