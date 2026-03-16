@@ -274,3 +274,12 @@
 | 2b | **Tick 国籍留保 (reservation of Japanese nationality) box** on birth registration form — without this baby may lose Japanese nationality automatically | ⏳ critical |**Key deadlines:** JP registration within 14 days | AU citizenship lodgement within 3 months (strongly recommended)
 | 2 | **Have Diego listed as father on the birth register** — Yuri declares paternity at ward office — critical step | ⏳ critical |
 | 2b | **Tick 国籍留保 (reservation of Japanese nationality) box** on birth registration form — without this baby may lose Japanese nationality automatically | ⏳ critical |**Key contact:** Australian Embassy Tokyo — japan.embassy.gov.au / +81 3 5232 4111
+
+---
+
+## 🔔 Today's Reminders (16 Mar 2026)
+
+| Task | Detail |
+|------|--------|
+| Group membership cleanup | Add 10 missing occupants to groups + remove 5+ who left. Full list at `/tmp/group-audit.json` |
+| EB3 inspection | Need time + agent details from Diego to create calendar event + announce to group |
