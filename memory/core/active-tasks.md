@@ -306,5 +306,6 @@
 | Task | Detail |
 |------|--------|
 | Add Mariane Piron + Hugo Mouchet to WL4 group | LIDs: `147064646287430@lid` + `160310476468297@lid` |
+| Add Mark Parkinson to WE1 Upstairs group | `61467235402@c.us` — check if he has LID first |
 | Maxime WL4 bond return | Submitted form 10 Mar but no refund bank details — ask him |
 | Louis WL4 bond return | Bank details in WA (BSB 732 135 / Acc 784 117) — $935 pending payment verify |
