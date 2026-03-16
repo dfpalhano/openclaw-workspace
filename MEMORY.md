@@ -260,3 +260,7 @@ If Atlas catches itself writing code instead of delegating → STOP → spawn ag
 - Flatmates/leasing → Jess
 - Gmail/calendar/inspections → Warden
 - No raw `codex` or `claude` CLI commands — always use the team
+
+## Work Group JIDs
+- 💼 WORK - General chat: `120363424849467954@g.us`
+- 💼 WORK - Checklist - Houses: `120363405280591139@g.us`
