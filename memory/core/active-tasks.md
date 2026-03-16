@@ -317,3 +317,11 @@
 | V5 group cleanup | Remove Lexane + Hugo Pain (left). Add Angelique Thierry (61435558261). Identify unknown 33624906824. |
 
 | Generate occupancy roster PDFs | Per house: room number, selfie, name. Mark missing rooms. Send to Diego WA for approval before sending to work group. 67/105 have selfies. |
+
+## 📋 Diego Personal — Today (17 Mar)
+
+| Task | Detail |
+|------|--------|
+| Blood test | Morning |
+| Pharmacy | Today |
+| Get BRIS1 mailbox key | 79 Albert St, Brisbane City — apartment mailbox |
