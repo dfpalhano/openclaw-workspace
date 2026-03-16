@@ -365,3 +365,28 @@ Before sending any welcome package (welcome message + house rules + licence + oc
 4. Never rely on the flag alone — it may not be set if the welcome was sent manually or via a different flow
 
 **Lesson (2026-03-15):** Sent Fiona's welcome package again because `welcomeSent` was null, but messages were already in her WA chat. Caused duplicate sends.
+
+---
+
+## Rule 33 — active-tenants.json + tenants.json Structure (LOCKED 2026-03-16)
+
+These two files are the **canonical source of truth** for all occupant data. They are sacred.
+
+**NEVER:**
+- Change the schema/structure of either file without explicit owner approval
+- Delete entries from either file
+- Merge or reorganise fields without a full migration plan approved by Diego
+
+**If structure needs to change:**
+1. Export all data from the current file
+2. Build the new structure in a NEW file
+3. Migrate data field by field
+4. Keep the old file as `active-tenants-backup-YYYY-MM-DD.json`
+5. Only cut over after Diego explicitly confirms data integrity
+
+**Archiving archived records (when approved):**
+- Move `status: "archived"` entries to a separate `-archive.json` file
+- Same schema — no field changes
+- Keep backup of the original before any move
+
+**Rule:** When in doubt about changes to these files — stop and ask Diego first.
