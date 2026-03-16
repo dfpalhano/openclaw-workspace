@@ -271,3 +271,9 @@ If Atlas catches itself writing code instead of delegating → STOP → spawn ag
 | SH1 | Diego Franca Palhano | 063 097 | 8801 1500 | Dedicated SH1 account |
 | SH2 | SH2 Account | 084 391 | 7878 04 909 | Dedicated SH2 account |
 | Default (other houses) | Diego Franca Palhano | 063 097 | 8801 1500 | Diego personal account |
+
+## Vox Training Bot
+- Bot: @trainingvoxbot
+- Token: `8527980630:AAErT6_UxTCIcqDJD2vpumhhy28bnZ5eRGY`
+- Purpose: Train Vox by conversation — I play Vox, Diego answers scenarios
+- Protocol: Start training session with /start, one scenario at a time
