@@ -299,4 +299,4 @@
 | Task | Who | Action |
 |------|-----|--------|
 | Guillaume Pech + Nâlan EB2 | Both | Resend registration form with bugs-fixed note |
-| Maxime EB2 R4 | +33 6 23 46 29 16 | Send firm reminder — payment receipt not received. Firmer tone. |
+| Maxime EB2 R4 | +33 6 23 46 29 16 | Firm reminder — payment receipt pending. DO NOT add to EB2 group until paid. |
