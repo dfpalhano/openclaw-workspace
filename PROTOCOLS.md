@@ -390,3 +390,20 @@ These two files are the **canonical source of truth** for all occupant data. The
 - Keep backup of the original before any move
 
 **Rule:** When in doubt about changes to these files — stop and ask Diego first.
+
+---
+
+## Rule 34 — Jess DOM Selectors Reference (LOCKED 2026-03-16)
+
+Whenever debugging or rebuilding Jess extension/scraping logic, **always check first:**
+
+`memory/jess-dom-selectors.md` — contains verified CSS selectors for:
+- Conversation list items (member name, last-active, snippet, unread status)
+- Thread navigation (conversation link, thread ID from href)
+- Message history (inbound vs outbound messages, timestamps)
+- Listing/house link in conversation header
+- Listing management (activate/deactivate, edit rooms)
+
+**File location:** `/home/diegopalhano/Documents/Jess.txt` (original) + `memory/jess-dom-selectors.md` (workspace copy)
+
+**Before dispatching any Jess extension fix:** read this file and include relevant selectors in the task spec.
