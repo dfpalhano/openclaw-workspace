@@ -293,3 +293,10 @@
   - Occupant names (NO financials, NO bond returns, NO registrations)
 - Gated by separate URL or login
 - To design when Diego is ready
+
+## 📋 Tomorrow Morning Tasks (17 Mar)
+
+| Task | Who | Action |
+|------|-----|--------|
+| Guillaume Pech + Nâlan EB2 | Both | Resend registration form with bugs-fixed note |
+| Maxime EB2 R4 | +33 6 23 46 29 16 | Send firm reminder — payment receipt not received. Firmer tone. |
