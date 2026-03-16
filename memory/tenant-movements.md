@@ -214,3 +214,5 @@ Track of who left, who replaced them, and when. No duplicates.
 - **Henri + Pierre** — move-in 16 Feb 2026. Pierre no reg form. Henri welcomed.
 - **Xavier + Raphaëlle** — move-in 9 Mar 2026. Both with reg forms. Same room description (terrace downstairs).
 - **Flag:** May be a replacement — Henri + Pierre left, Xavier + Raphaëlle took over R4. Mathis/Emilio to verify in person.
+
+| ? | Michael O'Brien | OUT | 22 Mar 2026 | WE1 downstairs. Notice given early. Bond return pending. |
