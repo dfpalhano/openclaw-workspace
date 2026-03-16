@@ -423,3 +423,16 @@ Jess does NOT:
 **jess-rooms.json, jess-inbox.json, jess-pending.json** = Jess's own marketing data only.
 MC must never pull house, room, or occupant data from Jess files.
 All MC data comes from MC's own sources: active-tenants.json, resident-registrations.json, house-details, etc.
+
+---
+
+## Rule 36 — WA Quiet Hours (LOCKED 2026-03-17)
+
+**Never send WA messages to occupants between 11:00pm and 7:30am Brisbane time.**
+
+- If Diego says "send it" between 11pm–7:30am → automatically schedule for 7:31am instead
+- Confirm: "Scheduled for 7:31am — too late to send now"
+- Applies to: individual occupant messages, house groups, bond returns, any tenant-facing comms
+- Does NOT apply to: work group (Mathis/Emilio), Diego's personal contacts, urgent operational emergencies (Diego must explicitly override)
+
+**Override:** If Diego explicitly says "send now, urgent" → send immediately. One clear override only.
