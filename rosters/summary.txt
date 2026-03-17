@@ -1,0 +1,46 @@
+Mission Control — Occupancy Roster Summary
+Generated: 2026-03-17
+============================================================
+
+SH1  |  6 active tenants  |  6 rooms defined
+  Vacant rooms: R1, R3, R5
+  No room assigned: Lenny Vachet
+
+SH2  |  7 active tenants  |  6 rooms defined
+  Vacant rooms: R4
+
+SH3  |  8 active tenants  |  5 rooms defined
+  Vacant rooms: R3
+
+CO1  |  7 active tenants  |  6 rooms defined
+  Vacant rooms: R6
+
+EB1  |  6 active tenants  |  5 rooms defined
+
+EB2  |  10 active tenants  |  8 rooms defined
+  Vacant rooms: R6
+
+EB3  |  8 active tenants  |  6 rooms defined
+
+GS1  |  8 active tenants  |  5 rooms defined
+
+SB1  |  6 active tenants  |  6 rooms defined
+  Vacant rooms: R3
+
+SP9  |  5 active tenants  |  5 rooms defined
+  Vacant rooms: R3
+
+V5  |  4 active tenants  |  5 rooms defined
+  Vacant rooms: R2, R4
+
+WE1  |  7 active tenants  |  7 rooms defined
+  Vacant rooms: R5
+
+WL3  |  4 active tenants  |  6 rooms defined
+  Vacant rooms: R1, R2, R4
+
+WL4  |  6 active tenants  |  6 rooms defined
+  Vacant rooms: R6
+
+BRIS1  |  8 active tenants  |  5 rooms defined
+
