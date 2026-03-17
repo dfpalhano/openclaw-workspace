@@ -218,3 +218,5 @@ Track of who left, who replaced them, and when. No duplicates.
 | ? | Michael O'Brien | OUT | 22 Mar 2026 | WE1 downstairs. Notice given early. Bond return pending. |
 
 | ? | Elage | OUT | 16 Mar 2026 | WL4. Scammer — NO bond return. Outstanding $147. |
+
+| R3 | Maxime (+33 6 58 55 41 53) | IN | 30 Mar 2026 | Replacing Florent Gasnier SH2 R3 |
