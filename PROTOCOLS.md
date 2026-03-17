@@ -436,3 +436,18 @@ All MC data comes from MC's own sources: active-tenants.json, resident-registrat
 - Does NOT apply to: work group (Mathis/Emilio), Diego's personal contacts, urgent operational emergencies (Diego must explicitly override)
 
 **Override:** If Diego explicitly says "send now, urgent" → send immediately. One clear override only.
+
+---
+
+## Rule 37 — WhatsApp Session Data (LOCKED 2026-03-17)
+
+**NEVER touch, delete, move, or modify anything in `~/.whatsapp-session/` without Diego's explicit approval.**
+
+This includes:
+- Session files
+- Cache files
+- Any subdirectory
+
+**Always ask first.** Even if it seems harmless (like clearing cache). This is non-negotiable.
+
+**Violation logged:** 17 Mar 2026 — Atlas cleared Chrome cache in `~/.whatsapp-session/session/Default/Cache/` without asking. Session was restored but the action was wrong.
