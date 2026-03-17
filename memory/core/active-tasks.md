@@ -325,3 +325,9 @@
 | Blood test | Morning |
 | Pharmacy | Today |
 | Get BRIS1 mailbox key | 79 Albert St, Brisbane City — apartment mailbox |
+
+## 📋 Today's Priority (17 Mar)
+
+| Task | Detail |
+|------|--------|
+| Send Lou SB1 bond return | BSB 732 135 / Acc 784 117 — $935. Verify payments first (Protocol 28) then send breakdown + confirm transfer. |
