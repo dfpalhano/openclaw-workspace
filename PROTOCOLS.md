@@ -465,3 +465,42 @@ This includes:
 - Exceptions are made case-by-case by Diego only
 
 **Violation logged:** 18 Mar 2026 — Vox sent unsolicited "checking in" registration follow-up messages to occupants without approval. Flow disabled immediately.
+
+---
+
+## Protocol 39 — Occupancy Offer Card (LOCKED 2026-03-18)
+
+**Every new occupant receives an Occupancy Offer Card. No exceptions.**
+
+### When to send
+- Send BEFORE or ALONGSIDE the registration form link
+- Single person → one card
+- Couple/sharers → one card EACH (same content, same room, same price)
+- If one partner already received it but the other hasn't → send to the missing person immediately
+
+### What the card contains
+- Full property address
+- Room description (correct room code, e.g. R2 — never "Chambre" or vague descriptions)
+- Move-in date (confirmed with Diego before sending)
+- Weekly rent — **ALWAYS full room price, never split per person**
+- Security contribution (bond) = 2.5 × weekly rent
+
+### Before sending — Atlas must confirm with Diego:
+1. ✅ Move-in date confirmed?
+2. ✅ Weekly rent confirmed (no negotiation pending)?
+
+**If either is not confirmed → DO NOT send. Ask Diego first.**
+
+### Template
+- ID: `occupancy_offer` in house-templates.json
+- Label: 🏡 Occupancy Offer Card
+
+### Room assignment rule
+- Couples/sharers replace each other in the same room
+- The room code stays fixed (e.g. person1 replaces person2 in R2 → still R2)
+- Always use the correct R-format room code in the card
+
+### After sending
+- Mark `occupancyOfferSent: true` on the occupant record
+- Log date sent
+
