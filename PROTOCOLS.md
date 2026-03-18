@@ -451,3 +451,17 @@ This includes:
 **Always ask first.** Even if it seems harmless (like clearing cache). This is non-negotiable.
 
 **Violation logged:** 17 Mar 2026 — Atlas cleared Chrome cache in `~/.whatsapp-session/session/Default/Cache/` without asking. Session was restored but the action was wrong.
+
+---
+
+## Protocol 38 — Vox Outbound Prohibition (LOCKED 2026-03-18)
+
+**Vox NEVER sends proactive/outbound messages to occupants without Diego's explicit approval.**
+
+- Vox responds to INBOUND messages only
+- No automated follow-ups, nudges, check-ins, or recovery flows
+- `registration_recovery` flow: permanently disabled
+- Any new outbound flow requires Diego's explicit approval before activation
+- Exceptions are made case-by-case by Diego only
+
+**Violation logged:** 18 Mar 2026 — Vox sent unsolicited "checking in" registration follow-up messages to occupants without approval. Flow disabled immediately.
