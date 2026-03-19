@@ -347,7 +347,7 @@
 | Enzo EB3 | EB3 | TBD | TBD | ⏳ awaiting bank details |
 
 ### House / Operations
-- [ ] **Order magic sponges** — restock for houses (confirm qty + supplier)
+- [x] **Order magic sponges** — Diego already purchased ✅
 - [ ] **House inventory checklist** — build standard checklist per room type (kitchen, bathroom, bedroom, common) as MC template + printable PDF
 - [ ] **Inspect SH2 R5** — Gisleine left, Noélie + Kevin moving in
 - [ ] **Thomas Rigau BRIS1 R2** — leaving 21 Mar, Jonathan + Jeremy moving in 21 Mar
