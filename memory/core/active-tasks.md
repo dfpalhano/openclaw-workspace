@@ -331,3 +331,40 @@
 | Task | Detail |
 |------|--------|
 | Send Lou SB1 bond return | BSB 732 135 / Acc 784 117 — $935. Verify payments first (Protocol 28) then send breakdown + confirm transfer. |
+
+---
+## 📋 Property Ops Todo (added 2026-03-19)
+
+### Bond Returns Pending
+| Name | House | Amount | Bank | Status |
+|------|-------|--------|------|--------|
+| Victor | WL4 | $755 | Westpac BSB 734-001 / ACC 884998 | ⏳ Diego to transfer |
+| Maelie | V5 | $470 | Westpac BSB 734-001 / ACC 507076 | ⏳ Diego to transfer |
+| Mathias EB2 | EB2 | ~$930 | TBD — awaiting bank details | ⏳ |
+| James Murray | EB2 | TBD | TBD | ⏳ form sent |
+| Samuele SH3 | SH3 | TBD | CommBank BSB 064-000 / ACC 16835398 | ⏳ leaving 21 Apr |
+| Lorenzo SH3 | SH3 | TBD | CommBank BSB 064-000 / ACC 16836526 | ⏳ leaving 17 Apr, paid to 21 Apr |
+| Enzo EB3 | EB3 | TBD | TBD | ⏳ awaiting bank details |
+
+### House / Operations
+- [ ] **Order magic sponges** — restock for houses (confirm qty + supplier)
+- [ ] **House inventory checklist** — build standard checklist per room type (kitchen, bathroom, bedroom, common) as MC template + printable PDF
+- [ ] **Inspect SH2 R5** — Gisleine left, Noélie + Kevin moving in
+- [ ] **Thomas Rigau BRIS1 R2** — leaving 21 Mar, Jonathan + Jeremy moving in 21 Mar
+- [ ] **Archive Thomas** after he leaves Saturday
+- [ ] **SH1 R5** — still vacant, Leo prospect pending
+- [ ] **WL3 unknown members** — 4 phones not identified
+- [ ] **Lili V5 R2** — phone unknown, not in system
+- [ ] **Hugo Samson EB2 R4** — phone unknown
+- [ ] **Patri/Patricia Gonzalez SH1 R4** — duplicate to merge
+- [ ] **Gabrielle WE1 R5** — rent and move-in to confirm via payments
+- [ ] **Noélie + Kevin SH2** — bond not yet paid, group add pending
+- [ ] **Fix inspection alert Telegram bot token** — replace dead token with Vox token 8755441223
+- [ ] **Pre-departure server stress test** — before 20 Mar departure
+- [ ] **BRIS1 mailbox key** — 79 Albert St
+
+### Departures Coming
+- Lorenzo SH3 — leaves 17 Apr, paid to 21 Apr
+- Samuele SH3 — leaves 21 Apr
+- Mathilde + Valentine SH2 — leaving 21 Mar (auto move-out cron set)
+- Thomas Rigau BRIS1 — leaving 21 Mar
