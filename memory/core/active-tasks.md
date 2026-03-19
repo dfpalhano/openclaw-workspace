@@ -368,3 +368,9 @@
 - Samuele SH3 — leaves 21 Apr
 - Mathilde + Valentine SH2 — leaving 21 Mar (auto move-out cron set)
 - Thomas Rigau BRIS1 — leaving 21 Mar
+
+### 🔥 BRIS1 Fire Door Inspection Reminder
+- Dates: 16, 17, 20 April 2026
+- Send notice to BRIS1 group (~9 April 2026, 1 week before)
+- Template: `bris1_fire_door_inspection_april2026` in MC templates
+- Group JID: `120363408294551957@g.us`
