@@ -504,3 +504,18 @@ This includes:
 - Mark `occupancyOfferSent: true` on the occupant record
 - Log date sent
 
+
+---
+
+## Protocol 40 — Revolut/International Payment Verification (LOCKED 2026-03-19)
+
+**Revolut/Wise/Nium/international payments are NOT verified unless Diego explicitly provides the reference.**
+
+Rules:
+- NEVER count a Revolut/Wise/Nium transaction as paid based on bank statement matching alone
+- ALWAYS ask Diego: "Can you confirm the Revolut reference for this payment?"
+- Only after Diego confirms the reference → verified and counted
+- If Diego makes an explicit exception (e.g. "I confirm this is Maelie's payment") → log it clearly
+- References format: e.g. `260208-N9MLWV321` (date-encoded Revolut ref)
+
+This applies to: bond returns, rent verification, any payment dispute resolution.
