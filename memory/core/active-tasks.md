@@ -374,3 +374,9 @@
 - Send notice to BRIS1 group (~9 April 2026, 1 week before)
 - Template: `bris1_fire_door_inspection_april2026` in MC templates
 - Group JID: `120363408294551957@g.us`
+
+### 📋 Routine Inspections Booked
+| House | Date | Time | Action needed |
+|-------|------|------|---------------|
+| WL4 | Wed 6 May 2026 | 10am–12pm | Send notice ~1 week before (by 29 Apr) |
+| WE1 | Tue 31 Mar 2026 | 9am–11am | Send notice ASAP (10 days away) |
