@@ -519,3 +519,18 @@ Rules:
 - References format: e.g. `260208-N9MLWV321` (date-encoded Revolut ref)
 
 This applies to: bond returns, rent verification, any payment dispute resolution.
+
+---
+
+## Protocol 41 — Away Mode: Incoming WA Messages (LOCKED 2026-03-21)
+
+When Diego is travelling and unavailable:
+
+**If message is clearly about a house problem** (maintenance, complaint, keys, noise, cleaning, repairs, other occupants):
+→ Reply: "Hi! I'm not available right now but Mathis can help you with anything house-related. You can reach him at +61 411 590 261 😊"
+
+**If message is NOT house-related** (personal, casual, financial, business etc.):
+→ Flag to Diego on Telegram immediately. Do NOT auto-reply.
+→ Include: sender name, house/context, message content
+
+**Rule:** Check context before sending Mathis's contact. Never redirect non-house matters to Mathis.
