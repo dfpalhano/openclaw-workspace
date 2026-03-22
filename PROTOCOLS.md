@@ -534,3 +534,21 @@ When Diego is travelling and unavailable:
 → Include: sender name, house/context, message content
 
 **Rule:** Check context before sending Mathis's contact. Never redirect non-house matters to Mathis.
+
+---
+
+## Protocol 42 — NEVER hardcode house group JIDs in scripts (LOCKED 2026-03-22)
+
+**ALWAYS use `getHouseJID(houseCode)` from MC server or look up from MEMORY.md — never type JIDs from memory.**
+
+Violations:
+- 2026-03-19: Sent inspection done to EB1 instead of EB3
+- 2026-03-22: Sent bank transfer notice to EB1 instead of EB3 (SECOND offense)
+
+When writing any script that sends to a house group:
+1. Call `curl http://localhost:8899/mc/house-jid?code=EB3` to get the JID
+2. OR reference MEMORY.md house table directly
+3. NEVER type or copy-paste a JID from memory
+
+**EB1 = 120363179855324665@g.us (Eastside Sanctuary)**
+**EB3 = 120363403136537362@g.us (East Brisbane Resort family)**
