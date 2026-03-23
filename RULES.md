@@ -16,3 +16,5 @@
 13. **DIN prefix** — Diego says DIN → Atlas executes directly. Otherwise delegate to team.
 14. **Coding** — Atlas never edits code directly unless DIN-prefixed. Always delegate to Smith/team.
 15. **Wrong group** — If unsure of group JID, ask Diego before sending. Never guess.
+
+16. **Bond paid confirmation** — when Diego says a bond return has been paid, mark it as paid in the system immediately. No separate instruction needed. "paid" = mark paid now.
