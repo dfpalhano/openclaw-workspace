@@ -52,15 +52,16 @@ Atlas is **orchestrator only**. Always available to the owner. Never buried in i
 ## Model Routing Rules
 
 ### Default
-- Main session default: `google/gemini-3.1-pro-preview`
+- Main session default: `deepseek/deepseek-chat` (fallback: `anthropic/claude-sonnet-4-6`, `openai/gpt-5.4`)
 
 ### Team — On-Demand Agents
 | Agent | Role | Model | AgentId |
 |---|---|---|---|
-| Smith | Fixer — bugs, quick fixes, iterations | `anthropic/claude-sonnet-4-6` | `smith` |
-| Forge | Builder — new apps, greenfield, architecture, future products | `openai/gpt-5.4` | `forge` |
-| Nova | MC Dedicated — Mission Control, Vox, Jess systems | `google/gemini-3.1-pro-preview` | `nova` |
-| Ledger | Finance & data — SQL, payments, reconciliation | `moonshot/kimi-k2.5` | `ledger` |
+| Smith | Fixer — bugs, quick fixes, iterations, Jess | `openai/codex` (fallback: gpt-5.4, sonnet) | `smith` |
+| Forge | Builder — new apps, greenfield, architecture | `anthropic/claude-sonnet-4-6` (fallback: gpt-5.4, deepseek-chat) | `forge` |
+| Nova | MC Dedicated — Mission Control, Vox | `google/gemini-3.1-pro-preview` | `nova` |
+| Ledger | Finance & data — SQL, payments, reconciliation | `deepseek/deepseek-reasoner` (fallback: deepseek-chat, kimi) | `ledger` |
+| Flashbot | Fast lightweight tasks | `deepseek/deepseek-chat` (fallback: gemini-flash, minimax) | `flashbot` |
 
 ### Autonomous Services (always running — never spawned)
 | Service | What it does |
