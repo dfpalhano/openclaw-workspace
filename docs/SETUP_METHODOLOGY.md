@@ -218,7 +218,59 @@ This script:
 
 ---
 
-*Last updated: 2026-03-09 by Smith*
+*Last updated: 2026-03-26 by Atlas*
+
+---
+
+## 6. Inspection Calendar Standard
+
+Use this format for all inspection calendar entries created manually or via automation.
+
+### Title format
+```text
+[INSP] <HOUSE> <TYPE>
+```
+
+Examples:
+```text
+[INSP] V5 Routine
+[INSP] CO1 Pool
+[INSP] SH2 Entry
+```
+
+Rules:
+```bash
+# Keep title short and aligned with MC existing entries
+# Do not add dashes
+# Do not add the word "Inspection" to the title
+# Use house code + short type only
+```
+
+### Routine inspection time buffer
+For routine inspections, use the Mission Control buffered notice window instead of the raw agent time.
+
+Formula:
+```bash
+# actual start/end known
+calendar_start="actual_start - 1 hour"
+calendar_end="actual_end + 30 minutes"
+```
+
+Example:
+```bash
+# actual inspection time
+09:00-11:00
+
+# calendar event time
+08:00-11:30
+```
+
+### Purpose
+```bash
+# Aligns calendar entries with the WA notice window
+# Keeps Atlas and Mission Control consistent
+# Matches existing short-form inspection naming in MC
+```
 
 ---
 

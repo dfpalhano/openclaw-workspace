@@ -97,3 +97,35 @@
 **Alerts:** move-out and maintenance → Telegram alert to Diego
 **Manager portal:** `mc.housemates.online/manager` — Mathis + Emilio, zero financials
 **Status:** Built by Smith ✅ (needs sudo service install)
+
+---
+
+## 2026-03-26 — Inspection Calendar Standard
+**Decision:** Inspection calendar entries must use the short MC title format and buffered routine window.
+
+### Title format
+Use:
+- `[INSP] <HOUSE> <TYPE>`
+
+Examples:
+- `[INSP] V5 Routine`
+- `[INSP] CO1 Pool`
+- `[INSP] SH2 Entry`
+
+Rules:
+- No dashes
+- No extra words
+- No `Inspection` suffix in the title
+- Match existing MC entries in `mission-control/data/calendar-pending.json`
+
+### Routine inspection time rule
+For routine inspections, the calendar event must use the MC buffered window rather than the raw agent time:
+- start = actual inspection start minus 1 hour
+- end = actual inspection end plus 30 minutes
+
+Example:
+- actual: `9:00am–11:00am`
+- calendar event: `8:00am–11:30am`
+
+**Why:** Keeps calendar entries aligned with the house notice window and existing Mission Control practice.
+**Status:** Locked ✅
