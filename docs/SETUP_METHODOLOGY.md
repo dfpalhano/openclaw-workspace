@@ -457,3 +457,57 @@ bridge.fetchMessages(jid, limit?)      // GET /chats/:jid/messages
 bridge.scheduleGroupChange(            // writes to schedule, never immediate
   phone, groupJid, action, scheduledDate, reason?)
 ```
+
+---
+
+## 7. Mission Control — Welcome Package Timing Fix
+
+**Date:** 2026-03-30  
+**Purpose:** Prevent welcome messages/documents from being sent before payment is confirmed.
+
+### Locked behaviour
+```bash
+# docs accepted
+send = holding-message-only
+
+# payment confirmed
+send = full welcome package
+```
+
+### Required sequence
+```bash
+# step 1
+registration form submitted
+
+# step 2
+if docs accepted:
+  send short acknowledgement only
+  # thank them for submitting
+  # confirm docs accepted
+  # say payment confirmation is pending
+  # do NOT send welcome/docs here
+
+# step 3
+if payment confirmed:
+  send welcome message
+  send house rules PDF
+  send occupancy licence PDF
+  send occupancy letter (if applicable)
+```
+
+### Code fix applied
+```bash
+# mission-control/server.js
+# - accept-docs path changed to holding message only
+# - confirm-payment path is the real welcome-package trigger
+
+# mission-control/scripts/daily-move-flow.js
+# - explicit guard added: skip if !paymentConfirmed
+```
+
+### Verification rule
+```bash
+# never treat docsAccepted as permission to send the welcome pack
+# only paymentConfirmed can trigger welcome/docs
+# keep duplicate protection (welcomeSent + WA chat history check)
+```

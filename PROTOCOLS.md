@@ -355,16 +355,28 @@ Draft must include:
 
 ---
 
-## Rule 32 — Welcome Package Duplicate Check (LOCKED 2026-03-15)
+## Rule 32 — Welcome Package Timing + Duplicate Check (LOCKED 2026-03-15, updated 2026-03-30)
 
 Before sending any welcome package (welcome message + house rules + licence + occupancy letter):
 
+### Timing rule (non-negotiable)
+- **NEVER send the welcome package when docs are merely accepted**
+- **Docs accepted step** = send only a holding message:
+  - thank them for submitting
+  - confirm documents were accepted
+  - say payment confirmation is still pending
+  - say welcome/docs will be sent after payment is confirmed
+- **Welcome package is sent ONLY after payment is confirmed**
+
+### Duplicate check
 1. Check `welcomeSent` flag in resident-registrations.json
 2. **Also check the WA chat history** — look for prior welcome messages, house rules PDFs, or occupancy letters already sent
 3. Only send if BOTH checks confirm it hasn't been sent
 4. Never rely on the flag alone — it may not be set if the welcome was sent manually or via a different flow
 
-**Lesson (2026-03-15):** Sent Fiona's welcome package again because `welcomeSent` was null, but messages were already in her WA chat. Caused duplicate sends.
+**Lessons:**
+- 2026-03-15: Sent Fiona's welcome package again because `welcomeSent` was null, but messages were already in her WA chat. Caused duplicate sends.
+- 2026-03-30: Valentin-style timing issue — welcome/docs were firing at docs acceptance. Locked fix: docs accepted = holding message only; payment confirmed = welcome package.
 
 ---
 

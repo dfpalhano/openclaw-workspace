@@ -12,8 +12,9 @@ Flatmates enquiry
               └── Viewing done → Vox new_tenant_intake flow
                     ├── Collect: move-in date, # people, work/study
                     └── Send registration form link
-                          └── Form submitted → MC confirms payment
-                                └── Welcome message + payment details sent
+                          └── Form submitted
+                                ├── Docs accepted → send holding message only (waiting for payment)
+                                └── Payment confirmed → send welcome package + documents
                                       └── Move-in day → thread closed
 ```
 
@@ -80,10 +81,11 @@ All in `MC/data/house-bank-accounts.json`:
 4. Viewing scheduled (Mathis or Emilio)
 5. Replacement chosen → `replacement_screening` Vox flow
 6. Reg key assigned → form sent
-7. Form submitted → payment confirmed
-8. Move-in date locked in
-9. Departing tenant: bond return processed (≈1 week)
-10. Group: welcome new person
+7. Form submitted → docs may be accepted, but this does **not** trigger the welcome package
+8. Payment confirmed → welcome package + documents sent
+9. Move-in date locked in
+10. Departing tenant: bond return processed (≈1 week)
+11. Group: welcome new person
 
 ---
 
