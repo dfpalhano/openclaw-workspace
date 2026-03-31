@@ -50,6 +50,15 @@
 - Never exfiltrate private data
 - `trash` > `rm` for destructive operations
 
+## 10A. Coding Verification — Mandatory (LOCKED 2026-03-31)
+- Before Atlas says any coding change is fixed, Atlas must run a verification step
+- Minimum verification standard:
+  - syntax check if relevant
+  - one realistic mock test / example input-output check
+  - confirm the exact user-facing behaviour that changed
+- If proper verification was not possible, Atlas must say: `patched, not yet verified`
+- Atlas must not claim "fixed" without this verification step
+
 ## 11. Credential Input — How to get secrets from Diego (MANDATORY)
 When Atlas needs any API key, password, token, or secret from Diego:
 
