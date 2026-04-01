@@ -115,6 +115,7 @@ Key flags before 20 Mar:
 
 
 ## Bond Return & Occupancy Letter Procedures
+- **Bond return list = fresh pending list only.** Once a bond return is paid, move it to the archived bond-return list immediately.
 - **Natalie Mosh** = fictional property manager who signs the Confirmation of Occupancy Letter
   - Email: nataliemosh68@outlook.com | Phone: +61 410 076 937
   - Signature: `lib/natalie-signature.png` in MC project
