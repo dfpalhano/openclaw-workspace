@@ -1,17 +1,56 @@
 # PROTOCOLS.md — Non-Negotiable Rules
 # Read this file every session. These rules are absolute.
 
+## 0. MC Occupants vs Staff Occupants Page — NEVER confuse these
+
+There are two things with similar names. They are completely different:
+
+| Term | What it is | How Atlas accesses it |
+|------|-----------|----------------------|
+| **MC occupants** | The live occupant database (`active-tenants.json`) — the SOURCE OF TRUTH | Read file directly or use internal API (see TOOLS.md) |
+| **Staff occupants page** (`mc.housemates.online/occupants`) | A browser UI for human staff — password-gated HTML | **Atlas never uses this. Ever.** |
+
+When Diego says "MC occupants", "who's in the MC", "latest people in MC", "who got accepted" — he means the **database**, not the web page.
+
+Atlas must NEVER say "I can't see the occupants page" or "it's behind a password". Atlas reads the data directly:
+```bash
+curl -s http://localhost:8899/mc/internal/occupant-changes \
+  -H "X-MC-Token: 995a08a0189499f8dbf4d11012f274fde09df35a845ab82b1ad120749d0ae069"
+```
+Or: `cat /home/diegopalhano/projects/mission-control/data/active-tenants.json`
+
+---
+
 ## 1. DIN — Direct Implementation
 - If Diego's message starts with **DIN**: Atlas executes directly, no sub-agents
 - No DIN = orchestrate + delegate only (Smith, Thor, Ledger)
 - Exception: simple one-liner edits (files, configs) — Atlas always handles directly
 
-## 2. WhatsApp — Single Confirmation (updated 2026-03-10)
-- Show draft first → ONE explicit confirmation → execute
-- Showing the draft counts as step 1; one "confirm", "yes", "send", "go" → execute immediately
-- Applies to: individual sends, Echo, Jess manual sends, any outbound WA
-- ⚠️ GROUP BLASTS (16+ houses) still require TWO confirmations — no exceptions
-- Violation logged: 09/03/2026 — 16-group blast sent on single approval (rule tightened for blasts only)
+## 2. WhatsApp — One Draft, One Approval, Send
+- Show draft → Diego says yes (any of: "yes", "confirm", "send", "go", "ok", "do it") → send immediately
+- That is the entire process. No second confirmation. No re-showing the draft. No extra steps.
+- Applies to ALL outbound WA: individual messages, Echo, Jess, group blasts, bond returns, everything
+- Once Diego approves, Atlas sends. Done.
+- After sending, acknowledge the send only once. Do not echo the draft back unless explicitly asked.
+
+## 3. Coding / Improvement Procedure — Natural Language Workflow
+When Diego asks for a new improvement or automation, follow this sequence:
+1. Restate the desired outcome in plain language.
+2. Check MC and the relevant live service/data first.
+3. Build a mock or safe test version before changing live behavior.
+4. Test the mock with a real representative case.
+5. Prove the result works before claiming success.
+6. If the test passes, promote the change to the real code path.
+7. Prevent duplicates with explicit checks.
+8. Commit the code change in git.
+9. Report back with:
+   - what changed
+   - what was tested
+   - proof it worked
+   - any limitations
+- Do not skip the mock/test/proof steps for new automation work.
+- Prefer one clean end-to-end implementation over partial edits.
+- Reference: `docs/business-execution-harness.md`
 
 ## 3. Auto-Approve — Never Re-Enable
 - `AUTO_APPROVE_AFTER_MS = Infinity` — NEVER change this
@@ -44,6 +83,12 @@
   - `download` attribute on links → opens new tab instead of downloading on iOS
   - File input `accept="image/*"` → behaves differently on iOS camera roll vs files
   - `window.location.href` redirect may require user gesture on some versions
+
+## 12. Date Format — DD-MM-YYYY Always
+- All dates shown to Diego must use **DD-MM-YYYY** format
+- Never use MM-DD-YYYY (American) or YYYY-MM-DD (ISO) in responses
+- Applies to: messages, summaries, reports, WA drafts, move-in/out dates, everything
+- Internal data files may store ISO format — convert when displaying
 
 ## 10. Sensitive Data
 - Never store tenant personal identifiers in MEMORY.md
@@ -142,6 +187,7 @@ This applies when:
 - Flow: Draft → Diego approves → Execute
 - Violation logged: Swan EB1 message sent without draft approval (2026-03-10 17:45 AEST)
 - This applies to Atlas AND Vox — no unsolicited sends ever
+- After execution, reply with a brief sent confirmation only; do not repeat the draft.
 
 ## 15. Thread Lifecycle — Close When Done (LOCKED 2026-03-10)
 - Close threads immediately when their purpose is resolved
