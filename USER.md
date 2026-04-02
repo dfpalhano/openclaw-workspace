@@ -2,6 +2,7 @@
 
 - **Location:** Brisbane, Australia
 - **Timezone:** Australia/Brisbane (GMT+10)
+- **Date format:** DD-MM-YYYY — always, no exceptions. Never use MM-DD-YYYY or YYYY-MM-DD in responses to Diego.
 
 ## Context
 - Values automation, structure, and leverage over manual effort.

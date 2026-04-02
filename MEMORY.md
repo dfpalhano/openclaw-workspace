@@ -36,7 +36,8 @@ See: memory/core/decisions.md → "Origin Context" for why this matters deeply.
 
 ## Hard Rules (non-negotiable)
 - `AUTO_APPROVE_AFTER_MS = Infinity` — NEVER re-enable Jess auto-send
-- WhatsApp: 1 confirmation for individuals (draft shown = step 1); GROUP BLASTS still need 2 confirms
+- WhatsApp: Always show a draft before sending. Send it after confirmation.
+- For suggestion-heavy replies, include at least 3 suggestions at once instead of going one by one where appropriate.
 - Email: no auto-send, ever
 - Echo: every message requires Telegram approval
 - Jess: no invite without confirmed inspection date/time
@@ -188,10 +189,27 @@ agent-tinman, claw-skill-guard, local-approvals, plansuite, super-skills, soul-g
 - Alerts only when degraded or recovered — silent when healthy
 - Script: ~/projects/monitor-bot/monitor.js
 
-## 🚨 WA Double-Confirmation Rule (09/03/2026 — violation logged)
-- NEVER fire WA messages (group or individual) without TWO explicit confirms
-- Step 1: show draft → Step 2: "good to send?" → Step 3: "confirming now — last chance" → Step 4: execute
-- Violated 09/03: fired 16-group blast on single approval. Logged as serious breach.
+## 🚨 WA Draft Rule
+- Always show a draft before sending.
+- Send it after the owner explicitly approves it.
+- Approval is valid once the owner has clearly said any positive confirmation to the draft, case-insensitive, including: ok, good, great, positive, confirm, confirmed, do it, yes, sure, go, send.
+- The phrase "I am confirming the suggestion you gave me" counts as approval, same as writing the whole sentence.
+- Do not add extra friction once approval is given.
+- Do not claim a message was sent unless it was actually sent.
+- After a successful send, reply with a short acknowledgement only (e.g. "Sent.") and do not repeat the draft.
+
+## Coding / Improvement Procedure (natural language)
+When Diego asks for a new improvement or automation:
+1. Restate the goal in plain language.
+2. Check MC and the relevant live service/data first.
+3. Build a mock or safe test version before changing live behavior.
+4. Test the mock on a representative real case.
+5. Prove the result works before claiming success.
+6. Promote it to the real code path only after the test passes.
+7. Add duplicate protection.
+8. Commit the code in git.
+9. Report back with what changed, what was tested, proof, and limitations.
+- Do not skip mock/test/proof steps for new automation work.
 
 ## 🚨 Rule 12 — WA/Flatmates Correction Protocol (LOCKED 2026-03-10)
 - NEVER send corrective or follow-up WA/Flatmates messages without owner approval
