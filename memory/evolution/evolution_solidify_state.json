@@ -1,0 +1,100 @@
+{
+  "last_run": {
+    "run_id": "run_1775476654097",
+    "created_at": "2026-04-06T11:57:34.104Z",
+    "parent_event_id": null,
+    "selected_gene_id": "gene_gep_repair_from_errors",
+    "selected_capsule_id": null,
+    "selector": {
+      "selected": "gene_gep_repair_from_errors",
+      "reason": [
+        "signals match gene.signals_match",
+        "signals: log_error, user_feature_request, user_feature_request:r_feature_request:**ASSISTANT**: The heartbeat block appears multiple times, so I need a more targeted patch. I’m reading the exact heartbeats agent section and main\", capability_gap",
+        "memory_graph: memory_prefer:gene_gep_repair_from_errors",
+        "drift_intensity: 0.577"
+      ],
+      "alternatives": [
+        "gene_tool_integrity"
+      ]
+    },
+    "signals": [
+      "log_error",
+      "user_feature_request",
+      "user_feature_request:r_feature_request:**ASSISTANT**: The heartbeat block appears multiple times, so I need a more targeted patch. I’m reading the exact heartbeats agent section and main\"",
+      "capability_gap"
+    ],
+    "mutation": {
+      "type": "Mutation",
+      "id": "mut_1775476654096",
+      "category": "repair",
+      "trigger_signals": [
+        "log_error",
+        "user_feature_request",
+        "user_feature_request:r_feature_request:**ASSISTANT**: The heartbeat block appears multiple times, so I need a more targeted patch. I’m reading the exact heartbeats agent section and main\"",
+        "capability_gap"
+      ],
+      "target": "gene:gene_gep_repair_from_errors",
+      "expected_effect": "reduce runtime errors, increase stability, and lower failure rate",
+      "risk_level": "low"
+    },
+    "mutation_id": "mut_1775476654096",
+    "personality_state": {
+      "type": "PersonalityState",
+      "rigor": 0.7,
+      "creativity": 0.35,
+      "verbosity": 0.25,
+      "risk_tolerance": 0.4,
+      "obedience": 0.85
+    },
+    "personality_key": "rigor=0.7|creativity=0.3|verbosity=0.3|risk_tolerance=0.4|obedience=0.9",
+    "personality_known": false,
+    "personality_mutations": [],
+    "drift": false,
+    "selected_by": "memory_graph+selector",
+    "source_type": "generated",
+    "reused_asset_id": null,
+    "reused_source_node": null,
+    "reused_chain_id": null,
+    "baseline_untracked": [
+      "assets/gep/candidates.jsonl",
+      "assets/gep/capsules.json",
+      "assets/gep/events.jsonl",
+      "assets/gep/failed_capsules.json",
+      "assets/gep/genes.json",
+      "assets/gep/genes.jsonl",
+      "memory/evolution/memory_graph.jsonl",
+      "memory/evolution/memory_graph_state.json",
+      "memory/evolution/personality_state.json",
+      "memory/evolution/question_generator_state.json",
+      "memory/evolver_update_check.json",
+      "memory/skills_list_cache.json"
+    ],
+    "baseline_git_head": "5515370f5e8782592256870a55859960df571b43",
+    "blast_radius_estimate": {
+      "files": 12,
+      "lines": 960
+    },
+    "strategy_policy": {
+      "name": "balanced",
+      "label": "Balanced",
+      "description": "Normal operation. Steady growth with stability.",
+      "forceInnovate": false,
+      "cautiousExecution": false,
+      "highRiskGene": false,
+      "repairStreak": 0,
+      "failureStreak": 0,
+      "blastRadiusMaxFiles": 12,
+      "directives": [
+        "Base strategy: Balanced (Normal operation. Steady growth with stability.)",
+        "Target max files for this cycle: 12."
+      ]
+    },
+    "active_task_id": null,
+    "active_task_title": null,
+    "worker_assignment_id": null,
+    "worker_pending": false,
+    "commitment_deadline": null,
+    "applied_lessons": [],
+    "hub_lessons": []
+  }
+}
