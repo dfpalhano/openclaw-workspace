@@ -1,3 +1,6 @@
+---
+hyperspell_id: o-aTxIDdFhHceg
+---
 # Session: 2026-04-01 06:53:19 UTC
 
 - **Session Key**: agent:main:telegram:personal:direct:1267601160

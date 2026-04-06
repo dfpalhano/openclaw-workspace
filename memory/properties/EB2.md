@@ -1,3 +1,6 @@
+---
+hyperspell_id: MJ5ahK_0PqqLJg
+---
 # EB2 — East Brisbane
 
 ## Basics

@@ -1,3 +1,6 @@
+---
+hyperspell_id: 2QaffO4zeiMWIw
+---
 # memory/travel.md — Diego Personal Travel & Lifestyle Preferences
 # Local only — not shared in group chats
 

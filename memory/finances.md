@@ -1,3 +1,6 @@
+---
+hyperspell_id: cGz57yKnkehPQg
+---
 # memory/finances.md — Finance & Banking
 # Load when: payments, revenue tab, cash flow, bank statements, bonds, accounting
 

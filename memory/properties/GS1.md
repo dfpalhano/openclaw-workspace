@@ -1,3 +1,6 @@
+---
+hyperspell_id: T5pa2B3CItwiPQ
+---
 # GS1
 
 ## Basics

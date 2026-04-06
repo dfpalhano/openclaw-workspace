@@ -1,3 +1,6 @@
+---
+hyperspell_id: YOdETNe4oMCXoQ
+---
 # memory/tenants.md — Tenant & Property Data
 # Load when: bond tracker, inspections, WA messages, vacancy management, move-outs
 

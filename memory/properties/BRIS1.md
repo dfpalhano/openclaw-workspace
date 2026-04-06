@@ -1,3 +1,6 @@
+---
+hyperspell_id: diPURiuFIKA32g
+---
 # BRIS1
 
 ## Basics

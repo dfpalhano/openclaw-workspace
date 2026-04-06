@@ -1,3 +1,6 @@
+---
+hyperspell_id: LRn6yHkZwbKSjQ
+---
 # memory/decisions.md — Architecture Decisions Log
 # Append-only. Never delete entries. Add new decisions at the bottom.
 
@@ -129,3 +132,17 @@ Example:
 
 **Why:** Keeps calendar entries aligned with the house notice window and existing Mission Control practice.
 **Status:** Locked ✅
+
+---
+
+## 2026-04-05 — Codex OAuth Refresh Protocol
+**Decision:** When Codex OAuth fails with `refresh_token_reused`, immediately run `codex login --device-auth` and give Diego the one-time code.
+**Why:** No API key swaps — just re-auth. Fallback models keep working in the meantime.
+**Protocol:**
+1. Detect error: `refresh_token_reused` in gateway logs
+2. Run `codex login --device-auth`
+3. Give Diego the one-time code immediately
+4. Wait for Diego to complete browser auth
+5. Gateway auto-picks up new token
+**Never:** Swap to API key, restart gateway multiple times, or waste time on invalid keys.
+**Status:** Live ✅

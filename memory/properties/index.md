@@ -1,3 +1,6 @@
+---
+hyperspell_id: C_E6I591WAfcAA
+---
 # Property Index — load this first, then pull the specific property file only if needed
 
 ## Active Properties (15 total)

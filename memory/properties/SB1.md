@@ -1,3 +1,6 @@
+---
+hyperspell_id: HIRbPHFEogSlGQ
+---
 # SB1
 
 ## Basics

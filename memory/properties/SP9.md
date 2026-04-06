@@ -1,3 +1,6 @@
+---
+hyperspell_id: CNtDfWlgmU4_yw
+---
 # SP9 — 4/44 Watson Esplanade (= 4/50 Peninsular Drive), Surfers Paradise
 
 ## Basics

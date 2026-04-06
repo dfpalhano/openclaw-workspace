@@ -1,3 +1,6 @@
+---
+hyperspell_id: r8wSyP20l4ONyw
+---
 # SH1 — Douglas St (ground floor entry)
 
 ## Basics

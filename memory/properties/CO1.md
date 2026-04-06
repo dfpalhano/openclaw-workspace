@@ -1,3 +1,6 @@
+---
+hyperspell_id: KCS8PB3KzDOwqw
+---
 # CO1 — 37 Marian St, Coorparoo
 
 ## Basics

@@ -1,3 +1,6 @@
+---
+hyperspell_id: 6dDPTwIjVKbj_Q
+---
 # memory/staff.md — Staff & Operations
 # Load when: Mathis, Emilio, scheduling, inspections, Japan trip, Emilio visa
 

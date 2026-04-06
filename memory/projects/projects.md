@@ -1,3 +1,6 @@
+---
+hyperspell_id: TuvdmPSoIPBhug
+---
 # memory/projects.md — App Ideas & Projects
 # Load when: nestd, Lodgr, Jess, Echo, Forma, Forte, app ideas, SaaS discussion
 # ⚠️ All ideas are confidential — do not share

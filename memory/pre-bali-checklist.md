@@ -1,3 +1,6 @@
+---
+hyperspell_id: sYStDMFEFroHkg
+---
 # Pre-Bali Checklist — Depart 20 March 2026
 # Update this file as items are completed
 

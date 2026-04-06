@@ -1,3 +1,6 @@
+---
+hyperspell_id: s1QVgGyydF0B0w
+---
 # Bank Import System — Full Spec & Status
 # Last updated: 2026-03-18
 

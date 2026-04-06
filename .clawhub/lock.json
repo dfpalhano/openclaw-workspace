@@ -208,6 +208,38 @@
     "skill-detector": {
       "version": "0.1.0",
       "installedAt": 1772155226135
+    },
+    "self-improving-agent": {
+      "version": "3.0.13",
+      "installedAt": 1775469301327
+    },
+    "capability-evolver": {
+      "version": "1.41.0",
+      "installedAt": 1775469309089
+    },
+    "agentmail": {
+      "version": "1.1.1",
+      "installedAt": 1775469365452
+    },
+    "obsidian-direct": {
+      "version": "1.0.0",
+      "installedAt": 1775469365583
+    },
+    "cc-godmode": {
+      "version": "5.11.3",
+      "installedAt": 1775469620414
+    },
+    "god-mode": {
+      "version": "0.1.0",
+      "installedAt": 1775469623615
+    },
+    "evolver": {
+      "version": "1.41.0",
+      "installedAt": 1775474872110
+    },
+    "feishu-evolver-wrapper": {
+      "version": "1.7.1",
+      "installedAt": 1775474874974
     }
   }
 }

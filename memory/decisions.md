@@ -1,3 +1,6 @@
+---
+hyperspell_id: dPT7TlKFBLUpaw
+---
 # memory/decisions.md — Architecture Decisions Log
 # Append-only. Never delete entries. Add new decisions at the bottom.
 

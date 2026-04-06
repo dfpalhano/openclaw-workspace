@@ -24,7 +24,19 @@ See: memory/core/decisions.md → "Origin Context" for why this matters deeply.
 
 ## Message Conventions
 - `Internal: <text>` — when Diego prefixes with this, it's private context for Atlas only. Absorb it silently, no public reply needed unless action required.
+- Always give Diego feedback after actions; never leave a task hanging without a status update.
 - Orbit-style messages from Mathis/Emilio (containing "Orbit") → staff-relay formats them as 🛰️ Orbit reports
+- For repair messages to occupants, house codes may be used internally for lookup, but the outgoing message must show the address, not the house code.
+- Occupant-facing bond messages must say "Security Contribution" (not "BOND" or "rent"); refer to the weekly amount as the weekly contribution.
+- Scheduled WhatsApp sends need an idempotency/sendKey guard so Brisbane-morning queue replays cannot duplicate a send.
+- Bond-return lifecycle: move-out creates/links a bond-return case; when bond is paid the case archives automatically; if no bond return is needed, archive the case with bondAmount=0.
+- Occupancy flow: the offer card is the source of truth for the room assignment; once set, the room must be immutable. When a bond-return case exists, the occupant must be archived from current occupants.
+- Occupancy model: server data is the only live truth; UI must not use stale local cache for room truth; local server mirror refreshes daily; occupant movement must append an automatic audit log entry.
+- Bond-return form matching: auto-fill room and house address by matching the person's WhatsApp/phone identity; if the submitted number differs but still resolves to the same person, accept it; use tokens only when identity is ambiguous.
+- Occupant-facing messages must never mention house codes; only staff-facing messages may use house codes. Occupant-facing address lines must use the full street address only.
+- After updating drafts, always show the updated drafts back to Diego again.
+- When someone is accepted in the final stage in MC, they should be added to the house WhatsApp group automatically.
+- When someone leaves the house, they should be removed from the house WhatsApp group automatically.
 
 ## 🚨 TOP PRIORITY — Inspection & Entry Notice Monitoring
 - `inspection_alert.py` runs via cron at **7am + 12pm daily** — scans Gmail for routine inspections, entry notices, compliance checks

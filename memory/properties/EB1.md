@@ -1,3 +1,6 @@
+---
+hyperspell_id: AQsqIEwBH6j_qA
+---
 # EB1
 
 ## Basics

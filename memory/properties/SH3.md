@@ -1,3 +1,6 @@
+---
+hyperspell_id: B9O7lVYYGokrLw
+---
 # SH3 — Place Graceville management
 
 ## Basics

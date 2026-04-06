@@ -1,3 +1,6 @@
+---
+hyperspell_id: mmLwP8_KZgTacw
+---
 # People Index
 
 - staff.md — original combined staff memory

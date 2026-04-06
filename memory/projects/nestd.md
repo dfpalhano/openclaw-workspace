@@ -1,3 +1,6 @@
+---
+hyperspell_id: 0JS2LExEnK4kNw
+---
 # nestd.life
 
 ## Source
