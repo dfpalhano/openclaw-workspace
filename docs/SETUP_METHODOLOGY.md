@@ -81,6 +81,38 @@ sed -n '1,120p' ~/.config/god-mode/config.yaml
   - CRLF line endings in skill files
 - `god status` still needs further repair if it fails with `show_overview: command not found`.
 
+## 0.1. Composio Gmail Connection
+
+### Connection via Composio
+```bash
+# Initiate connection
+COMPOSIO_MANAGE_CONNECTIONS toolkits: ["gmail"]
+
+# Wait for user authentication at:
+# https://connect.composio.dev/link/lk_CkmNJqB5bPPZ
+
+# Verify connection
+COMPOSIO_WAIT_FOR_CONNECTIONS toolkits: ["gmail"] mode: "any"
+
+# Test connection
+COMPOSIO_MULTI_EXECUTE_TOOL tools: [{"tool_slug": "GMAIL_GET_PROFILE", "arguments": {"user_id": "me"}}]
+```
+
+### Verification Output
+```json
+{
+  "emailAddress": "dfpalhano@gmail.com",
+  "historyId": "25374834",
+  "messagesTotal": 158231,
+  "threadsTotal": 140223
+}
+```
+
+### Notes
+- Connected Gmail account: `dfpalhano@gmail.com`
+- Connection established via Composio OAuth flow
+- All Gmail tools now available via Composio MCP
+
 ## 1. Tailscale
 
 ### Installation
