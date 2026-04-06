@@ -16,6 +16,71 @@ All three are systemd-managed, enabled for boot (`systemctl enable`), and protec
 
 ---
 
+## 0. god-mode Skill
+
+### Repair + Setup
+```bash
+# Fix missing wrapper and normalize line endings
+python3 - <<'PY'
+from pathlib import Path
+root = Path('/home/diegopalhano/.openclaw/workspace/skills/god-mode')
+wrapper = root / 'scripts' / 'god'
+if not wrapper.exists():
+    wrapper.write_text('''#!/usr/bin/env bash
+set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cmd="${1:-}"
+if [[ $# -gt 0 ]]; then shift; fi
+case "$cmd" in
+  setup) exec "$SCRIPT_DIR/setup.sh" "$@" ;;
+  status) exec "$SCRIPT_DIR/commands/status.sh" "$@" ;;
+  sync) exec "$SCRIPT_DIR/commands/sync.sh" "$@" ;;
+  projects) exec "$SCRIPT_DIR/commands/projects.sh" "$@" ;;
+  agents) exec "$SCRIPT_DIR/commands/agents.sh" "$@" ;;
+  ""|-h|--help|help) cat <<'EOF'
+Usage: god <command> [args]
+Commands: setup | status | sync | projects | agents
+EOF
+    ;;
+  *) echo "Unknown command: $cmd" >&2; exit 1 ;;
+esac
+''')
+for p in root.rglob('*'):
+    if p.is_file():
+        data = p.read_bytes()
+        if b'\r\n' in data:
+            p.write_bytes(data.replace(b'\r\n', b'\n'))
+PY
+chmod +x /home/diegopalhano/.openclaw/workspace/skills/god-mode/scripts/god \
+  /home/diegopalhano/.openclaw/workspace/skills/god-mode/scripts/setup.sh \
+  /home/diegopalhano/.openclaw/workspace/skills/god-mode/scripts/commands/*.sh
+
+# Add to PATH for bash shells
+if ! grep -Fq '/home/diegopalhano/.openclaw/workspace/skills/god-mode/scripts' ~/.bashrc; then
+  printf '\n# god-mode\nexport PATH="$PATH:/home/diegopalhano/.openclaw/workspace/skills/god-mode/scripts"\n' >> ~/.bashrc
+fi
+export PATH="$PATH:/home/diegopalhano/.openclaw/workspace/skills/god-mode/scripts"
+
+# Run first-time setup
+god setup
+```
+
+### Verification
+```bash
+which god
+ls -la ~/.config/god-mode ~/.god-mode
+sed -n '1,120p' ~/.config/god-mode/config.yaml
+```
+
+### Notes
+- `god setup` successfully created:
+  - `~/.config/god-mode/config.yaml`
+  - `~/.god-mode/cache.db`
+- The installed skill was broken initially:
+  - missing `scripts/god` wrapper
+  - CRLF line endings in skill files
+- `god status` still needs further repair if it fails with `show_overview: command not found`.
+
 ## 1. Tailscale
 
 ### Installation
