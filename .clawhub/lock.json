@@ -240,6 +240,10 @@
     "feishu-evolver-wrapper": {
       "version": "1.7.1",
       "installedAt": 1775476653164
+    },
+    "clawrouter": {
+      "version": "0.10.5",
+      "installedAt": 1775477777654
     }
   }
 }

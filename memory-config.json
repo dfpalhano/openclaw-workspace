@@ -1,0 +1,20 @@
+{
+  "enhancedMemory": {
+    "enabled": true,
+    "basePath": "/home/diegopalhano/openclaw-enhanced-memory",
+    "paths": {
+      "conversations": "/home/diegopalhano/openclaw-enhanced-memory/conversations",
+      "modelCache": "/home/diegopalhano/openclaw-enhanced-memory/model-cache",
+      "skillArchive": "/home/diegopalhano/openclaw-enhanced-memory/skill-archive",
+      "multimedia": "/home/diegopalhano/openclaw-enhanced-memory/multimedia",
+      "analytics": "/home/diegopalhano/openclaw-enhanced-memory/analytics"
+    },
+    "quotas": {
+      "conversations": "100GB",
+      "modelCache": "50GB",
+      "skillArchive": "20GB",
+      "multimedia": "200GB",
+      "analytics": "10GB"
+    }
+  }
+}
