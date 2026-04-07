@@ -117,3 +117,5 @@ All skills inspected via `claw-skill-guard` before install. Log maintained per s
 | youtube-transcript | ❌ REJECTED (HIGH) | VirusTotal flagged; uses residential IP proxy / WireGuard VPN for transcript fetching |
 
 **Alternative:** Installed `youtube-transcript-api` (pip) directly. Clean, no proxy, handles transcripts natively.
+
+- 07-04-2026 — duxiaoxiong/memu-engine-for-OpenClaw — SAFE — inspected SKILL.md and scanned with claw-skill-guard, no suspicious patterns found. Status: approved for install.
