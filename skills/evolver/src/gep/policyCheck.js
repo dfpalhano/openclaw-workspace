@@ -414,10 +414,12 @@ function runValidationsOnce(gene, opts) {
 }
 
 function sleepSync(ms) {
+  const t = Math.max(0, ms);
   try {
-    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, t);
   } catch (_) {
-    require('child_process').execSync('sleep ' + (Math.max(0, ms) / 1000));
+    const end = Date.now() + t;
+    while (Date.now() < end) { /* busy wait fallback */ }
   }
 }
 

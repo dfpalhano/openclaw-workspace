@@ -142,9 +142,11 @@ function buildPublish(opts) {
   if (!asset || !asset.type || !asset.id) {
     throw new Error('publish: asset must have type and id');
   }
-  // Generate signature: HMAC-SHA256 of asset_id with node secret
   const assetIdVal = asset.asset_id || computeAssetId(asset);
-  const nodeSecret = process.env.A2A_NODE_SECRET || getNodeId();
+  const nodeSecret = getHubNodeSecret();
+  if (!nodeSecret) {
+    throw new Error('publish: node_secret is required for signing. Run hello first to obtain one.');
+  }
   const signature = crypto.createHmac('sha256', nodeSecret).update(assetIdVal).digest('hex');
   return buildMessage({
     messageType: 'publish',
@@ -180,7 +182,10 @@ function buildPublishBundle(opts) {
   capsule.asset_id = computeAssetId(capsule);
   const geneAssetId = gene.asset_id;
   const capsuleAssetId = capsule.asset_id;
-  const nodeSecret = process.env.A2A_NODE_SECRET || getNodeId();
+  const nodeSecret = getHubNodeSecret();
+  if (!nodeSecret) {
+    throw new Error('publishBundle: node_secret is required for signing. Run hello first to obtain one.');
+  }
   const signatureInput = [geneAssetId, capsuleAssetId].sort().join('|');
   const signature = crypto.createHmac('sha256', nodeSecret).update(signatureInput).digest('hex');
   const assets = [gene, capsule];
@@ -327,11 +332,29 @@ function fileTransportReceive(opts) {
   const dir = (opts && opts.dir) || defaultA2ADir();
   const subdir = path.join(dir, 'inbox');
   if (!fs.existsSync(subdir)) return [];
-  const files = fs.readdirSync(subdir).filter(function (f) { return f.endsWith('.jsonl'); });
+  const MAX_FILES = 50;
+  const MAX_FILE_BYTES = 256 * 1024;
+  const files = fs.readdirSync(subdir).filter(function (f) { return f.endsWith('.jsonl'); }).slice(0, MAX_FILES);
   const messages = [];
   for (let fi = 0; fi < files.length; fi++) {
     try {
-      const raw = fs.readFileSync(path.join(subdir, files[fi]), 'utf8');
+      const filePath = path.join(subdir, files[fi]);
+      const stat = fs.statSync(filePath);
+      let raw;
+      if (stat.size <= MAX_FILE_BYTES) {
+        raw = fs.readFileSync(filePath, 'utf8');
+      } else {
+        const fd = fs.openSync(filePath, 'r');
+        try {
+          const buf = Buffer.alloc(MAX_FILE_BYTES);
+          fs.readSync(fd, buf, 0, MAX_FILE_BYTES, stat.size - MAX_FILE_BYTES);
+          raw = buf.toString('utf8');
+          const firstNl = raw.indexOf('\n');
+          if (firstNl >= 0) raw = raw.slice(firstNl + 1);
+        } finally {
+          fs.closeSync(fd);
+        }
+      }
       const lines = raw.split('\n').map(function (l) { return l.trim(); }).filter(Boolean);
       for (let li = 0; li < lines.length; li++) {
         try {
@@ -512,16 +535,24 @@ function getHubNodeSecret() {
   return null;
 }
 
+let _heartbeatInFlight = false;
+
 function _scheduleNextHeartbeat(delayMs) {
   if (!_heartbeatRunning) return;
   if (_heartbeatTimer) clearTimeout(_heartbeatTimer);
   const delay = delayMs || _heartbeatIntervalMs;
   _heartbeatTimer = setTimeout(function () {
     if (!_heartbeatRunning) return;
-    sendHeartbeat().catch(function (err) {
-      console.warn('[Heartbeat] Scheduled heartbeat failed:', err && err.message || err);
-    });
-    _scheduleNextHeartbeat();
+    if (_heartbeatInFlight) return;
+    _heartbeatInFlight = true;
+    sendHeartbeat()
+      .catch(function (err) {
+        console.warn('[Heartbeat] Scheduled heartbeat failed:', err && err.message || err);
+      })
+      .then(function () {
+        _heartbeatInFlight = false;
+        _scheduleNextHeartbeat();
+      });
   }, delay);
   if (_heartbeatTimer.unref) _heartbeatTimer.unref();
 }
@@ -547,6 +578,11 @@ function sendHeartbeat() {
     meta.worker_enabled = true;
     meta.worker_domains = domains;
     meta.max_load = Math.max(1, Number(process.env.WORKER_MAX_LOAD) || 5);
+  }
+
+  const modelTier = (process.env.EVOLVER_MODEL_TIER || '').trim();
+  if (modelTier) {
+    meta.model_tier = modelTier;
   }
 
   if (_pendingCommitmentUpdates.length > 0) {
@@ -741,6 +777,12 @@ function _fetchHubEvents() {
           : [];
       if (events.length > 0) {
         _latestHubEvents = _latestHubEvents.concat(events);
+        var MAX_BUFFERED_EVENTS = 200;
+        if (_latestHubEvents.length > MAX_BUFFERED_EVENTS) {
+          var dropped = _latestHubEvents.length - MAX_BUFFERED_EVENTS;
+          _latestHubEvents = _latestHubEvents.slice(-MAX_BUFFERED_EVENTS);
+          console.warn('[Events] Buffer overflow: dropped ' + dropped + ' oldest event(s).');
+        }
         console.log('[Events] Received ' + events.length + ' pending event(s): ' +
           events.map(function (e) { return e.type; }).join(', '));
       }
@@ -1039,13 +1081,16 @@ function hubOpenEventStream(opts) {
   var nodeId = (opts && opts.nodeId) || getNodeId();
   var durationMs = (opts && opts.durationMs) || 300000;
   var qs = 'node_id=' + encodeURIComponent(nodeId) + '&duration_ms=' + durationMs;
-  var secret = getHubNodeSecret();
-  if (secret) qs += '&node_secret=' + encodeURIComponent(secret);
   var endpoint = hubUrl.replace(/\/+$/, '') + '/a2a/events/stream?' + qs;
 
   try {
     var EventSource = require('eventsource');
-    var es = new EventSource(endpoint);
+    var esOpts = {};
+    var secret = getHubNodeSecret();
+    if (secret) {
+      esOpts.headers = { 'Authorization': 'Bearer ' + secret };
+    }
+    var es = new EventSource(endpoint, esOpts);
     return {
       ok: true,
       eventSource: es,
@@ -1054,6 +1099,67 @@ function hubOpenEventStream(opts) {
   } catch (err) {
     return { ok: false, error: 'eventsource_not_available: ' + (err.message || err) };
   }
+}
+
+// ---------------------------------------------------------------------------
+// Managed SSE stream -- starts/stops alongside the heartbeat loop.
+// Events are buffered into _hubEvents for consumption by evolve.js.
+// Falls back gracefully to poll-based events if SSE is unavailable.
+// ---------------------------------------------------------------------------
+
+var _activeStream = null;
+var _sseReconnectTimer = null;
+var _sseReconnectMs = 5000;
+var _sseMaxReconnectMs = 120000;
+
+function startEventStream() {
+  if (_activeStream) return;
+  if (process.env.EVOLVER_SSE_DISABLED === '1') return;
+
+  var result = hubOpenEventStream({ durationMs: 600000 });
+  if (!result.ok) {
+    console.log('[SSE] Event stream unavailable: ' + (result.error || 'unknown') + ' (falling back to poll)');
+    return;
+  }
+
+  _activeStream = result;
+  _sseReconnectMs = 5000;
+  console.log('[SSE] Event stream connected');
+
+  result.eventSource.onmessage = function (ev) {
+    try {
+      var parsed = JSON.parse(ev.data);
+      if (parsed && parsed.type) {
+        if (!_hubEvents) _hubEvents = [];
+        _hubEvents.push(parsed);
+      }
+    } catch (e) {}
+  };
+
+  result.eventSource.onerror = function () {
+    console.warn('[SSE] Stream error, will reconnect in ' + Math.round(_sseReconnectMs / 1000) + 's');
+    stopEventStream();
+    _sseReconnectTimer = setTimeout(function () {
+      _sseReconnectTimer = null;
+      startEventStream();
+    }, _sseReconnectMs);
+    _sseReconnectMs = Math.min(_sseReconnectMs * 2, _sseMaxReconnectMs);
+  };
+}
+
+function stopEventStream() {
+  if (_activeStream) {
+    try { _activeStream.close(); } catch (e) {}
+    _activeStream = null;
+  }
+  if (_sseReconnectTimer) {
+    clearTimeout(_sseReconnectTimer);
+    _sseReconnectTimer = null;
+  }
+}
+
+function isEventStreamActive() {
+  return _activeStream !== null;
 }
 
 module.exports = {
@@ -1109,4 +1215,7 @@ module.exports = {
   hubGetAuditLogs,
   hubGetWorkReport,
   hubOpenEventStream,
+  startEventStream,
+  stopEventStream,
+  isEventStreamActive,
 };

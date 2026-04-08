@@ -80,17 +80,20 @@ function runHealthCheck() {
     }
 
     // 4. Process Count (Check for fork bombs or leaks)
-    // Only on Linux
+    // Only on Linux. Cached for 60s since readdirSync('/proc') is heavy.
     if (process.platform === 'linux') {
         try {
-            // Optimization: readdirSync /proc is heavy. Use a lighter check or skip if too frequent.
-            // But since this is health check, we'll keep it but increase the threshold to reduce noise.
-            const pids = fs.readdirSync('/proc').filter(f => /^\d+$/.test(f));
-            if (pids.length > 2000) { // Bumped threshold to 2000
-                 checks.push({ name: 'process_count', ok: false, status: `${pids.length} procs`, severity: 'warning' });
+            const now = Date.now();
+            if (!runHealthCheck._procCache || now - runHealthCheck._procCacheAt > 60000) {
+                runHealthCheck._procCache = fs.readdirSync('/proc').filter(f => /^\d+$/.test(f)).length;
+                runHealthCheck._procCacheAt = now;
+            }
+            const pidCount = runHealthCheck._procCache;
+            if (pidCount > 2000) {
+                 checks.push({ name: 'process_count', ok: false, status: `${pidCount} procs`, severity: 'warning' });
                  warnings++;
             } else {
-                 checks.push({ name: 'process_count', ok: true, status: `${pids.length} procs` });
+                 checks.push({ name: 'process_count', ok: true, status: `${pidCount} procs` });
             }
         } catch(e) {}
     }

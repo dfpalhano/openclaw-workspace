@@ -27,7 +27,7 @@ const {
   memoryGraphPath,
 } = memoryAdapter;
 const { readStateForSolidify, writeStateForSolidify } = require('./gep/solidify');
-const { fetchTasks, selectBestTask, claimTask, taskToSignals, claimWorkerTask, estimateCommitmentDeadline } = require('./gep/taskReceiver');
+const { fetchTasks, selectBestTask, claimTask, taskToSignals, taskToSignalsWithPrivacy, claimWorkerTask, estimateCommitmentDeadline, detectPrivacyTask } = require('./gep/taskReceiver');
 const { generateQuestions } = require('./gep/questionGenerator');
 const { buildMutation, isHighRiskMutationAllowed } = require('./gep/mutation');
 const { selectPersonalityForRun } = require('./gep/personality');
@@ -38,6 +38,7 @@ const { loadNarrativeSummary } = require('./gep/narrativeMemory');
 const { maybeReportIssue } = require('./gep/issueReporter');
 const { resolveStrategy } = require('./gep/strategy');
 const { expandSignals } = require('./gep/learningSignals');
+const { captureLocalState } = require('./gep/localStateAwareness');
 
 const REPO_ROOT = getRepoRoot();
 
@@ -96,6 +97,7 @@ const MEMORY_DIR = getMemoryDir();
 const AGENT_NAME = process.env.AGENT_NAME || 'main';
 const AGENT_SESSIONS_DIR = path.join(os.homedir(), `.openclaw/agents/${AGENT_NAME}/sessions`);
 const CURSOR_TRANSCRIPTS_DIR = process.env.EVOLVER_CURSOR_TRANSCRIPTS_DIR || '';
+const SESSION_SOURCE = (process.env.EVOLVER_SESSION_SOURCE || 'auto').toLowerCase();
 const TODAY_LOG = path.join(MEMORY_DIR, new Date().toISOString().split('T')[0] + '.md');
 
 // Ensure memory directory exists so state/cache writes work.
@@ -118,64 +120,116 @@ function formatSessionLog(jsonlContent) {
     }
   };
 
+  function extractContentArray(arr) {
+    if (!Array.isArray(arr)) return '';
+    return arr.map(c => {
+      if (c.type === 'text' || c.type === 'input_text' || c.type === 'output_text')
+        return c.text || '';
+      if (c.type === 'tool_use' || c.type === 'toolCall' || c.type === 'function_call')
+        return `[TOOL: ${c.name || 'unknown'}]`;
+      if (c.type === 'tool_result')
+        return c.is_error ? `[TOOL ERROR] ${String(c.content || '').slice(0, 200)}` : '';
+      if (c.type === 'thinking') return '';
+      return '';
+    }).filter(Boolean).join(' ');
+  }
+
+  function extractContent(data) {
+    const msg = data.message || {};
+    const raw = msg.content || data.content;
+    if (Array.isArray(raw)) return extractContentArray(raw);
+    if (typeof raw === 'string') return raw;
+    return '';
+  }
+
   for (const line of lines) {
     if (!line.trim()) continue;
     try {
       const data = JSON.parse(line);
       let entry = '';
 
-      if (data.type === 'message' && data.message) {
-        const role = (data.message.role || 'unknown').toUpperCase();
-        let content = '';
-        if (Array.isArray(data.message.content)) {
-          content = data.message.content
-            .map(c => {
-              if (c.type === 'text') return c.text;
-              if (c.type === 'toolCall') return `[TOOL: ${c.name}]`;
-              return '';
-            })
-            .join(' ');
-        } else if (typeof data.message.content === 'string') {
-          content = data.message.content;
-        } else {
-          content = JSON.stringify(data.message.content);
-        }
+      // --- Agent format detection ---
+      // Claude Code: top-level type is 'user'|'assistant'
+      const isClaudeCode = data.type === 'user' || data.type === 'assistant';
+      // OpenClaw: type='message' wrapping message object (exclude toolResult)
+      const isOpenClaw = data.type === 'message' && data.message
+        && data.message.role !== 'toolResult';
+      // Cursor: top-level 'role' without 'type', with 'message' object
+      const isCursor = !data.type && data.role && data.message;
+      // Codex CLI: item events from rollout JSONL
+      const isCodexItem = (data.type === 'item.added' || data.type === 'item.completed') && data.item;
+      // Manus API: type ends with _message or is tool_used
+      const isManus = data.type === 'user_message' || data.type === 'assistant_message';
+      const isManusToolUsed = data.type === 'tool_used';
+      // Tool results (Claude Code / OpenClaw)
+      const isToolResult = data.type === 'tool_result'
+        || (data.message && data.message.role === 'toolResult');
+      if (isClaudeCode || isOpenClaw || isCursor) {
+        const role = (
+          (data.message && data.message.role) || data.role || data.type || 'unknown'
+        ).toUpperCase();
+        let content = extractContent(data);
 
-        // Capture LLM errors from errorMessage field (e.g. "Unsupported MIME type: image/gif")
-        if (data.message.errorMessage) {
+        if (data.message && data.message.errorMessage) {
           const errMsg = typeof data.message.errorMessage === 'string'
             ? data.message.errorMessage
             : JSON.stringify(data.message.errorMessage);
           content = `[LLM ERROR] ${errMsg.replace(/\n+/g, ' ').slice(0, 300)}`;
         }
 
-        // Filter: Skip Heartbeats to save noise
         if (content.trim() === 'HEARTBEAT_OK') continue;
-        if (content.includes('NO_REPLY') && !data.message.errorMessage) continue;
+        if (content.includes('NO_REPLY') && !(data.message && data.message.errorMessage)) continue;
+        if (data.isMeta) continue;
 
-        // Clean up newlines for compact reading
         content = content.replace(/\n+/g, ' ').slice(0, 300);
-        entry = `**${role}**: ${content}`;
-      } else if (data.type === 'tool_result' || (data.message && data.message.role === 'toolResult')) {
-        // Filter: Skip generic success results or short uninformative ones
-        // Only show error or significant output
-        let resContent = '';
+        if (content.trim()) {
+          entry = `**${role}**: ${content}`;
+        }
 
-        // Robust extraction: Handle structured tool results (e.g. sessions_spawn) that lack 'output'
-        if (data.tool_result) {
-          if (data.tool_result.output) {
-            resContent = data.tool_result.output;
-          } else {
-            resContent = JSON.stringify(data.tool_result);
+      } else if (isCodexItem) {
+        const item = data.item;
+        if (item.type === 'message') {
+          const role = (item.role || 'unknown').toUpperCase();
+          const content = Array.isArray(item.content)
+            ? extractContentArray(item.content)
+            : (typeof item.content === 'string' ? item.content : '');
+          if (content.trim()) {
+            entry = `**${role}**: ${content.replace(/\n+/g, ' ').slice(0, 300)}`;
+          }
+        } else if (item.type === 'function_call') {
+          entry = `[TOOL: ${item.name || item.call_id || 'unknown'}]`;
+        } else if (item.type === 'function_call_output') {
+          const out = (item.output || '').replace(/\n+/g, ' ').slice(0, 200);
+          if (out.trim() && !(out.length < 50 && (out.includes('success') || out.includes('done')))) {
+            entry = `[TOOL RESULT] ${out}${(item.output || '').length > 200 ? '...' : ''}`;
           }
         }
 
-        if (data.content) resContent = typeof data.content === 'string' ? data.content : JSON.stringify(data.content);
+      } else if (isManus) {
+        const payload = data[data.type] || {};
+        const role = data.type === 'user_message' ? 'USER' : 'ASSISTANT';
+        const content = (typeof payload.content === 'string' ? payload.content : '')
+          .replace(/\n+/g, ' ').slice(0, 300);
+        if (content.trim()) {
+          entry = `**${role}**: ${content}`;
+        }
 
+      } else if (isManusToolUsed) {
+        const tool = data.tool_used || {};
+        entry = `[TOOL: ${tool.name || 'unknown'}]`;
+
+      } else if (isToolResult) {
+        let resContent = '';
+        if (data.tool_result) {
+          resContent = data.tool_result.output || JSON.stringify(data.tool_result);
+        }
+        if (data.content) {
+          resContent = typeof data.content === 'string'
+            ? data.content : JSON.stringify(data.content);
+        }
         if (resContent.length < 50 && (resContent.includes('success') || resContent.includes('done'))) continue;
         if (resContent.trim() === '' || resContent === '{}') continue;
 
-        // Improvement: Show snippet of result (especially errors) instead of hiding it
         const preview = resContent.replace(/\n+/g, ' ').slice(0, 200);
         entry = `[TOOL RESULT] ${preview}${resContent.length > 200 ? '...' : ''}`;
       }
@@ -238,36 +292,45 @@ function formatCursorTranscript(raw) {
   return result.join('\n');
 }
 
+function collectTranscriptFiles(dir, maxDepth) {
+  const results = [];
+  function walk(d, depth) {
+    if (depth > maxDepth) return;
+    let entries;
+    try { entries = fs.readdirSync(d, { withFileTypes: true }); } catch { return; }
+    for (const ent of entries) {
+      if (ent.isFile() && (ent.name.endsWith('.jsonl') || ent.name.endsWith('.txt'))) {
+        const fp = path.join(d, ent.name);
+        try {
+          const st = fs.statSync(fp);
+          results.push({ path: fp, name: ent.name, time: st.mtime.getTime(), size: st.size });
+        } catch { /* skip unreadable */ }
+      } else if (ent.isDirectory() && ent.name !== 'subagents' && ent.name !== 'node_modules') {
+        walk(path.join(d, ent.name), depth + 1);
+      }
+    }
+  }
+  walk(dir, 0);
+  return results;
+}
+
 function readCursorTranscripts() {
   if (!CURSOR_TRANSCRIPTS_DIR) return '';
   try {
     if (!fs.existsSync(CURSOR_TRANSCRIPTS_DIR)) return '';
 
     const now = Date.now();
-    const ACTIVE_WINDOW_MS = 24 * 60 * 60 * 1000;
+    const ACTIVE_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
     const TARGET_BYTES = 120000;
     const PER_FILE_BYTES = 20000;
     const RECENCY_GUARD_MS = 30 * 1000;
 
-    let files = fs
-      .readdirSync(CURSOR_TRANSCRIPTS_DIR)
-      .filter(f => f.endsWith('.txt') || f.endsWith('.jsonl'))
-      .map(f => {
-        try {
-          const st = fs.statSync(path.join(CURSOR_TRANSCRIPTS_DIR, f));
-          return { name: f, time: st.mtime.getTime(), size: st.size };
-        } catch (e) {
-          return null;
-        }
-      })
-      .filter(f => f && (now - f.time) < ACTIVE_WINDOW_MS)
+    let files = collectTranscriptFiles(CURSOR_TRANSCRIPTS_DIR, 3)
+      .filter(f => (now - f.time) < ACTIVE_WINDOW_MS)
       .sort((a, b) => b.time - a.time);
 
     if (files.length === 0) return '';
 
-    // Skip the most recently modified file if it was touched in the last 30s --
-    // it is likely the current active session that triggered this evolver run,
-    // reading it would cause self-referencing signal noise.
     if (files.length > 1 && (now - files[0].time) < RECENCY_GUARD_MS) {
       files = files.slice(1);
     }
@@ -280,11 +343,13 @@ function readCursorTranscripts() {
       const f = files[i];
       const bytesLeft = TARGET_BYTES - totalBytes;
       const readSize = Math.min(PER_FILE_BYTES, bytesLeft);
-      const raw = readRecentLog(path.join(CURSOR_TRANSCRIPTS_DIR, f.name), readSize);
+      const raw = readRecentLog(f.path, readSize);
       if (raw.trim() && !raw.startsWith('[MISSING]')) {
-        const formatted = formatCursorTranscript(raw);
+        const isJsonl = f.name.endsWith('.jsonl');
+        const formatted = isJsonl ? formatSessionLog(raw) : formatCursorTranscript(raw);
         if (formatted.trim()) {
-          sections.push(`--- CURSOR SESSION (${f.name}) ---\n${formatted}`);
+          const label = isJsonl ? 'SESSION' : 'CURSOR SESSION';
+          sections.push(`--- ${label} (${f.name}) ---\n${formatted}`);
           totalBytes += formatted.length;
         }
       }
@@ -297,70 +362,102 @@ function readCursorTranscripts() {
   }
 }
 
-function readRealSessionLog() {
+function readOpenClawSessions() {
   try {
-    // Primary source: OpenClaw session logs (.jsonl)
-    if (fs.existsSync(AGENT_SESSIONS_DIR)) {
-      const now = Date.now();
-      const ACTIVE_WINDOW_MS = 24 * 60 * 60 * 1000; // 24 hours
-      const TARGET_BYTES = 120000;
-      const PER_SESSION_BYTES = 20000;
+    if (!fs.existsSync(AGENT_SESSIONS_DIR)) return '';
+    const now = Date.now();
+    const ACTIVE_WINDOW_MS = 24 * 60 * 60 * 1000;
+    const TARGET_BYTES = 120000;
+    const PER_SESSION_BYTES = 20000;
 
-      const sessionScope = getSessionScope();
+    const sessionScope = getSessionScope();
 
-      let files = fs
-        .readdirSync(AGENT_SESSIONS_DIR)
-        .filter(f => f.endsWith('.jsonl') && !f.includes('.lock'))
-        .map(f => {
-          try {
-            const st = fs.statSync(path.join(AGENT_SESSIONS_DIR, f));
-            return { name: f, time: st.mtime.getTime(), size: st.size };
-          } catch (e) {
-            return null;
-          }
-        })
-        .filter(f => f && (now - f.time) < ACTIVE_WINDOW_MS)
-        .sort((a, b) => b.time - a.time);
-
-      if (files.length > 0) {
-        let nonEvolverFiles = files.filter(f => !f.name.startsWith('evolver_hand_'));
-
-        if (sessionScope && nonEvolverFiles.length > 0) {
-          const scopeLower = sessionScope.toLowerCase();
-          const scopedFiles = nonEvolverFiles.filter(f => f.name.toLowerCase().includes(scopeLower));
-          if (scopedFiles.length > 0) {
-            nonEvolverFiles = scopedFiles;
-            console.log(`[SessionScope] Filtered to ${scopedFiles.length} session(s) matching scope "${sessionScope}".`);
-          } else {
-            console.log(`[SessionScope] No sessions match scope "${sessionScope}". Using all ${nonEvolverFiles.length} session(s) (fallback).`);
-          }
+    let files = fs
+      .readdirSync(AGENT_SESSIONS_DIR)
+      .filter(f => f.endsWith('.jsonl') && !f.includes('.lock'))
+      .map(f => {
+        try {
+          const st = fs.statSync(path.join(AGENT_SESSIONS_DIR, f));
+          return { name: f, time: st.mtime.getTime(), size: st.size };
+        } catch (e) {
+          return null;
         }
+      })
+      .filter(f => f && (now - f.time) < ACTIVE_WINDOW_MS)
+      .sort((a, b) => b.time - a.time);
 
-        const activeFiles = nonEvolverFiles.length > 0 ? nonEvolverFiles : files.slice(0, 1);
+    if (files.length === 0) return '';
 
-        const maxSessions = Math.min(activeFiles.length, 6);
-        const sections = [];
-        let totalBytes = 0;
+    let nonEvolverFiles = files.filter(f => !f.name.startsWith('evolver_hand_'));
 
-        for (let i = 0; i < maxSessions && totalBytes < TARGET_BYTES; i++) {
-          const f = activeFiles[i];
-          const bytesLeft = TARGET_BYTES - totalBytes;
-          const readSize = Math.min(PER_SESSION_BYTES, bytesLeft);
-          const raw = readRecentLog(path.join(AGENT_SESSIONS_DIR, f.name), readSize);
-          const formatted = formatSessionLog(raw);
-          if (formatted.trim()) {
-            sections.push(`--- SESSION (${f.name}) ---\n${formatted}`);
-            totalBytes += formatted.length;
-          }
-        }
-
-        if (sections.length > 0) {
-          return sections.join('\n\n');
-        }
+    if (sessionScope && nonEvolverFiles.length > 0) {
+      const scopeLower = sessionScope.toLowerCase();
+      const scopedFiles = nonEvolverFiles.filter(f => f.name.toLowerCase().includes(scopeLower));
+      if (scopedFiles.length > 0) {
+        nonEvolverFiles = scopedFiles;
+        console.log(`[SessionScope] Filtered to ${scopedFiles.length} session(s) matching scope "${sessionScope}".`);
+      } else {
+        console.log(`[SessionScope] No sessions match scope "${sessionScope}". Using all ${nonEvolverFiles.length} session(s) (fallback).`);
       }
     }
 
-    // Fallback: Cursor agent-transcripts (.txt)
+    const activeFiles = nonEvolverFiles.length > 0 ? nonEvolverFiles : files.slice(0, 1);
+    const maxSessions = Math.min(activeFiles.length, 6);
+    const sections = [];
+    let totalBytes = 0;
+
+    for (let i = 0; i < maxSessions && totalBytes < TARGET_BYTES; i++) {
+      const f = activeFiles[i];
+      const bytesLeft = TARGET_BYTES - totalBytes;
+      const readSize = Math.min(PER_SESSION_BYTES, bytesLeft);
+      const raw = readRecentLog(path.join(AGENT_SESSIONS_DIR, f.name), readSize);
+      const formatted = formatSessionLog(raw);
+      if (formatted.trim()) {
+        sections.push(`--- SESSION (${f.name}) ---\n${formatted}`);
+        totalBytes += formatted.length;
+      }
+    }
+
+    return sections.join('\n\n');
+  } catch (e) {
+    console.warn(`[OpenClawSessions] Read failed: ${e.message}`);
+    return '';
+  }
+}
+
+function readRealSessionLog() {
+  try {
+    // SESSION_SOURCE controls which transcript source to use:
+    //   'auto'     = OpenClaw primary, Cursor/Codex/Manus fallback (backward compat)
+    //   'cursor'   = Cursor/Codex/Manus transcripts only (skip OpenClaw)
+    //   'openclaw' = OpenClaw sessions only (explicit)
+    //   'merge'    = combine both sources, newest sections first
+
+    if (SESSION_SOURCE === 'cursor') {
+      const content = readCursorTranscripts();
+      if (content) return content;
+      return '[NO SESSION LOGS FOUND]';
+    }
+
+    if (SESSION_SOURCE === 'openclaw') {
+      const content = readOpenClawSessions();
+      if (content) return content;
+      return '[NO SESSION LOGS FOUND]';
+    }
+
+    if (SESSION_SOURCE === 'merge') {
+      const ocContent = readOpenClawSessions();
+      const cursorContent = readCursorTranscripts();
+      if (ocContent && cursorContent) {
+        return ocContent + '\n\n' + cursorContent;
+      }
+      return ocContent || cursorContent || '[NO SESSION LOGS FOUND]';
+    }
+
+    // 'auto' (default): OpenClaw primary, Cursor fallback
+    const ocContent = readOpenClawSessions();
+    if (ocContent) return ocContent;
+
     const cursorContent = readCursorTranscripts();
     if (cursorContent) {
       console.log('[SessionFallback] Using Cursor agent-transcripts as session source.');
@@ -836,18 +933,30 @@ function getDefaultLoadMax() {
 }
 
 // Check how many agent sessions are actively being processed (modified in the last N minutes).
-// If the agent is busy with user conversations, evolver should back off.
+// Counts across both OpenClaw sessions and Cursor/Codex/Manus transcripts.
 function getRecentActiveSessionCount(windowMs) {
+  let count = 0;
+  const now = Date.now();
+  const w = Number.isFinite(windowMs) ? windowMs : 10 * 60 * 1000;
+
   try {
-    if (!fs.existsSync(AGENT_SESSIONS_DIR)) return 0;
-    const now = Date.now();
-    const w = Number.isFinite(windowMs) ? windowMs : 10 * 60 * 1000;
-    return fs.readdirSync(AGENT_SESSIONS_DIR)
-      .filter(f => f.endsWith('.jsonl') && !f.includes('.lock') && !f.startsWith('evolver_hand_'))
-      .filter(f => {
-        try { return (now - fs.statSync(path.join(AGENT_SESSIONS_DIR, f)).mtimeMs) < w; } catch (_) { return false; }
-      }).length;
-  } catch (_) { return 0; }
+    if (fs.existsSync(AGENT_SESSIONS_DIR)) {
+      count += fs.readdirSync(AGENT_SESSIONS_DIR)
+        .filter(f => f.endsWith('.jsonl') && !f.includes('.lock') && !f.startsWith('evolver_hand_'))
+        .filter(f => {
+          try { return (now - fs.statSync(path.join(AGENT_SESSIONS_DIR, f)).mtimeMs) < w; } catch (_) { return false; }
+        }).length;
+    }
+  } catch (_) {}
+
+  try {
+    if (CURSOR_TRANSCRIPTS_DIR && fs.existsSync(CURSOR_TRANSCRIPTS_DIR)) {
+      const transcriptFiles = collectTranscriptFiles(CURSOR_TRANSCRIPTS_DIR, 3);
+      count += transcriptFiles.filter(f => (now - f.time) < w).length;
+    }
+  } catch (_) {}
+
+  return count;
 }
 
 function determineBridgeEnabled() {
@@ -865,7 +974,7 @@ async function runPreflightChecks(bridgeEnabled, loopMode) {
   if (process.platform !== 'win32') {
     try {
       const _psRace = require('child_process').execSync(
-        'ps aux | grep "evolver_hand_" | grep "openclaw.*agent" | grep -v grep',
+        'ps aux | grep "evolver_hand_" | grep -v grep',
         { encoding: 'utf8', timeout: 5000, stdio: ['ignore', 'pipe', 'ignore'] }
       ).trim();
       if (_psRace && _psRace.length > 0) {
@@ -1152,6 +1261,14 @@ async function run() {
     syncDirective = 'Workspace sync: run skills/git-sync/sync.sh "Evolution: Workspace Sync"';
   }
 
+  let localStateSummary = '';
+  try {
+    localStateSummary = captureLocalState();
+  } catch (e) {
+    console.warn('[LocalState] Capture failed (non-fatal): ' + (e && e.message ? e.message : e));
+    localStateSummary = '(local state capture unavailable)';
+  }
+
   const genes = loadGenes();
   const capsules = loadCapsules();
   const recentEvents = (() => {
@@ -1320,7 +1437,7 @@ async function run() {
           }
           if (claimed) {
             activeTask = best;
-            const taskSignals = taskToSignals(best);
+            const taskSignals = taskToSignalsWithPrivacy(best);
             for (const sig of taskSignals) {
               if (!signals.includes(sig)) signals.unshift(sig);
             }
@@ -1394,6 +1511,20 @@ async function run() {
         pipeline_step_assigned:        ['pipeline', 'task', 'work_assigned'],
         organism_work:                 ['organism', 'task', 'work_assigned'],
 
+        // ── 蜂群 PDRI 角色事件 ──────────────────────────────────────
+        swarm_plan_available:          ['swarm', 'planner', 'work_available'],
+        swarm_build_available:         ['swarm', 'builder', 'work_available'],
+        swarm_review_available:        ['swarm', 'reviewer', 'work_available', 'respond_required'],
+        swarm_aggregate_available:     ['swarm', 'aggregator', 'work_available'],
+        swarm_rework_required:         ['swarm', 'rework', 'iterate'],
+        subtask_failover:              ['swarm', 'failover', 'urgent'],
+        team_formed:                   ['swarm', 'team', 'collaboration'],
+        team_dissolved:                ['swarm', 'team'],
+
+        // ── 隐私计算 ────────────────────────────────────────────────
+        privacy_task_ready:            ['privacy', 'sealed_tool', 'work_available'],
+        privacy_result_available:      ['privacy', 'result'],
+
         // ── 评审 / 赏金 ───────────────────────────────────────────────
         bounty_review_requested:       ['review', 'bounty', 'respond_required'],
         peer_review_request:           ['review', 'swarm', 'respond_required'],
@@ -1444,7 +1575,7 @@ async function run() {
         if (best) {
           activeTask = best;
           activeTask._worker_pending = true;
-          const taskSignals = taskToSignals(best);
+          const taskSignals = taskToSignalsWithPrivacy(best);
           for (const sig of taskSignals) {
             if (!signals.includes(sig)) signals.unshift(sig);
           }
@@ -1518,10 +1649,25 @@ async function run() {
   });
 
   // Search-First Evolution: query Hub for reusable solutions before local reasoning.
+  // When problem-class signals are present, lower the threshold and extend timeout
+  // to maximize the chance of finding an ecosystem-proven solution (EvoMap-First).
   let hubHit = null;
   if (!skipHubCalls) {
     try {
-      hubHit = await hubSearch(signals, { timeoutMs: 8000 });
+      const problemSignals = ['log_error', 'recurring_error', 'capability_gap', 'perf_bottleneck', 'test_failure', 'deployment_issue'];
+      const hasProblemSignal = Array.isArray(signals) && signals.some(function (s) {
+        for (var pi = 0; pi < problemSignals.length; pi++) {
+          if (s === problemSignals[pi] || (typeof s === 'string' && s.startsWith('errsig:'))) return true;
+        }
+        return false;
+      });
+      const hubSearchOpts = hasProblemSignal
+        ? { timeoutMs: 12000, threshold: 0.55 }
+        : { timeoutMs: 8000 };
+      if (hasProblemSignal) {
+        console.log('[EvoMap-First] Problem signals detected -- expanding Hub search (threshold=0.55, timeout=12s).');
+      }
+      hubHit = await hubSearch(signals, hubSearchOpts);
       if (hubHit && hubHit.hit) {
         console.log(`[SearchFirst] Hub hit: asset=${hubHit.asset_id}, score=${hubHit.score}, mode=${hubHit.mode}`);
       } else {
@@ -1858,6 +2004,9 @@ Runtime state:
 - Skills available (if any):
 ${fileList || '[skills directory not found]'}
 
+Local State (ALREADY CONFIGURED -- do NOT duplicate):
+${localStateSummary}
+
 Notes:
 - ${reviewNote}
 - ${reportingDirective}
@@ -2022,5 +2171,5 @@ ${mutationDirective}
   }
 }
 
-module.exports = { run, computeAdaptiveStrategyPolicy, shouldSkipHubCalls, verbose, determineBridgeEnabled };
+module.exports = { run, computeAdaptiveStrategyPolicy, shouldSkipHubCalls, verbose, determineBridgeEnabled, formatSessionLog, formatCursorTranscript };
 

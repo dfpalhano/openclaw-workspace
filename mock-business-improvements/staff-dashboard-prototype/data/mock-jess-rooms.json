@@ -1,0 +1,38 @@
+[
+  {
+    "id": "room_sp9_r2",
+    "houseCode": "SP9",
+    "room": "R2",
+    "available": true,
+    "underNotice": false,
+    "weeklyContribution": 380,
+    "inspection_date": "2026-04-10",
+    "inspection_time": "17:30",
+    "assistant": "Mathis",
+    "listingActive": true
+  },
+  {
+    "id": "room_eb2_r1",
+    "houseCode": "EB2",
+    "room": "R1",
+    "available": false,
+    "underNotice": true,
+    "weeklyContribution": 320,
+    "inspection_date": "2026-04-12",
+    "inspection_time": "18:00",
+    "assistant": "Lenny",
+    "listingActive": true
+  },
+  {
+    "id": "room_sh1_r3",
+    "houseCode": "SH1",
+    "room": "R3",
+    "available": false,
+    "underNotice": false,
+    "weeklyContribution": 310,
+    "inspection_date": null,
+    "inspection_time": null,
+    "assistant": null,
+    "listingActive": false
+  }
+]

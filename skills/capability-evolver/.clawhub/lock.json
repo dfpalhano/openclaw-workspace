@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "self-improving-agent": {
+      "version": "3.0.13",
+      "installedAt": 1775626018062
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1775626370665
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1775626443468
+    }
+  }
+}

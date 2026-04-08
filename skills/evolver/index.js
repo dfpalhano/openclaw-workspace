@@ -69,18 +69,22 @@ function parseMs(v, fallback) {
 function acquireLock() {
   const lockFile = path.join(__dirname, 'evolver.pid');
   try {
-    if (fs.existsSync(lockFile)) {
-      const pid = parseInt(fs.readFileSync(lockFile, 'utf8').trim(), 10);
-      if (!Number.isFinite(pid) || pid <= 0) {
-        console.log('[Singleton] Corrupt lock file (invalid PID). Taking over.');
-      } else {
-        try {
-          process.kill(pid, 0);
-          console.log(`[Singleton] Evolver loop already running (PID ${pid}). Exiting.`);
-          return false;
-        } catch (e) {
-          console.log(`[Singleton] Stale lock found (PID ${pid}). Taking over.`);
-        }
+    try {
+      fs.writeFileSync(lockFile, String(process.pid), { flag: 'wx' });
+      return true;
+    } catch (exclErr) {
+      if (exclErr.code !== 'EEXIST') throw exclErr;
+    }
+    const pid = parseInt(fs.readFileSync(lockFile, 'utf8').trim(), 10);
+    if (!Number.isFinite(pid) || pid <= 0) {
+      console.log('[Singleton] Corrupt lock file (invalid PID). Taking over.');
+    } else {
+      try {
+        process.kill(pid, 0);
+        console.log(`[Singleton] Evolver loop already running (PID ${pid}). Exiting.`);
+        return false;
+      } catch (e) {
+        console.log(`[Singleton] Stale lock found (PID ${pid}). Taking over.`);
       }
     }
     fs.writeFileSync(lockFile, String(process.pid));
@@ -125,9 +129,27 @@ async function main() {
     if (isLoop) {
         // Internal daemon loop (no wrapper required).
         if (!acquireLock()) process.exit(0);
-        process.on('exit', releaseLock);
-        process.on('SIGINT', () => { releaseLock(); process.exit(); });
-        process.on('SIGTERM', () => { releaseLock(); process.exit(); });
+        process.on('exit', () => {
+          releaseLock();
+          try { require('./src/gep/a2aProtocol').stopEventStream(); } catch (e) {}
+        });
+        process.on('SIGINT', () => { releaseLock(); try { require('./src/gep/a2aProtocol').stopEventStream(); } catch (e) {} process.exit(); });
+        process.on('SIGTERM', () => { releaseLock(); try { require('./src/gep/a2aProtocol').stopEventStream(); } catch (e) {} process.exit(); });
+        process.on('uncaughtException', (err) => {
+          console.error('[FATAL] Uncaught exception:', err && err.stack ? err.stack : String(err));
+          releaseLock();
+          process.exit(1);
+        });
+        let _unhandledRejectionCount = 0;
+        process.on('unhandledRejection', (reason) => {
+          _unhandledRejectionCount++;
+          console.error('[FATAL] Unhandled promise rejection (' + _unhandledRejectionCount + '):', reason && reason.stack ? reason.stack : String(reason));
+          if (_unhandledRejectionCount >= 5) {
+            console.error('[FATAL] Too many unhandled rejections (' + _unhandledRejectionCount + '). Exiting to avoid corrupt state.');
+            releaseLock();
+            process.exit(1);
+          }
+        });
 
         process.env.EVOLVE_LOOP = 'true';
         if (!process.env.EVOLVE_BRIDGE) {
@@ -154,8 +176,9 @@ async function main() {
 
         // Start hub heartbeat (keeps node alive independently of evolution cycles)
         try {
-          const { startHeartbeat } = require('./src/gep/a2aProtocol');
+          const { startHeartbeat, startEventStream } = require('./src/gep/a2aProtocol');
           startHeartbeat();
+          startEventStream();
         } catch (e) {
           console.warn('[Heartbeat] Failed to start: ' + (e.message || e));
         }
@@ -717,7 +740,10 @@ async function main() {
 }
 
 if (require.main === module) {
-  main();
+  main().catch(function (err) {
+    console.error('[FATAL] Top-level error:', err && err.stack ? err.stack : String(err));
+    process.exitCode = 1;
+  });
 }
 
 module.exports = {

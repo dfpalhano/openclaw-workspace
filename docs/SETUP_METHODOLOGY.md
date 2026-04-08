@@ -81,7 +81,71 @@ sed -n '1,120p' ~/.config/god-mode/config.yaml
   - CRLF line endings in skill files
 - `god status` still needs further repair if it fails with `show_overview: command not found`.
 
-## 0.1. Composio Gmail Connection
+## 0.1. Bailian / DashScope Qwen Models
+
+### Add provider to OpenClaw config
+```bash
+python3 - <<'PY'
+import json
+p='$HOME/.openclaw/openclaw.json'
+with open(p) as f:
+    d=json.load(f)
+providers=d.setdefault('models',{}).setdefault('providers',{})
+providers['bailian']={
+  'baseUrl':'https://dashscope-intl.aliyuncs.com/compatible-mode/v1',
+  'apiKey':'${DASHSCOPE_API_KEY}',
+  'api':'openai-completions',
+  'models':[
+    {
+      'id':'qwen3.5-plus',
+      'name':'qwen3.5-plus',
+      'reasoning':False,
+      'input':['text','image'],
+      'contextWindow':1000000,
+      'maxTokens':65536
+    },
+    {
+      'id':'qwen3-coder-next',
+      'name':'qwen3-coder-next',
+      'reasoning':False,
+      'input':['text'],
+      'contextWindow':262144,
+      'maxTokens':65536
+    }
+  ]
+}
+defs=d.setdefault('agents',{}).setdefault('defaults',{})
+mods=defs.setdefault('models',{})
+mods.setdefault('bailian/qwen3.5-plus',{})
+mods.setdefault('bailian/qwen3-coder-next',{})
+with open(p,'w') as f:
+    json.dump(d,f,indent=2)
+    f.write('\n')
+PY
+```
+
+### Verification
+```bash
+curl -s https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions \
+  -H 'Content-Type: application/json' \
+  -H "Authorization: Bearer $DASHSCOPE_API_KEY" \
+  -d '{"model":"qwen3.5-plus","messages":[{"role":"user","content":"Reply with exactly: QWEN35_OK"}],"max_tokens":20}'
+
+curl -s https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions \
+  -H 'Content-Type: application/json' \
+  -H "Authorization: Bearer $DASHSCOPE_API_KEY" \
+  -d '{"model":"qwen3-coder-next","messages":[{"role":"user","content":"Reply with exactly: CODER_NEXT_OK"}],"max_tokens":20}'
+```
+
+### Notes
+- Provider name: `bailian`
+- Compatible base URL: `https://dashscope-intl.aliyuncs.com/compatible-mode/v1`
+- Verified working models:
+  - `bailian/qwen3.5-plus`
+  - `bailian/qwen3-coder-next`
+- Prefer env var `DASHSCOPE_API_KEY` instead of hardcoding credentials.
+
+## 0.2. Composio Gmail Connection
 
 ### Connection via Composio
 ```bash

@@ -1,0 +1,11 @@
+[
+  {
+    "ts": "2026-04-07T08:55:00+10:00",
+    "actor": "Mathis",
+    "action": "lead_watch",
+    "targetType": "lead",
+    "targetId": "lead_001",
+    "houseCode": "SP9",
+    "detail": "Watching Ana Clara for SP9 R2 occupancy details"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "lead_001",
+    "name": "Ana Clara",
+    "phone": "+61 420 880 083",
+    "email": "ana.clara@example.com",
+    "houseCode": "SP9",
+    "targetRoom": "R2",
+    "status": "interested",
+    "priority": "high",
+    "lastMessage": "Hi, I want SP9 R2. Is it only for one person?",
+    "notes": "Need to confirm whether solo or with another person."
+  },
+  {
+    "id": "lead_002",
+    "name": "Leon Dupont",
+    "phone": "+61 433 000 111",
+    "email": "leon@example.com",
+    "houseCode": "EB2",
+    "targetRoom": "R1",
+    "status": "viewing_pending",
+    "priority": "medium",
+    "lastMessage": "Friday works for me.",
+    "notes": "Waiting for inspection confirmation."
+  },
+  {
+    "id": "lead_003",
+    "name": "Mia Zhang",
+    "phone": "+61 488 999 222",
+    "email": "mia@example.com",
+    "houseCode": "SH1",
+    "targetRoom": "R4",
+    "status": "invited",
+    "priority": "low",
+    "lastMessage": "Thanks, I will confirm soon.",
+    "notes": "Low urgency."
+  }
+]

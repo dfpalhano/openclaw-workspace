@@ -74,6 +74,28 @@
         "eligible_to_broadcast": false
       },
       "asset_id": "sha256:20d971a3c4cb2b75f9c045376d1aa003361c12a6b89a4b47b7e81dbd4f4d8fe8"
+    },
+    {
+      "type": "Capsule",
+      "schema_version": "1.5.0",
+      "id": "capsule_1775288226446",
+      "trigger": [
+        "perf_bottleneck",
+        "user_improvement_suggestion"
+      ],
+      "gene": "ad_hoc",
+      "summary": "Optimized memory_graph.jsonl tail read, fileTransportReceive bounds, sleepSync fallback, acquireLock atomicity, health_check cache",
+      "confidence": 0.9,
+      "blast_radius": {
+        "files": 0,
+        "lines": 0
+      },
+      "outcome": {
+        "status": "success",
+        "score": 0.9
+      },
+      "success_streak": 1,
+      "asset_id": "sha256:4a2f205213e3c019f7c8e99faf4cfdd65f900f0e8771684002207ee01e96cfa7"
     }
   ]
 }

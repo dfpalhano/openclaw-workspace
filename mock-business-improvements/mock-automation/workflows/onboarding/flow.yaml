@@ -1,0 +1,198 @@
+# Occupant Onboarding Workflow
+# MOCK PROPOSAL ONLY - NOT FOR PRODUCTION
+
+name: occupant_onboarding
+version: 1.0
+description: Automated onboarding flow for new occupants
+trigger: occupant_status_changed_to_future
+
+steps:
+  - name: validate_occupant_data
+    action: validate
+    inputs:
+      required_fields: [name, phone, house_code, room, weekly_rent, move_in_date]
+    on_success: send_welcome_message
+    on_failure: notify_staff_incomplete_data
+
+  - name: send_welcome_message
+    action: whatsapp_send
+    template: welcome_message_v1
+    inputs:
+      occupant_id: ${trigger.occupant_id}
+      message_type: welcome
+    delay: 1 hour  # Wait for registration form completion
+    on_success: generate_occupancy_letter
+    on_failure: retry_after_6h
+
+  - name: generate_occupancy_letter
+    action: document_generate
+    template: occupancy_letter_standard
+    inputs:
+      occupant_id: ${trigger.occupant_id}
+      signatory: natalie_mosh
+    outputs:
+      pdf_url: ${output.document_url}
+    on_success: send_occupancy_letter
+    on_failure: notify_staff_document_failed
+
+  - name: send_occupancy_letter
+    action: whatsapp_send_document
+    inputs:
+      occupant_id: ${trigger.occupant_id}
+      document_url: ${steps.generate_occupancy_letter.outputs.pdf_url}
+      caption: "Your Confirmation of Occupancy letter is attached."
+    on_success: create_move_in_calendar_event
+    on_failure: email_fallback
+
+  - name: create_move_in_calendar_event
+    action: calendar_create
+    calendar: property_inspections
+    inputs:
+      title: "Move-in: ${occupant.name} - ${house.code}"
+      description: "New occupant move-in inspection"
+      start_time: ${occupant.move_in_date}T10:00:00
+      end_time: ${occupant.move_in_date}T11:00:00
+      location: ${house.address}
+      attendees: [${staff.email}, ${owner.email}]
+    on_success: add_to_house_wa_group
+    on_failure: notify_staff_calendar_failed
+
+  - name: add_to_house_wa_group
+    action: whatsapp_group_add
+    inputs:
+      occupant_id: ${trigger.occupant_id}
+      group_jid: ${house.wa_group_jid}
+    retry:
+      max_attempts: 3
+      delay: 5 minutes
+    on_success: update_occupant_status_active
+    on_failure: notify_staff_group_add_failed
+
+  - name: update_occupant_status_active
+    action: api_call
+    method: PATCH
+    endpoint: /occupants/${trigger.occupant_id}/status
+    body:
+      status: active
+      status_changed_at: ${now()}
+    on_success: schedule_follow_up
+    on_failure: rollback_and_notify
+
+  - name: schedule_follow_up
+    action: schedule_task
+    task: occupant_follow_up_7days
+    execute_at: ${occupant.move_in_date + 7 days}T10:00:00
+    inputs:
+      occupant_id: ${trigger.occupant_id}
+    on_success: onboarding_complete
+    on_failure: log_warning
+
+  - name: onboarding_complete
+    action: webhook_send
+    event: occupant.onboarding_completed
+    data:
+      occupant_id: ${trigger.occupant_id}
+      completed_at: ${now()}
+      steps_completed: 8
+    final: true
+
+# Error handling steps
+  - name: notify_staff_incomplete_data
+    action: notify
+    channel: telegram
+    message: "⚠️ Incomplete occupant data for onboarding: ${trigger.occupant_id}"
+    final: true
+
+  - name: email_fallback
+    action: email_send
+    to: ${occupant.email}
+    subject: "Your Occupancy Letter"
+    body: "Please find your occupancy letter attached."
+    attachments: [${steps.generate_occupancy_letter.outputs.pdf_url}]
+    on_success: create_move_in_calendar_event
+
+  - name: rollback_and_notify
+    action: sequence
+    steps:
+      - name: remove_from_group
+        action: whatsapp_group_remove
+        inputs:
+          occupant_id: ${trigger.occupant_id}
+          group_jid: ${house.wa_group_jid}
+      
+      - name: notify_staff_rollback
+        action: notify
+        channel: telegram
+        message: "🚨 Onboarding failed for ${occupant.name}. Rolled back group addition."
+    final: true
+
+# Templates
+templates:
+  welcome_message_v1: |
+    Welcome to ${house.code}! 🏡
+    
+    Hi ${occupant.name},
+    
+    Your room ${occupant.room} at ${house.address} is confirmed from ${occupant.move_in_date}.
+    
+    Weekly Contribution: $${occupant.weekly_rent}/week
+    Security Contribution: $${occupant.bond_amount}
+    
+    Next steps:
+    1. Complete registration: https://forms.housemates.online/r/${registration_key}
+    2. Make first payment (details in next message)
+    3. You'll receive your occupancy letter shortly
+    
+    Please save this number for house communications.
+    
+    Looking forward to having you! 😊
+
+  occupancy_letter_standard: |
+    CONFIRMATION OF OCCUPANCY
+    Date: ${today()}
+    
+    To: ${occupant.name}
+    Address: ${house.address}
+    Room: ${occupant.room}
+    
+    This letter confirms that ${occupant.name} is authorized to occupy room ${occupant.room} at ${house.address},
+    commencing ${occupant.move_in_date}.
+    
+    Weekly Contribution: $${occupant.weekly_rent}
+    Security Contribution: $${occupant.bond_amount}
+    
+    Signed,
+    Natalie Mosh
+    Property Manager
+    +61 410 076 937
+
+# Configuration
+config:
+  timeout: 24 hours
+  max_retries: 3
+  notifications:
+    success: true
+    failure: true
+    staff_channels: [telegram, email]
+  webhooks:
+    - url: https://analytics.housemates.online/webhooks
+      events: [onboarding_started, onboarding_completed, onboarding_failed]
+    - url: https://mission-control.internal/webhooks
+      events: [all]
+
+# Metrics to track
+metrics:
+  - name: onboarding_duration
+    description: "Time from future → active status"
+    unit: hours
+    alert_threshold: 48
+  
+  - name: welcome_message_open_rate
+    description: "Percentage of welcome messages opened"
+    unit: percent
+    target: 90%
+  
+  - name: occupancy_letter_download_rate
+    description: "Percentage of letters downloaded"
+    unit: percent
+    target: 80%

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "occ_001",
+    "name": "Ana Clara",
+    "phone": "+61 420 880 083",
+    "email": "ana.clara@example.com",
+    "houseCode": "SP9",
+    "room": "R2",
+    "status": "future",
+    "moveInDate": "2026-04-15",
+    "moveOutDate": null,
+    "underNotice": false,
+    "documents": [
+      { "type": "passport", "label": "Passport Photo", "preview": "placeholder-passport-ana.jpg" }
+    ],
+    "notes": "Interested in SP9 R2. Need to confirm if moving alone or with someone else."
+  },
+  {
+    "id": "occ_002",
+    "name": "Marco Silva",
+    "phone": "+61 411 222 333",
+    "email": "marco@example.com",
+    "houseCode": "SH1",
+    "room": "R3",
+    "status": "active",
+    "moveInDate": "2026-02-10",
+    "moveOutDate": null,
+    "underNotice": false,
+    "documents": [
+      { "type": "passport", "label": "Passport Photo", "preview": "placeholder-passport-marco.jpg" }
+    ],
+    "notes": "Active occupant. No pricing should show in normal occupied view."
+  },
+  {
+    "id": "occ_003",
+    "name": "Julia Costa",
+    "phone": "+61 455 777 999",
+    "email": "julia@example.com",
+    "houseCode": "EB2",
+    "room": "R1",
+    "status": "active",
+    "moveInDate": "2026-01-20",
+    "moveOutDate": "2026-04-20",
+    "underNotice": true,
+    "documents": [
+      { "type": "passport", "label": "Passport Photo", "preview": "placeholder-passport-julia.jpg" }
+    ],
+    "notes": "Under notice. Room pricing may be shown in vacancy/notice context only."
+  }
+]

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Dashboard Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div>
+      <div class="brand">Staff Dashboard Prototype</div>
+      <div class="note">Mock-only, cloned-data prototype. No live MC writes, no live WA sends.</div>
+    </div>
+    <div class="note" id="header-note">Mathis / Lenny shared Phase 1 access</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <button class="active" data-view="overview">Overview</button>
+      <button data-view="occupants">Occupants</button>
+      <button data-view="leads">Leads</button>
+      <button data-view="groups">House Groups</button>
+      <button data-view="activity">Activity</button>
+    </aside>
+
+    <main class="main">
+      <section id="view-overview"></section>
+      <section id="view-occupants" class="hidden"></section>
+      <section id="view-leads" class="hidden"></section>
+      <section id="view-groups" class="hidden"></section>
+      <section id="view-activity" class="hidden"></section>
+    </main>
+  </div>
+
+  <div id="message-modal" class="modal-backdrop">
+    <div class="modal">
+      <h3 id="modal-title">Message Preview</h3>
+      <div class="small" id="modal-target"></div>
+      <label>Template</label>
+      <select id="message-template"></select>
+      <label>Message</label>
+      <textarea id="message-body" rows="7"></textarea>
+      <div class="small">This is mock-only. Confirm will log a fake send into prototype activity.</div>
+      <div class="actions">
+        <button id="confirm-send">Confirm mock send</button>
+        <button class="secondary" id="close-modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="inspection-modal" class="modal-backdrop">
+    <div class="modal">
+      <h3 id="inspection-title">Book Inspection</h3>
+      <div class="small" id="inspection-target"></div>
+      <label>Date</label>
+      <input id="inspection-date" type="date" />
+      <label>Time</label>
+      <input id="inspection-time" type="time" />
+      <label>Assistant</label>
+      <select id="inspection-assistant">
+        <option>Mathis</option>
+        <option>Lenny</option>
+      </select>
+      <div class="actions">
+        <button id="confirm-inspection">Save mock inspection</button>
+        <button class="secondary" id="close-inspection-modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

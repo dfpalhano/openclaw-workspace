@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-08T06:05:23.849Z","run_id":null,"action":"hub_search_miss","signals":["user_feature_request","user_feature_request:**ASSISTANT**: I need to see the generator interface before I can produce the actual PDF, so I’m chec","repeated_tool_usage:exec"],"reason":"hub_http_401","via":"search_then_fetch"}
