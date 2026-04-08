@@ -27,6 +27,7 @@ See: memory/core/decisions.md → "Origin Context" for why this matters deeply.
 - Always give Diego feedback after actions; never leave a task hanging without a status update.
 - Orbit-style messages from Mathis/Emilio (containing "Orbit") → staff-relay formats them as 🛰️ Orbit reports
 - For repair messages to occupants, house codes may be used internally for lookup, but the outgoing message must show the address, not the house code.
+- Occupant-facing occupancy offer / additional information messages use the MC template pattern: greeting, key conditions, occupancy details, amounts, payment instruction, and registration link. Use the exact phrase set from prior sends when possible (e.g. "Sharing the additional information and conditions for your occupancy. Please read carefully:", "Key conditions (non-negotiable):", "Occupancy details:", "Amounts:", "Please send the payment receipt once transferred.", "Receipt confirms the booking and commencement date.").
 - Occupant-facing bond messages must say "Security Contribution" (not "BOND" or "rent"); refer to the weekly amount as the weekly contribution.
 - Scheduled WhatsApp sends need an idempotency/sendKey guard so Brisbane-morning queue replays cannot duplicate a send.
 - Bond-return lifecycle: move-out creates/links a bond-return case; when bond is paid the case archives automatically; if no bond return is needed, archive the case with bondAmount=0.
@@ -35,6 +36,7 @@ See: memory/core/decisions.md → "Origin Context" for why this matters deeply.
 - Bond-return form matching: auto-fill room and house address by matching the person's WhatsApp/phone identity; if the submitted number differs but still resolves to the same person, accept it; use tokens only when identity is ambiguous.
 - Occupant-facing messages must never mention house codes; only staff-facing messages may use house codes. Occupant-facing address lines must use the full street address only.
 - After updating drafts, always show the updated drafts back to Diego again.
+- OpenClaw memory architecture: **lossless-claw** should be the active **context engine**. **memu-engine** is for **sync/memory ingestion**, not the context-engine selector. Never set memu-engine as the context engine.
 - When someone is accepted in the final stage in MC, they should be added to the house WhatsApp group automatically.
 - When someone leaves the house, they should be removed from the house WhatsApp group automatically.
 
