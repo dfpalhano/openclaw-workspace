@@ -221,3 +221,7 @@ Full mapping: `/home/diegopalhano/projects/mission-control/data/house-wa-groups.
 - This machine: Rocky Linux 10.1, Brisbane, GMT+10
 - Wired ethernet only — no WiFi
 - Cloudflare Tunnel: `mc.housemates.online` + `forms.housemates.online` → nginx:80 → node:8899
+
+
+## Local Ops Note
+- WhatsApp bridge sends use raw digits only, no leading +, and the bridge resolves @c.us/@lid as needed.
