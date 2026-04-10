@@ -119,3 +119,10 @@ All skills inspected via `claw-skill-guard` before install. Log maintained per s
 **Alternative:** Installed `youtube-transcript-api` (pip) directly. Clean, no proxy, handles transcripts natively.
 
 - 07-04-2026 — duxiaoxiong/memu-engine-for-OpenClaw — SAFE — inspected SKILL.md and scanned with claw-skill-guard, no suspicious patterns found. Status: approved for install.
+## 2026-04-10 11:02:06Z — archon
+- Source: https://github.com/coleam00/archon
+- Action: force-install attempted via upstream install script
+- Risk: CRITICAL
+- Reason flagged: includes multiple curl-pipe-to-shell install commands (bun.sh, claude.ai/install.sh, archon.diy/install)
+- Result: installed to ~/.local/bin/archon after 3 explicit confirmations
+
