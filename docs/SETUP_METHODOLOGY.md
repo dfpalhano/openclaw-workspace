@@ -383,7 +383,31 @@ This script:
 
 ---
 
-## 6. Inspection Calendar Standard
+## 6. Jess Relay / Flatmates Automation
+
+### Relay endpoint
+```bash
+POST http://127.0.0.1:3847/relay-callback
+```
+
+### Jess bot path
+```bash
+/home/diegopalhano/projects/jess-bot/jess-v2.js
+```
+
+### Runtime notes
+- The Chrome extension posts Flatmates conversation updates into the local relay.
+- Jess then persists state into mission-control data files such as `jess-inbox.json`, `jess-enquirers.json`, and `jess-pending.json`.
+- Replies are queued for manual approval before sending.
+- Approved sends are replayed through the Flatmates textarea + send-button flow.
+
+### Verification
+```bash
+curl -s http://127.0.0.1:3847/health
+node /home/diegopalhano/projects/jess-bot/jess-v2.js
+```
+
+## 7. Inspection Calendar Standard
 
 Use this format for all inspection calendar entries created manually or via automation.
 
