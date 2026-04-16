@@ -225,3 +225,5 @@ Full mapping: `/home/diegopalhano/projects/mission-control/data/house-wa-groups.
 
 ## Local Ops Note
 - WhatsApp bridge sends use raw digits only, no leading +, and the bridge resolves @c.us/@lid as needed.
+
+- andrej-karpathy-skills (guidelines and SKILL.md under skills/andrej-karpathy-skills/)
