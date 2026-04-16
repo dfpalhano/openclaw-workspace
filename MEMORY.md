@@ -130,6 +130,17 @@ Key flags before 20 Mar:
 - Phone: `61416775321@c.us`
 
 
+## Recent Activity (2026-04-12 Hermes session)
+- Emilio (WL3 R5): departed 31/03, bond refund $720 scheduled via cron 8:02am 12/04
+- Angelo (SB1 R4): departed 29/03, bond return form sent (token WpqOskcC), awaiting submission
+- Maureen Six-Joly + Emma Dargent: moved into WL3 R5 on 01/04/26 (back-to-back with Emilio), $430/wk each
+- Valentin Lalau: assigned R3 SH2 (replacing Thomas Venant)
+- Lenny Vachet: staff since 21/03/26, $28/hr
+- Gateway fixes: _get_session_lock AttributeError fixed, duplicated _AGENT_PENDING_SENTINEL fixed
+- **CRITICAL bond token rule**: tokens MUST be in `bond-return-tokens.json` (NOT just SQLite DB). Always curl-test link returns 200 before sending.
+- Thomas Venant: move-out date corrected to 02/03/26 in DB
+- Maureen/Emma move-in dates corrected from 01/06 to 01/04 in DB
+
 ## Bond Return & Occupancy Letter Procedures
 - **Bond return list = fresh pending list only.** Once a bond return is paid, move it to the archived bond-return list immediately.
 - **Natalie Mosh** = fictional property manager who signs the Confirmation of Occupancy Letter
@@ -235,6 +246,8 @@ When Diego asks for a new improvement or automation:
 ## Registration Form URL
 - **ALWAYS use:** `https://forms.housemates.online/r/<key>`
 - **NEVER use:** `mc.inspectionsxraytesting.com.au` — deprecated, do not reference
+
+- `docs/business-execution-harness.md` — Reference harness for business execution tasks
 
 ## Lessons Learned (2026-03-10)
 - **Draft first, always.** Swan message fired without approval. Rule 14 now locked.
