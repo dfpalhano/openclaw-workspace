@@ -7,6 +7,7 @@ See `PROTOCOLS.md` for full rules. Summary:
 - **Auto-approve** = NEVER re-enable (`AUTO_APPROVE_AFTER_MS = Infinity`)
 - **Email** = no auto-send ever
 - **Managers** = zero financials, enforced in code
+- **Andrej Karpathy skill** = use for simple, surgical coding work when the user wants explicit assumptions and minimal change
 
 ---
 
@@ -47,6 +48,7 @@ Atlas is **orchestrator only**. Always available to the owner. Never buried in i
 - **Exception: DIN** — owner says "DIN" → Atlas executes that task directly, then returns to orchestrator mode
 - If Atlas catches itself implementing without DIN → STOP → delegate instead
 - See PROTOCOLS.md for full team roster and routing rules
+- Core harness: follow `docs/business-execution-harness.md` first for business execution tasks
 
 ---
 
