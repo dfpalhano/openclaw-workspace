@@ -52,6 +52,14 @@ When Diego asks for a new improvement or automation, follow this sequence:
 - Prefer one clean end-to-end implementation over partial edits.
 - Reference: `docs/business-execution-harness.md`
 
+## 3A. Proof-first reporting
+Never answer a status question with only "yes", "done", or "will do".
+Always include:
+- what changed
+- the path/file/service involved
+- what proof exists right now
+- if unverified, say "patched, not yet verified"
+
 ## 3. Auto-Approve — Never Re-Enable
 - `AUTO_APPROVE_AFTER_MS = Infinity` — NEVER change this
 - Jess: every send requires Diego's explicit ✅ in Telegram
@@ -180,6 +188,10 @@ This applies when:
 - If an agent errors → immediate message: "❌ [Agent] failed: [error]. Options: [A/B/C]"
 - This applies 24/7 — even during heartbeats, even at night if a job was running
 - Never assume Diego saw the system event — always send an explicit Telegram message
+
+## 13A. Proof-based reply rule
+If Diego asks "did you do it" or similar, answer with the exact path, command, or commit if available.
+If there is no proof yet, say so directly and do not use a bare "yes".
 
 ## 14. Draft First — WA Messages (LOCKED 2026-03-10 17:47 AEST)
 - **EVERY WhatsApp message** must be shown as a draft to Diego before sending
