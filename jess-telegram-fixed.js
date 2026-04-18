@@ -68,9 +68,13 @@ function sendTelegram(chatId, text) {
       chat_id: chatId,
       text: text
     });
-    // Use stdin to avoid shell escaping issues
-    const cmd = `echo '${payload.replace(/'/g, "'\\''")}' | curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage -H "Content-Type: application/json" -d @-`;
+    // Write to temp file to avoid all shell escaping issues
+    const tmpFile = `/tmp/jess-telegram-${Date.now()}.json`;
+    fs.writeFileSync(tmpFile, payload);
+    const cmd = `curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage -H "Content-Type: application/json" -d @${tmpFile}`;
     exec(cmd, { timeout: 10000 }, (error, stdout, stderr) => {
+      // Clean up temp file
+      try { fs.unlinkSync(tmpFile); } catch (_) {}
       if (error) {
         log(`Send error: ${error.message}`);
         reject(error);
@@ -99,9 +103,13 @@ function editTelegram(chatId, messageId, text) {
       message_id: messageId,
       text: text
     });
-    // Use stdin to avoid shell escaping issues
-    const cmd = `echo '${payload.replace(/'/g, "'\\''")}' | curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/editMessageText -H "Content-Type: application/json" -d @-`;
+    // Write to temp file to avoid all shell escaping issues
+    const tmpFile = `/tmp/jess-telegram-edit-${Date.now()}.json`;
+    fs.writeFileSync(tmpFile, payload);
+    const cmd = `curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/editMessageText -H "Content-Type: application/json" -d @${tmpFile}`;
     exec(cmd, { timeout: 10000 }, (error, stdout, stderr) => {
+      // Clean up temp file
+      try { fs.unlinkSync(tmpFile); } catch (_) {}
       if (error) {
         log(`Edit error: ${error.message}`);
         reject(error);
@@ -196,6 +204,23 @@ async function main() {
         log(`Message from ${userId}: ${text}`);
         
         try {
+          // Check for /jess scrape command
+          if (text.trim().toLowerCase() === '/jess scrape') {
+            log('Manual scrape requested');
+            // Send immediate response
+            await sendTelegram(chatId, 'Scraping Flatmates inbox now... This may take a minute.');
+            
+            // Trigger scrape in background
+            exec('cd /home/diegopalhano/projects/jess-bot && node -e "const ns=require(\'./modules/natural-scraper\'); ns.triggerFullScrape().then(r=>console.log(\'Scrape triggered:\',r)).catch(e=>console.error(e))"', 
+              (error, stdout, stderr) => {
+                log(`Scrape trigger result: ${stdout} ${stderr}`);
+                // Send completion message
+                sendTelegram(chatId, 'Scrape completed. You can now ask for updated counts.');
+              }
+            );
+            continue;
+          }
+          
           // Send "working" message
           const workingMsg = await sendTelegram(chatId, "Working on it... ⏳");
           const workingMsgId = workingMsg.message_id;
