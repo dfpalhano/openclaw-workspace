@@ -1,3 +1,12 @@
+## Core Operating Harness
+
+### Rule: Business Execution Harness (LOCKED 2026-04-09)
+- Follow `docs/business-execution-harness.md` first for business execution tasks
+- Decision order: EXECUTE → RESEARCH → CREATE → ESCALATE
+- For coding/automation: Mock → Test → Proof → Release
+- For people, properties, occupancy, WhatsApp, and house operations: MC first
+- This rule sits above task-specific procedures and informs how all other rules are applied
+
 # Atlas Hard Rules
 _These are non-negotiable. Locked dates indicate when they were violated and hardened._
 

@@ -141,6 +141,11 @@ Key flags before 20 Mar:
 - Thomas Venant: move-out date corrected to 02/03/26 in DB
 - Maureen/Emma move-in dates corrected from 01/06 to 01/04 in DB
 
+## Current Data Source Rule
+- **Registrations now live in SQLite, not JSON.** Use the DB as source of truth for registration status updates and UI fixes.
+- Do not use `resident-registrations.json` as the operational write target for registrations.
+- For future registrations work, update the registrations table / DB-backed path only.
+
 ## Bond Return & Occupancy Letter Procedures
 - **Bond return list = fresh pending list only.** Once a bond return is paid, move it to the archived bond-return list immediately.
 - **Natalie Mosh** = fictional property manager who signs the Confirmation of Occupancy Letter
