@@ -1,0 +1,62 @@
+{
+  "thread": {
+    "threadId": "200210055",
+    "personName": null,
+    "listingTitle": "Studio at Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743#room2388606",
+    "propertyCode": "P1575743",
+    "roomId": "2388606",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "He , hope your well!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "25 January 9:35 am",
+        "sentAt": "2026-01-24T23:35:00.000Z"
+      },
+      {
+        "text": "Hi Mackenzie\nThanks for reaching out. Would you like to come Tuesday at 7pm for the inspection?\n37 Marian St, Coorparoo\nDee will be there to assist you\n+61 416 775 321 (whatsapp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Ok great thank you",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "25 January 7:02 pm",
+        "sentAt": "2026-01-25T09:02:00.000Z"
+      },
+      {
+        "text": "Awesome :)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      },
+      {
+        "text": "Hey, hope your well!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "22 March 4:39 pm",
+        "sentAt": "2026-03-22T06:39:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!DeliveredMonday 9:32 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-22T06:39:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/200210055",
+    "receivedAt": "2026-03-31T00:47:28.327Z",
+    "updatedAt": "2026-03-31T00:47:28.323Z"
+  }
+}

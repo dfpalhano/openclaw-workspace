@@ -1,0 +1,132 @@
+{
+  "thread": {
+    "threadId": "196234466",
+    "personName": null,
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0412 810 •••",
+    "messages": [
+      {
+        "text": "My name is Mila, and my friend and I are looking for a place to rent. We are Brazilians, organized and clean, and we also enjoy being social. We’ve just arrived in Brisbane and would love to find a place with easy access to our school and jobs. We hope we can make it work!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "20 July 12:39 pm",
+        "sentAt": "2026-07-20T02:39:00.000Z"
+      },
+      {
+        "text": "Hi Mila, yes sure. The entrance date is at July 30th. Does it work for you?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "if so, I can book the inspection for you",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi! When can we schedule it for?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "20 July 7:10 pm",
+        "sentAt": "2026-07-20T09:10:00.000Z"
+      },
+      {
+        "text": "Yes, that could work for us",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "20 July 7:11 pm",
+        "sentAt": "2026-07-20T09:11:00.000Z"
+      },
+      {
+        "text": "Hi Mila\nCan you come tonight at 6:30pm for the inspection?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Jess! Tonight we have class until 9pm, could be at tomorrow morning?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "21 July 10:13 am",
+        "sentAt": "2026-07-21T00:13:00.000Z"
+      },
+      {
+        "text": "Ok. Can you come at 9:30am?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Yes, perfect! Can you pass the accurate address for me please?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "21 July 10:20 am",
+        "sentAt": "2026-07-21T00:20:00.000Z"
+      },
+      {
+        "text": "37 Marian St, Coorparoo\nDee will be there to assist you\n0416 775 321",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Nice, thank you so much!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "21 July 12:01 pm",
+        "sentAt": "2026-07-21T02:01:00.000Z"
+      },
+      {
+        "text": "Hi Jess! We ended up closing another listing, but thank you so much for your attention!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "21 July 4:33 pm",
+        "sentAt": "2026-07-21T06:33:00.000Z"
+      },
+      {
+        "text": "No worries",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hello! I’m Milena, I’d love to know if it’s still available. A little about me: I’m responsible, clean, and easygoing, also love cooking! Please let me know if we can arrange a viewing or if you need any more information from me. Thank you!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Wednesday 10:19 pm",
+        "sentAt": "2026-03-25T12:19:00.000Z"
+      },
+      {
+        "text": "I’m interested on the Brisbane City 370$",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Wednesday 10:20 pm",
+        "sentAt": "2026-03-25T12:20:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!DeliveredMonday 9:32 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-25T12:20:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/196234466",
+    "receivedAt": "2026-03-31T00:48:19.063Z",
+    "updatedAt": "2026-03-31T00:48:19.060Z"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://flatmates.com.au/messages/201154866",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-23T21:59:21.816Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201154866",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [
+      {
+        "text": "Hi Jess, my name is Nikita and I work in a Marketing Company in Surfers Paradise. I’m am a non-party and non-smoker person 😄 I‘m looking for a place to stay from 30.03. I'm ready to check out the place & meet you anyday after 4pm. Looking forward to meet you! 😊",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "3 March 7:14 pm",
+        "sentAt": "2026-03-03T09:14:00.000Z"
+      },
+      {
+        "text": "Hey! We have a room viewing tonight at 7pm — 4/44 Watson Esplanade, Surfers Paradise (entry beside the Mini Market on Watson Esplanade). Emilio will be there to show you around 😊 +61481517377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-03T09:14:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201154866"
+  }
+}

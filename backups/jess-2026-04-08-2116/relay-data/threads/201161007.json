@@ -1,0 +1,48 @@
+{
+  "url": "https://flatmates.com.au/messages/201161007",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T05:24:33.649Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201161007",
+    "personName": "C",
+    "listingTitle": null,
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [
+      {
+        "text": "Hi! I’m interested in this room. Is it still available? Do you accept two girl friends?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "3 March 11:57 pm",
+        "sentAt": "2026-03-03T13:57:00.000Z"
+      },
+      {
+        "text": "Hi Chonnipha 😊 Thanks for reaching out. Can you please tell me a bit about yourself? Include your cultural background, hobbies, age, and work or academic life if any. Thanks!",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      },
+      {
+        "text": "Just to confirm — tonight's inspection is at 7:00pm at 37 Marian St, Coorparoo QLD 4151. The room is available for two people at $460/week. See you there! 😊 Dee will be there to assist you. Send a message upon your arrival.\n+61416775321 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      },
+      {
+        "text": "Hey Chonnipha! The room is still available 😊 We're doing a showing tonight at 7pm — 37 Marian St, Coorparoo. If you'd like to come check it out, just reply to confirm! Our host will be there to show you around. See you tonight? 🏠",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-03T13:57:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201161007"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "url": "https://flatmates.com.au/messages/201228312",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T06:55:39.616Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201228312",
+    "personName": "S",
+    "listingTitle": "View Shivani Thakur's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 11:42 pm",
+        "sentAt": "2026-03-06T13:42:00.000Z"
+      },
+      {
+        "text": "Hi",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 11:42 pm",
+        "sentAt": "2026-03-06T13:42:00.000Z"
+      },
+      {
+        "text": "Hey! We have a room viewing tonight at 7pm — 4/44 Watson Esplanade, Surfers Paradise (entry beside the Mini Market on Watson Esplanade). Emilio will be there to show you around 😊 +61481517377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Can I come tomorrow",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 7:33 pm",
+        "sentAt": "2026-03-07T09:33:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-07T09:33:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201228312"
+  }
+}

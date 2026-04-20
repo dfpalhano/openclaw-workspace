@@ -1,0 +1,62 @@
+{
+  "url": "https://flatmates.com.au/messages/201238845",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T06:57:18.617Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201238845",
+    "personName": null,
+    "listingTitle": "View TATSUYA KASHIWAGI's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0415 208 •••",
+    "messages": [
+      {
+        "text": "Hi! I’m Tatsuya from Japan. I’m very interested in your room. Here are my details:\n1. Move in: Immediately\n2. Inspection: Free anytime this week & weekend! (Today/Tomorrow ok)\n3. Stay: At least 6 months\n4. About me:\nI am a Japanese male on a working holiday visa. I am very clean, organized, and a non-smoker who respects house rules and others' privacy. I have enough savings to pay rent on time, and I am planning to work in a cafe during the day. I am friendly but also value a quiet and peaceful living environment.\nI can come for an inspection even today or tomorrow if you are available. Looking forward to hearing from you!\nThanks,\nTatsuya",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 3:09 pm",
+        "sentAt": "2026-03-07T05:09:00.000Z"
+      },
+      {
+        "text": "hi Tatsuya",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "can you come at 6:30pm?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Sorry, would it be possible to reschedule for tomorrow?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 6:01 pm",
+        "sentAt": "2026-03-07T08:01:00.000Z"
+      },
+      {
+        "text": "likely. I'll be in touch",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Thanks, I appreciate it. Please let me know.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 6:10 pm",
+        "sentAt": "2026-03-07T08:10:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-07T08:10:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201238845"
+  }
+}

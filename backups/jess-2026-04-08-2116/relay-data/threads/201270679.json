@@ -1,0 +1,34 @@
+{
+  "url": "https://flatmates.com.au/messages/201270679",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T05:24:28.954Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201270679",
+    "personName": null,
+    "listingTitle": "View princy's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Sunday 11:03 pm",
+        "sentAt": "2026-03-08T13:03:00.000Z"
+      },
+      {
+        "text": "Hi princy! We have a room viewing at 606 Vulture St E, East Brisbane tonight Wednesday 11 March at 6pm. Would you like to come? 😊",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-08T13:03:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201270679"
+  }
+}

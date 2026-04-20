@@ -1,0 +1,41 @@
+{
+  "thread": {
+    "threadId": "201244001",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [
+      {
+        "text": "Hello Jess! I'm interested in the room! Would you be able to contact me if still available ? 0424114169",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "7 March 7:08 pm",
+        "sentAt": "2026-03-07T09:08:00.000Z"
+      },
+      {
+        "text": "Hi Eliott,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Jess. I'm sorry I missed your message. Could we schedule another inspection, if the place is still available ? Thank you",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 4:40 am",
+        "sentAt": "2026-03-12T18:40:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T18:40:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201244001",
+    "receivedAt": "2026-03-23T19:54:17.917Z",
+    "updatedAt": "2026-03-23T19:54:17.915Z"
+  }
+}

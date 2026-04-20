@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201724068",
+    "personName": null,
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1868232",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1868232",
+    "propertyCode": "P1868232",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello, how are you? I'll be arriving in Brisbane on Saturday! I'm going to stay 15 days at the school accommodation (18/04)and then I need to find a place. \nIs this neighborhood close to Valley? easy public transportation? Thank you",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 9:42 pm",
+        "sentAt": "2026-03-30T11:42:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-30T11:42:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201724068",
+    "receivedAt": "2026-03-31T00:46:46.635Z",
+    "updatedAt": "2026-03-31T00:46:46.632Z"
+  }
+}

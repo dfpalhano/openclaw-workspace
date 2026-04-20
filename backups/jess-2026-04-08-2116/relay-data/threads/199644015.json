@@ -1,0 +1,69 @@
+{
+  "thread": {
+    "threadId": "199644015",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0478 747 •••",
+    "messages": [
+      {
+        "text": "Hello. I'm Jo. I'm looking for couple room with my GF. I'm tiler and my girl friend is chef in the city. I'm interested this room. Can I get price for couple?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "4 January 10:42 pm",
+        "sentAt": "2026-01-04T12:42:00.000Z"
+      },
+      {
+        "text": "Hi Jo\nThanks for reaching out. It's $430/couples/week.\nWould you like to come tonight at 7:15pm for the inspection?\n40 Rosa St Spring Hill\nDee will be there to assist you\n+61 416 775 321 (whatsapp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Okay. I'm gonna do inspection tonight!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "6 January 5:08 pm",
+        "sentAt": "2026-01-06T07:08:00.000Z"
+      },
+      {
+        "text": "But is it able to inspect on weekend?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "6 January 5:09 pm",
+        "sentAt": "2026-01-06T07:09:00.000Z"
+      },
+      {
+        "text": "Sure. Can you come on Saturday same time?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!Seen12 March 6:29 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hello. I'm Jo from South Korea. My partner and I are looking for room for rent around city. We are interested this room. So could you please let me know when can we inspect this room?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 6:32 pm",
+        "sentAt": "2026-03-12T08:32:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T08:32:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/199644015",
+    "receivedAt": "2026-03-23T19:53:50.744Z",
+    "updatedAt": "2026-03-23T19:53:50.742Z"
+  }
+}

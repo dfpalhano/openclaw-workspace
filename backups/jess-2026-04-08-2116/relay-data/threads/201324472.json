@@ -1,0 +1,21 @@
+{
+  "url": "https://flatmates.com.au/messages/201324472",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-31T02:11:17.479Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201324472",
+    "personName": null,
+    "listingTitle": null,
+    "listingId": null,
+    "listingUrl": "https://flatmates.com.au/messages/201324472",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [],
+    "lastMessageAt": null,
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201324472"
+  }
+}

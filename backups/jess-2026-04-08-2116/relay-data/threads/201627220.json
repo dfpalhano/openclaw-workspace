@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "201627220",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello! My name is Millicent (but everyone calls me Millie). I’m looking to move back to Brisbane very soon for full time work and feel like I would be a good fit for the property. If the room is still available, please let me know. Have a great rest of the week! Millie",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Wednesday 8:46 pm",
+        "sentAt": "2026-03-25T10:46:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!SeenMonday 9:38 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-25T10:46:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201627220",
+    "receivedAt": "2026-03-31T00:46:52.077Z",
+    "updatedAt": "2026-03-31T00:46:52.074Z"
+  }
+}

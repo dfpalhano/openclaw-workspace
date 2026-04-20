@@ -1,0 +1,71 @@
+{
+  "url": "https://flatmates.com.au/messages/201349190",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-23T21:29:52.890Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201349190",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [
+      {
+        "text": "Hi Jess,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 12:28 pm",
+        "sentAt": "2026-03-12T02:28:00.000Z"
+      },
+      {
+        "text": "Hi Jess,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 12:28 pm",
+        "sentAt": "2026-03-12T02:28:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 7pm.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 7pm.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 7pm.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 7pm.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 7pm.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-12T02:28:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201349190"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "url": "https://flatmates.com.au/messages/201272070",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T03:43:33.619Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201272070",
+    "personName": "K",
+    "listingTitle": "Brisbane City, Brisbane",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "030 49 ••• •••",
+    "messages": [
+      {
+        "text": "Hey Jess, im a danish mechanical engineering student looking to rent a room with my girlfriend, whats the pricing for couples ?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 1:53 am",
+        "sentAt": "2026-03-08T15:53:00.000Z"
+      },
+      {
+        "text": "Hey Kasper! The room is still available 😊 We're doing a showing tonight at 6:30pm — 40 Rosa St, Spring Hill. If you'd like to come check it out, just reply to confirm! Our host will be there to show you around. See you tonight? 🏠",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered\nToday 1:43 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-08T15:53:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201272070"
+  }
+}

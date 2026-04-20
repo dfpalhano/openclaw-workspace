@@ -1,0 +1,34 @@
+{
+  "url": "https://flatmates.com.au/messages/201247624",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T03:52:53.975Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201247624",
+    "personName": null,
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello I’m Nicola I’m 22 and my partner Steven is 27 we’re interested in renting this place as 2 proffesional that work near the city were clean tidy and very respectful",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 10:14 pm",
+        "sentAt": "2026-03-07T12:14:00.000Z"
+      },
+      {
+        "text": "Hi Nicola! We have a room viewing at 606 Vulture St E, East Brisbane tonight Wednesday 11 March at 6pm. Would you like to come? 😊",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered\nToday 1:51 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-07T12:14:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201247624"
+  }
+}

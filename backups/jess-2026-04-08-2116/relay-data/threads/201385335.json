@@ -1,0 +1,29 @@
+{
+  "url": "https://flatmates.com.au/messages/201385335",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-31T01:38:59.288Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201385335",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [
+      {
+        "text": "Hi Jess! I’m very keen on your shared apartment. Ready to move asap. Could I call you today or tomorrow sometime to chat further about details?\nI’m a 36 year old woman. Single, no smoking, drugs, alcohol, partying. I have a full time job starting next week and I’m a student as well studying an online management course. So besides working f/t hrs and study, I’m very fit and active. At the gym, calisthenics or CrossFit. So I cook healthy meals daily.\nJust moved up from Melbourne on Monday, looking for a stable, safe home to spend 6+ months in. \nCould I come by today for an inspection?\nWolf",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 March 9:02 am",
+        "sentAt": "2026-03-13T23:02:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-13T23:02:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201385335"
+  }
+}

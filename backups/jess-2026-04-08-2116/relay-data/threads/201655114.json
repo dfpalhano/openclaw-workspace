@@ -1,0 +1,36 @@
+{
+  "url": "https://flatmates.com.au/messages/201655114",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-31T02:51:55.757Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201655114",
+    "personName": null,
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0490 851 •••",
+    "messages": [
+      {
+        "text": "Hello, I’m leaving the farm where I’ve been working with my boyfriend, and we’re looking for a room in Brisbane as we’ll be working there.\nHe’s 31 and I’m 26; we’re very tidy and respectful.\nWe’ve been working on a farm for a month and a half, but we’ve decided to move back to the city.\nWe’re very interested.\nWe would like to come Friday and to stay until 7 June. \nHave a good day. 😊",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 9:18 am",
+        "sentAt": "2026-03-26T23:18:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 8pm.\nWould you like to come?\n📍 37 Marian St, Coorparoo QLD 4151\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-26T23:18:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201655114"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "201527505",
+    "personName": null,
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0481 456 •••",
+    "messages": [
+      {
+        "text": "Hi, please have a read of my profile and let me know if I'm a suitable Tennant please!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "21 March 6:11 am",
+        "sentAt": "2026-03-20T20:11:00.000Z"
+      },
+      {
+        "text": "Jess, hey, I see U guys are still looking. Look.... I know 44 seems old and boring but babe I promise I can pull out some classic moves on the dance floor that will have U in stitches! I have updated my profile a bit in the \"promise I'm not ya mum\" section to show U I really am no boring old fart and U won't feel cramped with me in Ur house. \nPlease have another look and at least meet me so I can show U I'm not so bad!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 3:59 am",
+        "sentAt": "2026-03-26T17:59:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-26T17:59:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201527505",
+    "receivedAt": "2026-03-28T06:07:48.737Z",
+    "updatedAt": "2026-03-28T06:07:48.734Z"
+  }
+}

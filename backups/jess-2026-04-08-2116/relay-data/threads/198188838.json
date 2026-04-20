@@ -1,0 +1,83 @@
+{
+  "thread": {
+    "threadId": "198188838",
+    "personName": null,
+    "listingTitle": "Whole flat 2 bedrooms 1 bathroom at Woolloongabba, Brisbane",
+    "listingId": "1661659",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1661659#room2486371",
+    "propertyCode": "P1661659",
+    "roomId": "2486371",
+    "waNumber": null,
+    "partialPhoneDisplay": "0411 134 •••",
+    "messages": [
+      {
+        "text": "Good afternoon,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "26 October 2:39 pm",
+        "sentAt": "2026-10-26T04:39:00.000Z"
+      },
+      {
+        "text": "Hi Thomas\nThanks for reaching out. Would you like to come tonight at 7:20pm for the inspection?\n28 Taylor St, Woolloongabba\nDee will be there to assist you\n0416 775 321",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "I am afraid I am working tonight, and after Ill go on a little trip. My earliest convenience would be the 3rd of Nov",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "28 October 3:06 pm",
+        "sentAt": "2026-10-28T05:06:00.000Z"
+      },
+      {
+        "text": "Send me a message by then",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Will do!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "28 October 5:37 pm",
+        "sentAt": "2026-10-28T07:37:00.000Z"
+      },
+      {
+        "text": "Hi Jess,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "2 November 7:39 pm",
+        "sentAt": "2026-11-02T09:39:00.000Z"
+      },
+      {
+        "text": "Hi there,\nThanks for the interest in this property. We have other property that are available still:\nWest End: https://flatmates.com.au/share-house-brisbane-west-end-4101-P1661658\nKP/East Brisbane: https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189\nWoolloongabba: https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1661659\nLuxury Coorparoo: https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Good afternoon,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 4:13 pm",
+        "sentAt": "2026-03-27T06:13:00.000Z"
+      },
+      {
+        "text": "Good afternoon,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 4:13 pm",
+        "sentAt": "2026-03-27T06:13:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T06:13:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/198188838",
+    "receivedAt": "2026-03-28T06:05:48.469Z",
+    "updatedAt": "2026-03-28T06:05:48.466Z"
+  }
+}

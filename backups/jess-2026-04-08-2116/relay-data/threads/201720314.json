@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201720314",
+    "personName": null,
+    "listingTitle": "Shower inside the room at Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878#room2499981",
+    "propertyCode": "P1773878",
+    "roomId": "2499981",
+    "waNumber": null,
+    "partialPhoneDisplay": "0403 591 •••",
+    "messages": [
+      {
+        "text": "Hi Guys! \nIs this room still available?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 6:57 pm",
+        "sentAt": "2026-03-30T08:57:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-30T08:57:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201720314",
+    "receivedAt": "2026-03-31T00:48:40.813Z",
+    "updatedAt": "2026-03-31T00:48:40.810Z"
+  }
+}

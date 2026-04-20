@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201383152",
+    "personName": null,
+    "listingTitle": "Ensuite at Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189#room2413329",
+    "propertyCode": "P1549189",
+    "roomId": "2413329",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi, I hope you’re doing well. Could you please let me know how much the rent would be for a couple?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 March 2:46 am",
+        "sentAt": "2026-03-13T16:46:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-13T16:46:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201383152",
+    "receivedAt": "2026-03-23T19:55:26.831Z",
+    "updatedAt": "2026-03-23T19:55:26.829Z"
+  }
+}

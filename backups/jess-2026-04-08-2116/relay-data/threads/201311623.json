@@ -1,0 +1,55 @@
+{
+  "thread": {
+    "threadId": "201311623",
+    "personName": null,
+    "listingTitle": "Ensuite at Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189#room2413329",
+    "propertyCode": "P1549189",
+    "roomId": "2413329",
+    "waNumber": null,
+    "partialPhoneDisplay": "0407 868 •••",
+    "messages": [
+      {
+        "text": "Hi 👋 I’m Cyril\nI’ve been in Australia for about 8 months now and I’m currently working as a carpenter in Brisbane. I’m looking for a place to stay for at least 6 months, somewhere relaxed and easy-going",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "10 March 6:32 pm",
+        "sentAt": "2026-03-10T08:32:00.000Z"
+      },
+      {
+        "text": "Hi Cyril,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi 👋 \nI would like to come, but I’m only available at 7pm \nDoes that suit you ?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 5:57 pm",
+        "sentAt": "2026-03-11T07:57:00.000Z"
+      },
+      {
+        "text": "Hi \nI’d like to know if the room ( with ensuite ) in Kangaroo Point is still available ? \nCheers",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 8:18 pm",
+        "sentAt": "2026-03-12T10:18:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tomorrow at 7pm.\nWould you like to come?\n📍 40 Rosa St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-12T10:18:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201311623",
+    "receivedAt": "2026-03-28T06:06:48.229Z",
+    "updatedAt": "2026-03-28T06:06:48.227Z"
+  }
+}

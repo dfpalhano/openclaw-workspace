@@ -1,0 +1,62 @@
+{
+  "thread": {
+    "threadId": "199919706",
+    "personName": null,
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess, my girlfriend and I would like to take a look at the property and meet you. We are very tidy and are part time uni and working.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 January 5:35 pm",
+        "sentAt": "2026-01-14T07:35:00.000Z"
+      },
+      {
+        "text": "Hi Jess just enquiring about ur rental in cooporoo. My girlfriend and I would like to see it if possible. When suits you",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "16 January 4:32 pm",
+        "sentAt": "2026-01-16T06:32:00.000Z"
+      },
+      {
+        "text": "Hi Connor\nThanks for reaching out. Would you be able to come tomorrow at 9am?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Sorry. I missed that message. We could come tomorrow? Is that ok?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "17 January 5:22 pm",
+        "sentAt": "2026-01-17T07:22:00.000Z"
+      },
+      {
+        "text": "hi",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 3:16 am",
+        "sentAt": "2026-03-12T17:16:00.000Z"
+      },
+      {
+        "text": "Thursday 8:54 pm\nMy name is Sophie, and me and my boyfriend very interested in renting your property. I'm a student at qut with a stable part time income, and I have a clean rental history. I'm tidy, non-smoker, and would take great care of the place. I'm ready to apply immediately and can provide references or payslips if needed.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 3:27 am",
+        "sentAt": "2026-03-12T17:27:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T17:27:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/199919706",
+    "receivedAt": "2026-03-23T19:54:14.294Z",
+    "updatedAt": "2026-03-23T19:54:14.291Z"
+  }
+}

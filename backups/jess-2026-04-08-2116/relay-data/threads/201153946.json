@@ -1,0 +1,62 @@
+{
+  "url": "https://flatmates.com.au/messages/201153946",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T03:45:34.071Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201153946",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi is it suitable for couples?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "3 March 6:42 pm",
+        "sentAt": "2026-03-03T08:42:00.000Z"
+      },
+      {
+        "text": "Hi Nereyda 😊 Thanks for reaching out. Can you please tell me a bit about yourself? Include your cultural background, hobbies, age, and work or academic life if any. Thanks!",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen\nThursday 8:56 am",
+        "sentAt": null
+      },
+      {
+        "text": "Sure, im Nereyda. I’m originally from the Philippines and currently living in Australia but my partner will come this coming april from phils aswell ,I’m 28 years old and working full-time in aged care\nMy partner and I are quiet, respectful, and clean. I mostly focus on work and like to relax at home during my free time. We don’t smoke .",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Thursday 9:01 am",
+        "sentAt": "2026-03-04T23:01:00.000Z"
+      },
+      {
+        "text": "Hi Nereyda, quick correction — tonight it will be Mathis showing you around, not Dee. His WhatsApp: +61411590261. See you tonight!",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen\nFriday 5:27 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Just to confirm — tonight’s inspection is at 6:50pm at 40 Rosa St, Spring Hill QLD 4000. See you there! 😊",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen\nFriday 5:27 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Hey Nereyda! The room is still available 😊 We're doing a showing tonight at 6:30pm — 40 Rosa St, Spring Hill. If you'd like to come check it out, just reply to confirm! Our host will be there to show you around. See you tonight? 🏠",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered\nToday 1:45 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-04T23:01:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201153946"
+  }
+}

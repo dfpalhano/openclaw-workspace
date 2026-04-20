@@ -1,0 +1,29 @@
+{
+  "url": "https://flatmates.com.au/messages/201455754",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-17T06:40:37.141Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201455754",
+    "personName": null,
+    "listingTitle": "Small single room at Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189#room2522775",
+    "propertyCode": "P1549189",
+    "roomId": "2522775",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess my name is Natasha 26F I’m working as a software developer. I’m originally from Bali and I love traveling and running but most of the time I’m quiet and will be working. Let me know if I can have an inspection maybe during the weekend ?I am planning to move in from 28 March.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 4:39 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": null,
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201455754"
+  }
+}

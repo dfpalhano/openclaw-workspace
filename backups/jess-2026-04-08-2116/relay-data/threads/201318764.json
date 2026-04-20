@@ -1,0 +1,48 @@
+{
+  "thread": {
+    "threadId": "201318764",
+    "personName": "K",
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello Jess! I’m interested by the bedroom. If you like we could meet around a coffee to discuss and visited the property?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "10 March 11:49 pm",
+        "sentAt": "2026-03-10T13:49:00.000Z"
+      },
+      {
+        "text": "Hi Kiara,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Sorry I have not saw your message before! Do you think we can make it today please?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 11:42 am",
+        "sentAt": "2026-03-12T01:42:00.000Z"
+      },
+      {
+        "text": "Are you sure about the adress because the one that you gave me is in Brisbane",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 11:45 am",
+        "sentAt": "2026-03-12T01:45:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T01:45:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201318764",
+    "receivedAt": "2026-03-24T02:55:28.124Z",
+    "updatedAt": "2026-03-24T02:55:28.122Z"
+  }
+}

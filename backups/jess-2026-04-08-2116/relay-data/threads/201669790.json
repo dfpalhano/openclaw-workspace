@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201669790",
+    "personName": null,
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1868232",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1868232",
+    "propertyCode": "P1868232",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0423 455 •••",
+    "messages": [
+      {
+        "text": "Hi! I’m interested in your room listing.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 1:01 am",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": null,
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201669790",
+    "receivedAt": "2026-03-28T06:05:15.868Z",
+    "updatedAt": "2026-03-28T06:05:15.865Z"
+  }
+}

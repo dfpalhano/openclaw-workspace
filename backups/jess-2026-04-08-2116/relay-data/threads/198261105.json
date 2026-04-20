@@ -1,0 +1,55 @@
+{
+  "thread": {
+    "threadId": "198261105",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1480522",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1480522",
+    "propertyCode": "P1480522",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0417 702 •••",
+    "messages": [
+      {
+        "text": "Hi Jess how’s it going?\nI’m Danilo (Danny if you want to) 32 yo boy working full time in north Brisbane.\nI’m clean, tidy and respectful guy. I’ll always look after your home.\nI looking for a long term room in this area because it close to central station.\nI hope to hearing back from you for an inspection.\nThanks",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "29 October 4:29 pm",
+        "sentAt": "2026-10-29T06:29:00.000Z"
+      },
+      {
+        "text": "Hi Danilo\nThanks for reaching out. Would you like to come tonight at 6:45pm for the inspection?\n36 Rosa St, Spring Hill\nDee will be there to assist you\n0416 775 321",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Yeah sound good thanks",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "29 October 4:52 pm",
+        "sentAt": "2026-10-29T06:52:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!Seen6 November 3:19 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Jess,\nI might be interested in this room, I wonder how many people are living there and when it’s available the inspection? \nCheers",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 2:52 pm",
+        "sentAt": "2026-03-27T04:52:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T04:52:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/198261105",
+    "receivedAt": "2026-03-28T06:05:59.332Z",
+    "updatedAt": "2026-03-28T06:05:59.329Z"
+  }
+}

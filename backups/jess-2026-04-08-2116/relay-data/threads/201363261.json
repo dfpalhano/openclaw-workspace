@@ -1,0 +1,41 @@
+{
+  "thread": {
+    "threadId": "201363261",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0403 138 •••",
+    "messages": [
+      {
+        "text": "Hi, my name is Konomi.\nI'm from Japan. I'm used to living with other people.\nI’m interested in this property and would like to arrange a viewing.\nCould you please let me know when it would be convenient?\nThank you very much.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 11:16 pm",
+        "sentAt": "2026-03-12T13:16:00.000Z"
+      },
+      {
+        "text": "I really want to live here. I’d like to sign the contract on the day of the viewing if possible.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 11:23 pm",
+        "sentAt": "2026-03-12T13:23:00.000Z"
+      },
+      {
+        "text": "Hi, my name is Konomi.\nI'm from Japan. I'm used to living with other people.\nI’m interested in this property and would like to arrange a viewing.\nCould you please let me know when it would be convenient?\nThank you very much.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 March 7:00 pm",
+        "sentAt": "2026-03-14T09:00:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-14T09:00:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201363261",
+    "receivedAt": "2026-03-23T19:56:01.258Z",
+    "updatedAt": "2026-03-23T19:56:01.255Z"
+  }
+}

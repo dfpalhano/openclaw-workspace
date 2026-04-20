@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201373967",
+    "personName": null,
+    "listingTitle": "Standard room at Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277#room2640983",
+    "propertyCode": "P1362277",
+    "roomId": "2640983",
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [
+      {
+        "text": "Hello, I woul love to see the room and move in this weekend! Would that be possibile? I just signed my contract with Louboutine I will be working from Monday and I’m looking for a place for 6 months",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 3:37 pm",
+        "sentAt": "2026-03-13T05:37:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-13T05:37:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201373967",
+    "receivedAt": "2026-03-23T19:54:50.815Z",
+    "updatedAt": "2026-03-23T19:54:50.813Z"
+  }
+}

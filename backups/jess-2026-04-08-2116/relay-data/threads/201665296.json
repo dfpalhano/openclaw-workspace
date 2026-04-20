@@ -1,0 +1,29 @@
+{
+  "url": "https://flatmates.com.au/messages/201665296",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-31T02:52:19.596Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201665296",
+    "personName": "W",
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess. My partner (31F) and I (33M) are interested in this room. We both from Malaysia and currently working full time in Morningside. Would be great if we can arrange an inspection anytime 🙂",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 6:50 pm",
+        "sentAt": "2026-03-27T08:50:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T08:50:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201665296"
+  }
+}

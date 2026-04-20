@@ -1,0 +1,27 @@
+{
+  "url": "https://flatmates.com.au/messages/201279809",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T07:11:24.919Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201279809",
+    "personName": null,
+    "listingTitle": "View Noa's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0413 708 •••",
+    "messages": [
+      {
+        "text": "Hello Jess,\nMe and my friend Jyliane are really interested by your room for rent. \nIs it still available?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 12:43 pm",
+        "sentAt": "2026-03-09T02:43:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-09T02:43:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201279809"
+  }
+}

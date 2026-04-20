@@ -1,0 +1,48 @@
+{
+  "thread": {
+    "threadId": "201298340",
+    "personName": "L",
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "007 88 ••• ••• •••",
+    "messages": [
+      {
+        "text": "Hi !",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "10 March 7:53 am",
+        "sentAt": "2026-03-09T21:53:00.000Z"
+      },
+      {
+        "text": "Hi Leny,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi! Thanks for the invite. As I mentioned, I’m actually still in France and won't be landing in Brisbane until March 25th.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 10:44 pm",
+        "sentAt": "2026-03-11T12:44:00.000Z"
+      },
+      {
+        "text": "Hi!\nMy name is Lény, I’m a 22-year-old French student, and I’ve just landed in Brisbane for a 6-month internship at QUT.\nI’m currently staying in a hostel in the CBD and I'm looking for a place to settle in as soon as possible. Is the room in Fortitude Valley still available?\nI’m a clean, easy-going, and respectful person with previous experience in shared houses, so I’m well-aware of the importance of keeping common areas tidy. When I’m not at my internship, I love exploring, cooking, and I’m really keen to discover the Aussie lifestyle!\nI’m available for a viewing anytime this week since I’m already in town.\nLooking forward to hearing from you!\nBest, Lény",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 2:26 pm",
+        "sentAt": "2026-03-27T04:26:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T04:26:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201298340",
+    "receivedAt": "2026-03-28T06:06:04.766Z",
+    "updatedAt": "2026-03-28T06:06:04.763Z"
+  }
+}

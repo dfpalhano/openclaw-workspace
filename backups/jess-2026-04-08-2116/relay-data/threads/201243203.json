@@ -1,0 +1,27 @@
+{
+  "url": "https://flatmates.com.au/messages/201243203",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T06:56:29.662Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201243203",
+    "personName": null,
+    "listingTitle": null,
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0451 539 •••",
+    "messages": [
+      {
+        "text": "Hi, I am student at uq and like to know about the room. I would like take the bond for 6 months and please let me know about the nearest inspection time and date",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 6:34 pm",
+        "sentAt": "2026-03-07T08:34:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-07T08:34:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201243203"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "url": "https://flatmates.com.au/messages/201226265",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T03:49:48.641Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201226265",
+    "personName": "R",
+    "listingTitle": "Ensuite at Kangaroo Point, Brisbane",
+    "propertyCode": "P1549189",
+    "roomId": "2413329",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi there! 😊  Is this room available for couples? My partner and I are very interested in the room.  We’re both clean, respectful, and easy-going, and we’re looking for a quiet and comfortable place to live.  If we’re approved after the inspection, we were hoping to move in on either April 7 or April 8.  Would it be possible to arrange an inspection? We’re only available on Mondays to Wednesdays, sorry about the limited availability.  Thank you so much! 😊",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 9:20 pm",
+        "sentAt": "2026-03-06T11:20:00.000Z"
+      },
+      {
+        "text": "Hi Riege Christian! We have a room viewing at 606 Vulture St E, East Brisbane tonight Wednesday 11 March at 6pm. Would you like to come? 😊",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered\nToday 1:49 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-06T11:20:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201226265"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "thread": {
+    "threadId": "201548268",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi, my name is Nina. I’m 20 years old and currently a childcare student.\nI’m tidy, quiet, and easygoing.\nI’m planning to move in around April 11 and stay for a few months.\nI’d love to come for an inspection.\nIs the room still available?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "22 March 10:24 am",
+        "sentAt": "2026-03-22T00:24:00.000Z"
+      },
+      {
+        "text": "I’d like to come for an inspection for the $310 room in Surfers Paradise.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 2:42 pm",
+        "sentAt": "2026-03-30T04:42:00.000Z"
+      },
+      {
+        "text": "Hi, my name is Nina. I’m 20 years old and currently a childcare student.\nI’m tidy, quiet, and easygoing.\nI’m planning to move in around April 11 and stay for a few months.\nI’d love to come for an inspection.\nIs the room still available?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 7:26 pm",
+        "sentAt": "2026-03-30T09:26:00.000Z"
+      },
+      {
+        "text": "I’m a 20-year-old Japanese student.\nI love the ocean and would like to live near the beach.\nI’d also love to interact and get along with my housemates.\nI’m tidy and clean.\nI’d love to come for an inspection!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 10:24 pm",
+        "sentAt": "2026-03-30T12:24:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-30T12:24:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201548268",
+    "receivedAt": "2026-03-31T00:46:39.382Z",
+    "updatedAt": "2026-03-31T00:46:39.378Z"
+  }
+}

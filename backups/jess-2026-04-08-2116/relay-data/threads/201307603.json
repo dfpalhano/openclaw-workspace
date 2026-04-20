@@ -1,0 +1,55 @@
+{
+  "thread": {
+    "threadId": "201307603",
+    "personName": null,
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1868232",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1868232",
+    "propertyCode": "P1868232",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "10 March 3:43 pm",
+        "sentAt": "2026-03-10T05:43:00.000Z"
+      },
+      {
+        "text": "Hi Bella,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Jess,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 3:27 pm",
+        "sentAt": "2026-03-12T05:27:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tomorrow at 7pm.\nWould you like to come?\n📍 40 Rosa St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Jess, It's not exactly what I'm looking for but thank you for reaching out.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 1:37 pm",
+        "sentAt": "2026-03-27T03:37:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T03:37:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201307603",
+    "receivedAt": "2026-03-28T06:06:13.821Z",
+    "updatedAt": "2026-03-28T06:06:13.818Z"
+  }
+}

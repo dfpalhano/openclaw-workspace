@@ -1,0 +1,62 @@
+{
+  "thread": {
+    "threadId": "180230426",
+    "personName": null,
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1022098",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1022098",
+    "propertyCode": "P1022098",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey Jess! Is this room still available? I'm a 23 year old female nurse and I'm going to be arriving into Brisbane within the next week or so, from New Zealand! Please let me know as soon as you can if your rooms still going, and have a read of my profile to see if you think I'd be a good addition to the flat :)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "25 June 2023 11:16 am",
+        "sentAt": null
+      },
+      {
+        "text": "Hello!\nMy name's Georgie and I'm a nurse moving to Brisbane and looking for somewhere to live! I'm a New Zealander and have lived here my whole life, so am excited about moving to Aus and starting my new adventure.\nI've just come back from a month in Europe, but have worked in cancer and emergency nursing prior to this. I love to get out and about, whether that be exercising, socialising, or any form of activity. I'm an extrovert and love making friends, but also appreciate my quiet time. My friends describe me as fun, kind, outgoing and caring, while my past flatmates describe me as clean, tidy and organised (so I can guarantee I'll be a positive addition to your home). I will be doing agency nursing, meaning I can move to different hospitals within Brisbane, so being close to public transport is important. My length of stay is flexible, as is my budget, so please let me know if you think your place is right for me! :)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "25 June 2023 11:17 am",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Georgie! Are you in Brisbane already?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Heya! I arrive into Brizze late this Sunday night, 2nd of July :)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "26 June 2023 9:09 am",
+        "sentAt": null
+      },
+      {
+        "text": "ok! let me know by then",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Great will do, thanks so much :)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "26 June 2023 12:39 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": null,
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/180230426",
+    "receivedAt": "2026-03-28T06:05:57.522Z",
+    "updatedAt": "2026-03-28T06:05:57.520Z"
+  }
+}

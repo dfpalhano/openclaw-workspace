@@ -1,0 +1,41 @@
+{
+  "url": "https://flatmates.com.au/messages/201286914",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T07:05:53.535Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201286914",
+    "personName": null,
+    "listingTitle": null,
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0412 836 •••",
+    "messages": [
+      {
+        "text": "Hi Jess ! we are very interested in your listing and would love to take both rooms. If it would be possible to arrange a viewing sometime soon, we would really appreciate it. Please let me know when it might be convenient for you.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 5:31 pm",
+        "sentAt": "2026-03-09T07:31:00.000Z"
+      },
+      {
+        "text": "Hi Jess ! we are very interested in your listing and would love to take both rooms. If it would be possible to arrange a viewing sometime soon, we would really appreciate it. Please let me know when it might be convenient for you.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 5:31 pm",
+        "sentAt": "2026-03-09T07:31:00.000Z"
+      },
+      {
+        "text": "Hi Jess ! we are very interested in your listing and would love to take both rooms. If it would be possible to arrange a viewing sometime soon, we would really appreciate it. Please let me know when it might be convenient for you.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 5:31 pm",
+        "sentAt": "2026-03-09T07:31:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-09T07:31:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201286914"
+  }
+}

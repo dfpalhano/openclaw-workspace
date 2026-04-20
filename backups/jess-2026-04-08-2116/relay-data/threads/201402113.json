@@ -1,0 +1,29 @@
+{
+  "url": "https://flatmates.com.au/messages/201402113",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-31T01:38:12.333Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201402113",
+    "personName": "R",
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0401 729 •••",
+    "messages": [
+      {
+        "text": "Good evening, I'm a French student at Griffith University. I arrived a week ago at a house in Southport, but it's really dirty. I'm interested in your room. Is it possible to arrange a viewing?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 March 5:50 am",
+        "sentAt": "2026-03-14T19:50:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-14T19:50:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201402113"
+  }
+}

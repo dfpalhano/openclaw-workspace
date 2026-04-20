@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201434108",
+    "personName": null,
+    "listingTitle": "Small single room at Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189#room2522775",
+    "propertyCode": "P1549189",
+    "roomId": "2522775",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi, I'm Dayeong Lee, a 26-year-old female interested in your room. I have 6 years of experience living in dorms and studios, so I'm very tidy and know how to take good care of a house. I'd like to arrange an inspection anytime after March 20th if possible. Please let me know when you're available. Looking forward to hearing from you!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "16 March 4:56 pm",
+        "sentAt": "2026-03-16T06:56:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-16T06:56:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201434108",
+    "receivedAt": "2026-03-23T19:56:53.795Z",
+    "updatedAt": "2026-03-23T19:56:53.792Z"
+  }
+}

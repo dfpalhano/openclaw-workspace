@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "201725053",
+    "personName": "R",
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1868232",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1868232",
+    "propertyCode": "P1868232",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey Jess, Love your write-up!!  I'm Ronan from Ireland. I am working 2 jobs and want to move to Annerley to be closer to Victorious gym.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 10:43 pm",
+        "sentAt": "2026-03-30T12:43:00.000Z"
+      },
+      {
+        "text": "You can contact me on 043 905 8438",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 10:24 am",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-30T12:43:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201725053",
+    "receivedAt": "2026-03-31T00:46:04.940Z",
+    "updatedAt": "2026-03-31T00:46:04.937Z"
+  }
+}

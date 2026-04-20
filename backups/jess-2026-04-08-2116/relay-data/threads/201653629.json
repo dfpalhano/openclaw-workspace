@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201653629",
+    "personName": null,
+    "listingTitle": "Fortitude Valley, Brisbane",
+    "listingId": "1868183",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-fortitude-valley-4006-P1868183",
+    "propertyCode": "P1868183",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0450 316 •••",
+    "messages": [
+      {
+        "text": "Hi there,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 7:13 am",
+        "sentAt": "2026-03-26T21:13:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-26T21:13:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201653629",
+    "receivedAt": "2026-03-28T06:07:54.163Z",
+    "updatedAt": "2026-03-28T06:07:54.160Z"
+  }
+}

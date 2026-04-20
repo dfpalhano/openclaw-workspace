@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201449070",
+    "personName": null,
+    "listingTitle": "Aircon room at Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277#room2075252",
+    "propertyCode": "P1362277",
+    "roomId": "2075252",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess, I'm currently pursuing a master of architecture from UQ.\nI really like your property, and I'm interested in inspecting the rooms.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Tuesday 11:03 am",
+        "sentAt": "2026-03-24T01:03:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-24T01:03:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201449070",
+    "receivedAt": "2026-03-23T19:57:08.287Z",
+    "updatedAt": "2026-03-23T19:57:08.284Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "201359968",
+    "personName": null,
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi! I’m Evelyn (20), and I'm a Korean university student currently on a gap year.\nI'm working in Cafe in East Brisbane and seeking a tidy, friendly home.\nI’m very clean and communicative, and since I have experience living in a dormitory, I’m well-aware of shared house etiquette. I saw your listing and would love to inquire if the room is still available.\nI'm looking to stay for about 6 months starting from 14th Mar.\nLooking forward to hearing from you. Thank you!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 8:35 pm",
+        "sentAt": "2026-03-12T10:35:00.000Z"
+      },
+      {
+        "text": "I'm interested in the room for $270/pw. Would it be possible to arrange an inspection?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 8:36 pm",
+        "sentAt": "2026-03-12T10:36:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T10:36:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201359968",
+    "receivedAt": "2026-03-23T19:54:01.613Z",
+    "updatedAt": "2026-03-23T19:54:01.610Z"
+  }
+}

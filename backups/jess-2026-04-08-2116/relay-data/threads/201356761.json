@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201356761",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0493 712 •••",
+    "messages": [
+      {
+        "text": "Hi, I’m interested in your room!\nIs the room still available?\nWould it be possible to arrange an inspection?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 6:25 pm",
+        "sentAt": "2026-03-12T08:25:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T08:25:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201356761",
+    "receivedAt": "2026-03-23T19:53:47.123Z",
+    "updatedAt": "2026-03-23T19:53:47.121Z"
+  }
+}

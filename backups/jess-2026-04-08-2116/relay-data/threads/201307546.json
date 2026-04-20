@@ -1,0 +1,83 @@
+{
+  "thread": {
+    "threadId": "201307546",
+    "personName": null,
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [
+      {
+        "text": "avaliable?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "10 March 3:41 pm",
+        "sentAt": "2026-03-10T05:41:00.000Z"
+      },
+      {
+        "text": "Hi Marco,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "I’m in Melb",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 4:54 pm",
+        "sentAt": "2026-03-11T06:54:00.000Z"
+      },
+      {
+        "text": "I’m going to Brisbane on 14 march",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 4:54 pm",
+        "sentAt": "2026-03-11T06:54:00.000Z"
+      },
+      {
+        "text": "I’ll arrive at 8 pm in Brisbane",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 4:54 pm",
+        "sentAt": "2026-03-11T06:54:00.000Z"
+      },
+      {
+        "text": "Jess?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 2:14 pm",
+        "sentAt": "2026-03-12T04:14:00.000Z"
+      },
+      {
+        "text": "Jess???",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 12:04 pm",
+        "sentAt": "2026-03-13T02:04:00.000Z"
+      },
+      {
+        "text": "can you text me?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 12:04 pm",
+        "sentAt": "2026-03-13T02:04:00.000Z"
+      },
+      {
+        "text": "0403087300",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 12:04 pm",
+        "sentAt": "2026-03-13T02:04:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-13T02:04:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201307546",
+    "receivedAt": "2026-03-23T19:54:32.406Z",
+    "updatedAt": "2026-03-23T19:54:32.404Z"
+  }
+}

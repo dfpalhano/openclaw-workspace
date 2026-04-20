@@ -1,0 +1,55 @@
+{
+  "url": "https://flatmates.com.au/messages/201146129",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T03:46:03.741Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201146129",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess love your place! I am Beth 26 year old from UK but working here full time and work in Spring Hill as a restaurant manager! I would love to come and see your space!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "3 March 12:57 pm",
+        "sentAt": "2026-03-03T02:57:00.000Z"
+      },
+      {
+        "text": "Hi Bethany, thanks for reaching out! We'd love to learn a bit more about you before we go any further. Could you tell me: when are you looking to move in, and a little about yourself (work or study, lifestyle)? Thanks!",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen\n4 March 1:38 am",
+        "sentAt": "2001-03-03T15:38:00.000Z"
+      },
+      {
+        "text": "Hi Bethany, quick correction — tonight it will be Mathis showing you around, not Dee. His WhatsApp: +61411590261. See you tonight!",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen\nFriday 5:07 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Just to confirm — tonight’s inspection is at 6:50pm at 40 Rosa St, Spring Hill QLD 4000. See you there! 😊",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered\nFriday 5:10 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Hey Bethany! The room is still available 😊 We're doing a showing tonight at 6:30pm — 40 Rosa St, Spring Hill. If you'd like to come check it out, just reply to confirm! Our host will be there to show you around. See you tonight? 🏠",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered\nToday 1:46 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-03T02:57:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201146129"
+  }
+}

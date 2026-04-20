@@ -1,0 +1,41 @@
+{
+  "thread": {
+    "threadId": "201661213",
+    "personName": "B",
+    "listingTitle": "Fortitude Valley, Brisbane",
+    "listingId": "1868183",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-fortitude-valley-4006-P1868183",
+    "propertyCode": "P1868183",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess! I came across your listing and I'm really interested. My sister and I are both on working holiday visas and looking for a place together — could you let us know what the weekly rent would be for two people sharing the room? Thanks so much!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 3:22 pm",
+        "sentAt": "2026-03-27T05:22:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 6:45pm.\nWould you like to come?\n📍 41 Park St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Jess! Thanks so much for the invitation, but unfortunately I won't be able to make it today at 6pm. Could you let me know when the next inspection would be? I'd really appreciate it!\nAlso, PLEASE let me know what the weekly rent would be for two people sharing the room — that's really important to me! Looking forward to hearing from you!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 5:44 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-27T05:22:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201661213",
+    "receivedAt": "2026-03-28T07:52:01.293Z",
+    "updatedAt": "2026-03-28T07:52:01.291Z"
+  }
+}

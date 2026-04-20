@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201673261",
+    "personName": "Y",
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1868232",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1868232",
+    "propertyCode": "P1868232",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi! 😊\nMy name is Yulmi Choi, and I arrived in Australia on March 27 on a working holiday visa.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 10:20 am",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": null,
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201673261",
+    "receivedAt": "2026-03-28T06:05:08.627Z",
+    "updatedAt": "2026-03-28T06:05:08.625Z"
+  }
+}

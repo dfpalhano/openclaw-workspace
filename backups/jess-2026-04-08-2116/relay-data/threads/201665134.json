@@ -1,0 +1,64 @@
+{
+  "url": "https://flatmates.com.au/messages/201665134",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-31T00:39:57.294Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201665134",
+    "personName": null,
+    "listingTitle": "Fortitude Valley, Brisbane",
+    "listingId": "1868183",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-fortitude-valley-4006-P1868183",
+    "propertyCode": "P1868183",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0410 945 •••",
+    "messages": [
+      {
+        "text": "Hi, my husband and I are interested in this place, can we schedule a viewing?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 6:41 pm",
+        "sentAt": "2026-03-27T08:41:00.000Z"
+      },
+      {
+        "text": "I saw there's one in Valley too, we'd like to try it as well.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 6:42 pm",
+        "sentAt": "2026-03-27T08:42:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 6:45pm.\nWould you like to come?\n📍 41 Park St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Today is my boyfriend birthday",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 5:11 pm",
+        "sentAt": "2026-03-28T07:11:00.000Z"
+      },
+      {
+        "text": "Maybe tomorrow or all this week?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 5:12 pm",
+        "sentAt": "2026-03-28T07:12:00.000Z"
+      },
+      {
+        "text": "We're really desperate, so if you can't, maybe if you have a video we can close the deal.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 5:15 pm",
+        "sentAt": "2026-03-28T07:15:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-28T07:15:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201665134"
+  }
+}

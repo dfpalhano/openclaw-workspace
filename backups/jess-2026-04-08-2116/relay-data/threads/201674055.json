@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "201674055",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey Jess\nHope you’re doing well! I’m an international student who just arrived in Australia to start my Master’s at Griffith University. I’m 30 years old and did my bachelor’s in USA, where I mostly stayed in homestays, so I’m used to shared living, and I really value cleanliness, quiet and respect , I’m currently looking for a calm place to stay for 3–4 months, ideally somewhere not too far from the university. Your place looks like a great fit, is it still available? If so, would it be possible to arrange a time for an inspection?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 11:12 am",
+        "sentAt": "2026-03-28T01:12:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections next Thursday at 1pm.\nWould you like to come?\n📍 4/44 Watson Esplanade, Surfers Paradise QLD 4217\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-28T01:12:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201674055",
+    "receivedAt": "2026-03-31T00:45:50.435Z",
+    "updatedAt": "2026-03-31T00:45:50.432Z"
+  }
+}

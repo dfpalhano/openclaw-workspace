@@ -1,0 +1,41 @@
+{
+  "thread": {
+    "threadId": "201411066",
+    "personName": null,
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0468 765 •••",
+    "messages": [
+      {
+        "text": "Hi there Jess, my partner and I would be very interested. In the description it states that when one person leaves the house the other must leave with them. Does this go for couples or just buddy friends renting out the room? Let me know, as both Kush and I have different schedules and we remain home sometimes separately. Thanks!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 March 3:20 pm",
+        "sentAt": "2026-03-15T05:20:00.000Z"
+      },
+      {
+        "text": "This listing was for the Cooparoo room^^",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 March 3:22 pm",
+        "sentAt": "2026-03-15T05:22:00.000Z"
+      },
+      {
+        "text": "I would also be interested in the Woolongabba room too!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 March 3:23 pm",
+        "sentAt": "2026-03-15T05:23:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-15T05:23:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201411066",
+    "receivedAt": "2026-03-23T19:56:22.995Z",
+    "updatedAt": "2026-03-23T19:56:22.993Z"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "url": "https://flatmates.com.au/messages/201385262",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-04-01T22:17:03.718Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201385262",
+    "personName": null,
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 March 8:56 am",
+        "sentAt": "2026-03-13T22:56:00.000Z"
+      },
+      {
+        "text": "Hi jess",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 March 8:57 am",
+        "sentAt": "2026-03-13T22:57:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 8pm.\nWould you like to come?\n📍 37 Marian St, Coorparoo QLD 4151\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hello, sorry for the time, I just saw your message recently, a visit would be possible these days.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Sunday 9:01 pm",
+        "sentAt": "2026-03-29T11:01:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 7pm.\nWould you like to come?\n📍 37 Marian St, Coorparoo QLD 4151\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-29T11:01:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201385262"
+  }
+}

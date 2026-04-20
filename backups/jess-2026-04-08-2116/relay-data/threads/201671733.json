@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201671733",
+    "personName": null,
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Less , me and my wife are looking for a place near murrarie for next 3/4 months and your place looks ideal for us . I work as a mechanical engineer in murrarie . We’re clean and respectful. Please let me know if you would be interested to share the place with us .",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 8:09 am",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": null,
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201671733",
+    "receivedAt": "2026-03-28T06:05:10.438Z",
+    "updatedAt": "2026-03-28T06:05:10.435Z"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "thread": {
+    "threadId": "196507807",
+    "personName": null,
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey Jess ☺️ would you accept a small cat?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "3 August 8:43 am",
+        "sentAt": "2026-08-02T22:43:00.000Z"
+      },
+      {
+        "text": "Unfortunately no pets allowed, sorry :(",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Jess has removed a listing in Coorparoo, BrisbaneJess’s listing in Coorparoo, Brisbane is no longer available. But there are still plenty of great places available — take a look around!SeenSaturday 7:49 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hey Jess ☺️ is your lovely place still available",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "16 March 9:39 pm",
+        "sentAt": "2026-03-16T11:39:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 8pm.\nWould you like to come?\n📍 37 Marian St, Coorparoo QLD 4151\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Is your Spring Hill still available",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 7:50 pm",
+        "sentAt": "2026-03-28T09:50:00.000Z"
+      },
+      {
+        "text": "And would you take a cat",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 7:50 pm",
+        "sentAt": "2026-03-28T09:50:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!SeenMonday 9:58 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-28T09:50:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/196507807",
+    "receivedAt": "2026-03-31T00:46:44.822Z",
+    "updatedAt": "2026-03-31T00:46:44.817Z"
+  }
+}

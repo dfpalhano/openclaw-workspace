@@ -1,0 +1,62 @@
+{
+  "thread": {
+    "threadId": "200256857",
+    "personName": null,
+    "listingTitle": "Small single bedroom at Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878#room2499984",
+    "propertyCode": "P1773878",
+    "roomId": "2499984",
+    "waNumber": null,
+    "partialPhoneDisplay": "0402 142 •••",
+    "messages": [
+      {
+        "text": "Subject: Inspection Request (Feb 1–4)\nDear Jess\nMy name is Yesung yoon, and I am a female Korean pharmacy student at Griffith University. I will be arriving in the Gold Coast on February 1st, and I am very interested in your property. I would like to kindly request an inspection between February 1 and 4, if that is available for you.\nThe room and its location seem ideal for my needs. I am looking for a clean, quiet, and comfortable space where I can focus on my studies, and your home appears to be the perfect place for that. I am a tidy and responsible person, and I always take good care of the place where I live.\nPlease let me know if any of those dates work for you. I truly appreciate your time and consideration, and I look forward to hearing from you soon.\nKind regards,\nYesung Yoon\nyys030708@gmail.com\nwhat's app: +82 1059328754",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "26 January 10:35 pm",
+        "sentAt": "2026-01-26T12:35:00.000Z"
+      },
+      {
+        "text": "Hi Yesung, thanks for reaching out! We have an inspection today (Sun 22 Feb) at 6pm — are you able to make it? Just confirm and Emilio (+61 481 517 377 on WhatsApp) will send you the meet-up details.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi jess! I am so sorry about that. I’ve already lived in other house. I really hope you find great flatmates",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "22 February 3:19 pm",
+        "sentAt": "2026-02-22T05:19:00.000Z"
+      },
+      {
+        "text": "Hi Yesly,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Yesly, sorry about that! We're currently working on scheduling an inspection for your property — we'll be in touch as soon as it's confirmed. Thanks for your patience!",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi! We're doing inspections tomorrow at 7pm.\nWould you like to come?\n📍 40 Rosa St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-02-22T05:19:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/200256857",
+    "receivedAt": "2026-03-28T06:05:35.786Z",
+    "updatedAt": "2026-03-28T06:05:35.783Z"
+  }
+}

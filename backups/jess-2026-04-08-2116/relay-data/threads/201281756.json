@@ -1,0 +1,27 @@
+{
+  "url": "https://flatmates.com.au/messages/201281756",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T07:08:35.769Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201281756",
+    "personName": "K",
+    "listingTitle": "View Kira's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0434 430 •••",
+    "messages": [
+      {
+        "text": "Hello, I saw your rooms for rent. I would like to know if they are still available.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 2:07 pm",
+        "sentAt": "2026-03-09T04:07:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-09T04:07:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201281756"
+  }
+}

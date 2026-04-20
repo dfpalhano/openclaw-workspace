@@ -1,0 +1,43 @@
+{
+  "url": "https://flatmates.com.au/messages/201251288",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T08:22:57.310Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201251288",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0400 420 •••",
+    "messages": [
+      {
+        "text": "Hey! Hope you’re good- happy Sunday 🩷",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Sunday 8:07 am",
+        "sentAt": "2026-03-07T22:07:00.000Z"
+      },
+      {
+        "text": "Hey Amanda! The room is still available 😊 We're doing a showing tonight at 6:30pm — 40 Rosa St, Spring Hill. If you'd like to come check it out, just reply to confirm! Our host will be there to show you around. See you tonight? 🏠",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hey sorry, I’m not actually in Brisbane until the 30th :( xx",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 1:58 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-07T22:07:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201251288"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "thread": {
+    "threadId": "201197356",
+    "personName": null,
+    "listingTitle": "Small single room at Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189#room2522775",
+    "propertyCode": "P1549189",
+    "roomId": "2522775",
+    "waNumber": null,
+    "partialPhoneDisplay": null,
+    "messages": [
+      {
+        "text": "Hello, I am Jacky from Taiwan, a male international student. Is this single room still available? Can I arrange an inspection?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "5 March 3:49 pm",
+        "sentAt": "2026-03-05T05:49:00.000Z"
+      },
+      {
+        "text": "Hi 周家賢,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "So sorry for the late reply—it’s been a very busy day and I missed your message. If the room is still available for inspection, I’m free after 1:30 PM this Thursday and Friday, and I’m available all day this Saturday. Please let me know which time works best for you!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 9:52 pm",
+        "sentAt": "2026-03-11T11:52:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tomorrow at 7pm.\nWould you like to come?\n📍 40 Rosa St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-11T11:52:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201197356",
+    "receivedAt": "2026-03-28T06:07:15.401Z",
+    "updatedAt": "2026-03-28T06:07:15.399Z"
+  }
+}

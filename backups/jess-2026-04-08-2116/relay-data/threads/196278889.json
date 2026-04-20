@@ -1,0 +1,76 @@
+{
+  "thread": {
+    "threadId": "196278889",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi i have some questions about the house",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "22 July 1:59 pm",
+        "sentAt": "2026-07-22T03:59:00.000Z"
+      },
+      {
+        "text": "Hi Daniel\nHow can I help?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "i really like the photos about the house in Surfers",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "24 July 1:43 pm",
+        "sentAt": "2026-07-24T03:43:00.000Z"
+      },
+      {
+        "text": "how many people live there?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "24 July 1:43 pm",
+        "sentAt": "2026-07-24T03:43:00.000Z"
+      },
+      {
+        "text": "There are five rooms, 4 of them are taken. 5 people",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Jess has removed a listing in Surfers Paradise, Gold CoastJess’s listing in Surfers Paradise, Gold Coast is no longer available. But there are still plenty of great places available — take a look around!Seen25 July 10:21 am",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hii ii'm Daniel 23 years old guy from Italy, very clean,tidy and friendly,i like the vibes of your plafe,can i come for inspection?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "22 March 3:51 am",
+        "sentAt": "2026-03-21T17:51:00.000Z"
+      },
+      {
+        "text": "let me know",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 12:09 am",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-21T17:51:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/196278889",
+    "receivedAt": "2026-03-31T00:46:26.686Z",
+    "updatedAt": "2026-03-31T00:46:26.682Z"
+  }
+}

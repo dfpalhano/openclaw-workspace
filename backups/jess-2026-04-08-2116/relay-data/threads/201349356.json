@@ -1,0 +1,29 @@
+{
+  "url": "https://flatmates.com.au/messages/201349356",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-23T20:43:58.739Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201349356",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0468 476 •••",
+    "messages": [
+      {
+        "text": "Hi! \nI just saw your room listing and it looks great 😊My name is Sona, a 20-year-old from Japan currently working here.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 12:35 pm",
+        "sentAt": "2026-03-12T02:35:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T02:35:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201349356"
+  }
+}

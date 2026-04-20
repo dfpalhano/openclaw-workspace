@@ -1,0 +1,76 @@
+{
+  "url": "https://flatmates.com.au/messages/189604042",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T06:47:40.717Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "189604042",
+    "personName": null,
+    "listingTitle": null,
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0421 170 •••",
+    "messages": [
+      {
+        "text": "Hey Jess, I’m Kayley. I’m interested in rented out the available room, let me know if your interested in renting the room to me to. If you have any questions, I’ll be prepared to give you any information necessary. Thank you",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "17 September 2024 7:24 am",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Kayley! Yes sure. Would you like to come tonight to have a look?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi. Sorry, I won’t be available to look at the place until the 28th of September onwards due to school and work. Is that okay?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "17 September 2024 2:28 pm",
+        "sentAt": null
+      },
+      {
+        "text": "let me know the date you can actually see the rooms and I'll tell you what will be available by then. Thanks",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Okay, thank you.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "17 September 2024 2:34 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Vince,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Tuesday 8:31 pm",
+        "sentAt": "2026-03-10T10:31:00.000Z"
+      },
+      {
+        "text": "*** Hi Jess,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Tuesday 8:32 pm",
+        "sentAt": "2026-03-10T10:32:00.000Z"
+      },
+      {
+        "text": "Hi Kayley,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-10T10:32:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/189604042"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201401305",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey Jess. How are you. \nMy name is Vj and am moving to Gold Coast for work and the room you have for me is perfect as I work close to the esplanade. If you coukd reach out to me, it would be awesome.\nA little about me, \nAm 36\nWorking full time \nAm from India.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 March 1:34 am",
+        "sentAt": "2026-03-14T15:34:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-14T15:34:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201401305",
+    "receivedAt": "2026-03-23T19:56:08.506Z",
+    "updatedAt": "2026-03-23T19:56:08.504Z"
+  }
+}

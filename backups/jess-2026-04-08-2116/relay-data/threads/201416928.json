@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201416928",
+    "personName": null,
+    "listingTitle": "Small single room at Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189#room2522775",
+    "propertyCode": "P1549189",
+    "roomId": "2522775",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey Jess, this sounds awesome! I’m Alex (26), a kiwi that’s relatively new to Australia and working full time in architecture with a side gig in photography and web design. This sounds like the family vibe I’ve been missing, I’d love to come and check the place out if that’s a possibility!\nCheers",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 March 7:55 pm",
+        "sentAt": "2026-03-15T09:55:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-15T09:55:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201416928",
+    "receivedAt": "2026-03-23T19:56:35.679Z",
+    "updatedAt": "2026-03-23T19:56:35.676Z"
+  }
+}

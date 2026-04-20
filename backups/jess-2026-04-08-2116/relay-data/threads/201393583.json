@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201393583",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess\nI’m a 32-year-old woman from Korea. I’ve been in Australia for about 3 years on a working holiday visa, and I recently received a sponsorship visa from my workplace, so I’m looking for a place where I can stay long-term.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 March 4:27 pm",
+        "sentAt": "2026-03-14T06:27:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-14T06:27:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201393583",
+    "receivedAt": "2026-03-23T19:55:52.200Z",
+    "updatedAt": "2026-03-23T19:55:52.197Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "url": "https://flatmates.com.au/messages/201302375",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T06:53:18.991Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201302375",
+    "personName": null,
+    "listingTitle": "View Victor's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "006 71 ••• ••• •••",
+    "messages": [
+      {
+        "text": "Hey, I’m interested in this property",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Tuesday 11:44 am",
+        "sentAt": "2026-03-10T01:44:00.000Z"
+      },
+      {
+        "text": "Hi Victor,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-10T01:44:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201302375"
+  }
+}

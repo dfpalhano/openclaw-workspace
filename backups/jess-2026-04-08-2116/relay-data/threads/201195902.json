@@ -1,0 +1,62 @@
+{
+  "thread": {
+    "threadId": "201195902",
+    "personName": "H",
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0420 207 •••",
+    "messages": [
+      {
+        "text": "Hi Jess\nCan i view this  property please? I am working in Brisbane from Sydney and looking for a place for my self. Please call me on 04 2020 7925 or email me on harichandra@tpg.com.au\nRegards\nHari",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "5 March 2:41 pm",
+        "sentAt": "2026-03-05T04:41:00.000Z"
+      },
+      {
+        "text": "Hi Hari,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Can i come tomorrow if possible please?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 6:06 pm",
+        "sentAt": "2026-03-11T08:06:00.000Z"
+      },
+      {
+        "text": "Do you have a room with private bathroom please and off street parking?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 6:08 pm",
+        "sentAt": "2026-03-11T08:08:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tomorrow at 7pm.\nWould you like to come?\n📍 40 Rosa St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "When is it  becoming available and the minimum stay detaails i like to see please",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 9:13 am",
+        "sentAt": "2026-03-26T23:13:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-26T23:13:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201195902",
+    "receivedAt": "2026-03-28T06:07:59.590Z",
+    "updatedAt": "2026-03-28T06:07:59.587Z"
+  }
+}

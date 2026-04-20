@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "201660130",
+    "personName": null,
+    "listingTitle": "Fortitude Valley, Brisbane",
+    "listingId": "1868183",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-fortitude-valley-4006-P1868183",
+    "propertyCode": "P1868183",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess! Me and my partner Jacopo would be super interested in this! We have jobs starting on Monday in Brisbane and are looking for a place. We can provide landlord references and friend references to prove we are fun and easy to live with! :) would be happy to do a FaceTime/in person viewing :)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 2:19 pm",
+        "sentAt": "2026-03-27T04:19:00.000Z"
+      },
+      {
+        "text": "Also, I’m British and jacopos Italian , we are on a working holiday visa, let me know if I can tell you anything else about us!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 2:21 pm",
+        "sentAt": "2026-03-27T04:21:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T04:21:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201660130",
+    "receivedAt": "2026-03-28T06:06:06.577Z",
+    "updatedAt": "2026-03-28T06:06:06.574Z"
+  }
+}

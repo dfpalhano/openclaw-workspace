@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "196233555",
+    "personName": null,
+    "listingTitle": "Room Deluxe at Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743#room2300178",
+    "propertyCode": "P1575743",
+    "roomId": "2300178",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey Jess is this available I’m moving into city and this place looks nice . I’m working in the healthcare industry and looking to move soon. Cheers",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "20 July 11:47 am",
+        "sentAt": "2026-07-20T01:47:00.000Z"
+      },
+      {
+        "text": "Hey Jess is this available I’m moving closer to city and this place looks nice . I’m working as an engineer in the healthcare industry and looking to move soon. A little bit about myself , Im from NZ but lived in various places, recently lived in Europe and I enjoy travelling. Recently gotten into surfing and I like salsa / bachata. Cheers",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 March 9:34 am",
+        "sentAt": "2026-03-13T23:34:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-13T23:34:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/196233555",
+    "receivedAt": "2026-03-23T19:55:37.704Z",
+    "updatedAt": "2026-03-23T19:55:37.702Z"
+  }
+}

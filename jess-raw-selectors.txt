@@ -1,0 +1,108 @@
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.message-body > ul > li:nth-child(3) > div > div.message-text > p
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.message-body > ul > li:nth-child(4) > div.message-details.other-message > div.message-text > p
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.SubHeader__container___1llko > div.inbox-messages-listings > a
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.message-body > ul > li:nth-child(4) > div.message-details.other-message > div.time-sent
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.message-body > ul > li:nth-child(3) > div > div.time-sent > div
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-conversations.selected > ul > li:nth-child(3) > a > div.details > div.last-active
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-conversations.selected > ul > li:nth-child(2) > a > div.details > div.member
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div:nth-child(3) > div.styles__mainContent__wrapper___1xRLf > section > div:nth-child(1) > div > span
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div:nth-child(3) > div.styles__mainContent__wrapper___1xRLf > section > div.styles__keyFeatures___3CJA7 > div:nth-child(2) > div > div.styles__text__wrapper___2QRUH > div
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div:nth-child(3) > div.styles__mainContent__wrapper___1xRLf > section > div.styles__keyFeatures___3CJA7 > div:nth-child(1) > div > div.styles__text__wrapper___2QRUH > div
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div:nth-child(3) > div.styles__mainContent__wrapper___1xRLf > section > div.styles__keyFeatures___3CJA7 > div:nth-child(3) > div > div.styles__text__wrapper___2QRUH > div
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.SubHeader__container___1llko > div.inbox-messages-mobile > div > div
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.SubHeader__container___1llko > div.inbox-messages-mobile > div > div > div > h1 > a
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.SubHeader__container___1llko > div.inbox-messages-mobile > div > div > div > div.close-button > span > svg > path
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section
+
+document.querySelector("body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-conversations.selected > ul > li:nth-child(3)") 
+
+<li class="conversation-item unread"><a class="conversation-link" href="/messages/201328782"><div class="avatar"><div class="avatar-with-dot"><div class="unread-dot">•</div><div class="styles__avatar___1bYIf"><div class="initial">G</div></div></div></div><div class="details"><div class="member">George Bravo</div><div class="last-active">Online Today</div><div class="snippet"><span class="snippet-icon"></span>Hello, I'm George and I am Student  I'd like to know when the room inspection could take place (Ensuite Bathroom); my stay would be long-term.</div></div></a></li>
+
+
+body > div.content-wrapper > div
+
+#nav-myaccount
+
+
+#desktop-nav > li:nth-child(4)
+
+body > div.content-wrapper > div > div:nth-child(1) > div
+
+body > div.content-wrapper > div > div:nth-child(1) > div > div.my-account > div > div.listings.my-account-no-listings
+
+body > div.content-wrapper > div > div:nth-child(1) > div > div.close-button
+
+body > div.content-wrapper > div > header
+
+#listingId-1773878
+
+body > div.content-wrapper > div > div:nth-child(1) > div > div.my-account > div > div.listings.my-account-no-listings > div.property-listings > div:nth-child(6)
+
+#listingId-1362277 > div.labels > div
+
+#listingId-1773878 > div.light.live
+
+#listingId-1464131 > div.labels > div
+
+<div class="status-label inactive"><span>Inactive</span></div>
+
+<div class="status-label boosted"><span>Boosted</span></div>
+
+<div class="status-label live"><span>Live</span></div>
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-messages-section > div > div > div.message-body > ul > li:nth-child(1) > div.inbox-messages-subject > a
+
+<a class="detail available" href="https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878">Surfers Paradise, Gold Coast</a>
+
+Deactivation
+
+Edit listings:
+
+#listingId-1362277 > div.listing-link > span.link-edit
+
+Edit room details:
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div.styles__dashboard__container___UO59P > div > div:nth-child(2) > div > div.styles__contentLayout___1s0_B > div > section > div.styles__roomDetails___3Vm1D > div:nth-child(1)
+
+Deactivate room:
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div.styles__dashboard__container___UO59P > div > div:nth-child(2) > div > div.styles__contentLayout___1s0_B > div > section > div.styles__roomDetails___3Vm1D > div:nth-child(1) > div > div.undefined.styles__PROPERTY___1a2AI > div.sc-hiwPVj.hHzOEw > button:nth-child(1)
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div.styles__dashboard__container___UO59P > div > div:nth-child(2) > div > div.styles__contentLayout___1s0_B > div > section > div.styles__roomDetails___3Vm1D > div:nth-child(2) > div > div.undefined.styles__PROPERTY___1a2AI > div.sc-hiwPVj.hHzOEw > button:nth-child(1) > span
+
+<span class="Button__LabelWithMargin-sc-etylg7-1 izGxkF">Set as unavailable</span>
+
+<span class="Button__LabelWithMargin-sc-etylg7-1 izGxkF">Set as available</span>
+
+Deactivate listing
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div.styles__dashboard__container___UO59P > section > button
+
+<button type="button" class="ButtonBase-sc-1lobkej-0 kytKcH sc-eCImPb fKnZTF styles__activationToggle___Tid0S"><span class="statusText"><i class="far fa-stop-circle styles__statusIcon___2KaTe"></i>Deactivate listing</span></button>
+
+New messages:
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-conversations.selected > ul > li:nth-child(2)
+
+<li class="conversation-item unread"><a class="conversation-link" href="/messages/201438245"><div class="avatar"><div class="avatar-with-dot"><div class="unread-dot">•</div>...
+
+body > div.content-wrapper > div > div:nth-child(3) > div > div > div > div.inbox-conversations.selected > ul > li:nth-child(2) > a > div.details > div.last-active
+
+<div class="last-active">Online Today</div>
+
+This is where you should look for last time stamp
+<div class="time-sent">Wednesday 4:17 am</div>

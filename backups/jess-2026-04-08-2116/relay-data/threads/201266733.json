@@ -1,0 +1,34 @@
+{
+  "url": "https://flatmates.com.au/messages/201266733",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T03:50:03.895Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201266733",
+    "personName": null,
+    "listingTitle": "Small single room at Kangaroo Point, Brisbane",
+    "propertyCode": "P1549189",
+    "roomId": "2522775",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello,\nI hope this message finds you well. My name is Neha, I am from India ( Mumbai )\nI am studying at QUT, Masters of Business (Marketing). I work park time 3/4 days a week",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Sunday 7:53 pm",
+        "sentAt": "2026-03-08T09:53:00.000Z"
+      },
+      {
+        "text": "Hi Neha Shinde! We have a room viewing at 606 Vulture St E, East Brisbane tonight Wednesday 11 March at 6pm. Would you like to come? 😊",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered\nToday 1:50 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-08T09:53:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201266733"
+  }
+}

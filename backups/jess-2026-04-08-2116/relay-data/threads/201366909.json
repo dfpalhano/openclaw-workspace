@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "201366909",
+    "personName": null,
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello I was wondering if you could like consider two girls ? (Not a couple)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 8:59 am",
+        "sentAt": "2026-03-12T22:59:00.000Z"
+      },
+      {
+        "text": "Hello I was wondering if you could like consider two girls ? (Not a couple)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "13 March 8:59 am",
+        "sentAt": "2026-03-12T22:59:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T22:59:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201366909",
+    "receivedAt": "2026-03-23T19:54:26.971Z",
+    "updatedAt": "2026-03-23T19:54:26.968Z"
+  }
+}

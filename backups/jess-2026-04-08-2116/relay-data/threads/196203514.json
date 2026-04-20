@@ -1,0 +1,69 @@
+{
+  "thread": {
+    "threadId": "196203514",
+    "personName": null,
+    "listingTitle": "Small single bedroom at Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878#room2499984",
+    "propertyCode": "P1773878",
+    "roomId": "2499984",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "18 July 5:54 pm",
+        "sentAt": "2026-07-18T07:54:00.000Z"
+      },
+      {
+        "text": "Hi Olivia\nThanks for reaching out. I have just the $320 room left. Would you like to come tomorrow at 6:30pm for the inspection?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Jess has removed a listing in Surfers Paradise, Gold CoastJess’s listing in Surfers Paradise, Gold Coast is no longer available. But there are still plenty of great places available — take a look around!Seen25 July 10:57 am",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hello, I am Olivia Arthur a 30 year old female and saw your room advertised on flatmates website. I am portentously interested in the room, I work full time as an auditor (accountant) and enjoy an active lifestyle including going to the gym in the mornings. I am wondering if there is good on or off street parking? I am available at a mutually suitable time for a viewing. Thanks",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 October 7:59 am",
+        "sentAt": "2026-10-14T21:59:00.000Z"
+      },
+      {
+        "text": "Good morning,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 10:52 am",
+        "sentAt": "2026-03-30T00:52:00.000Z"
+      },
+      {
+        "text": "Just for your information my contact number is 0428439923, thanks",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 12:27 pm",
+        "sentAt": "2026-03-30T02:27:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!SeenMonday 9:34 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-30T02:27:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/196203514",
+    "receivedAt": "2026-03-31T00:46:55.703Z",
+    "updatedAt": "2026-03-31T00:46:55.699Z"
+  }
+}

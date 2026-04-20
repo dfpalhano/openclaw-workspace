@@ -1,0 +1,48 @@
+{
+  "thread": {
+    "threadId": "201458800",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "011 95782 •••",
+    "messages": [
+      {
+        "text": "I’m interested to join i will arrive at 16 april",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "17 March 6:51 pm",
+        "sentAt": "2026-03-17T08:51:00.000Z"
+      },
+      {
+        "text": "?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "18 March 9:56 am",
+        "sentAt": "2026-03-17T23:56:00.000Z"
+      },
+      {
+        "text": "I’m a chill guy I’m coming to study so i need a place next to my school",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "18 March 5:44 pm",
+        "sentAt": "2026-03-18T07:44:00.000Z"
+      },
+      {
+        "text": "Jess ?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 2:07 pm",
+        "sentAt": "2026-03-27T04:07:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T04:07:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201458800",
+    "receivedAt": "2026-03-28T06:06:10.200Z",
+    "updatedAt": "2026-03-28T06:06:10.197Z"
+  }
+}

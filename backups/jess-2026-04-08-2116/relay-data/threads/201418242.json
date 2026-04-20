@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201418242",
+    "personName": "A",
+    "listingTitle": "Coorparoo, Brisbane",
+    "listingId": "1575743",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-coorparoo-4151-P1575743",
+    "propertyCode": "P1575743",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0416 145 •••",
+    "messages": [
+      {
+        "text": "Hi! My name is Adrián and I’m looking for a place together with my partner María.\nWe are both working, clean, respectful and easy-going people.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 March 8:57 pm",
+        "sentAt": "2026-03-15T10:57:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-15T10:57:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201418242",
+    "receivedAt": "2026-03-23T19:56:37.491Z",
+    "updatedAt": "2026-03-23T19:56:37.488Z"
+  }
+}

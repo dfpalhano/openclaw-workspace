@@ -1,0 +1,69 @@
+{
+  "url": "https://flatmates.com.au/messages/201268025",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T06:02:21.025Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201268025",
+    "personName": null,
+    "listingTitle": "View Laura's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi! I’m Laura — a chef on the hunt for a cosy new home 🍳✨",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Sunday 8:50 pm",
+        "sentAt": "2026-03-08T10:50:00.000Z"
+      },
+      {
+        "text": "Hi Laura! We have a room viewing at 606 Vulture St E, East Brisbane tonight Wednesday 11 March at 6pm. Would you like to come? 😊",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Could you do it a bit earlier 4pm? \nLet me know \nCheers",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 3:10 pm",
+        "sentAt": null
+      },
+      {
+        "text": "get in contact with Mathis\n+61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Sure I’ll be there in 10 min \nThanks",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 3:46 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Contact Mathis first. I dont think he is there now, but you can discuss a time",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Ok thanks :)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 4:02 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-08T10:50:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201268025"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201348691",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello, my name is Maxime and I am looking for a place to Live from now till 15th June. I am french brazilian and Inam studyng and working part time. If the rooms are available please send me a message. Thanks.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "12 March 12:00 pm",
+        "sentAt": "2026-03-12T02:00:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-12T02:00:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201348691",
+    "receivedAt": "2026-03-24T02:55:26.309Z",
+    "updatedAt": "2026-03-24T02:55:26.305Z"
+  }
+}

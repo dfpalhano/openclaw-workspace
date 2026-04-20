@@ -1,0 +1,41 @@
+{
+  "thread": {
+    "threadId": "201638172",
+    "personName": null,
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0437 526 •••",
+    "messages": [
+      {
+        "text": "Hi Jess,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Thursday 12:31 pm",
+        "sentAt": "2026-03-26T02:31:00.000Z"
+      },
+      {
+        "text": "Hi Jess, just following up on my previous message. I'm still very keen on the room and available for an inspection anytime today after 2pm. Please let me know if that works!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 7:39 am",
+        "sentAt": null
+      },
+      {
+        "text": "Hi! I'm Sia, a 25-year-old Korean woman on a working holiday in Brisbane. I'm looking for a place I can genuinely call home — somewhere comfortable, clean, and with good people.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 2:59 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-26T02:31:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201638172",
+    "receivedAt": "2026-03-28T06:04:46.896Z",
+    "updatedAt": "2026-03-28T06:04:46.893Z"
+  }
+}

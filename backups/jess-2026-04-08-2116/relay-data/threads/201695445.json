@@ -1,0 +1,36 @@
+{
+  "url": "https://flatmates.com.au/messages/201695445",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-31T02:50:25.214Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201695445",
+    "personName": "J",
+    "listingTitle": "Brisbane City, Brisbane",
+    "listingId": "1362277",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1362277",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello, I am interested. My name is Johanna Palomino i am from Colombia. I am 28 years old I am a student at torrens university, I work in the mornings in a cafe. I considered myself as a really clean and organize person. I am really happy to share time with the roommates and have a some drinks. Thank you for your time",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Sunday 2:14 pm",
+        "sentAt": "2026-03-29T04:14:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!SeenToday 12:17 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-29T04:14:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201695445"
+  }
+}

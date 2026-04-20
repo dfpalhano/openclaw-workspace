@@ -1,0 +1,41 @@
+{
+  "thread": {
+    "threadId": "201673456",
+    "personName": null,
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1868232",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1868232",
+    "propertyCode": "P1868232",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi I am interested when can I come inspect",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 10:35 am",
+        "sentAt": "2026-03-28T00:35:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections today at 5:30pm.\nWould you like to come?\n📍 43 Redfern St, Woolloongabba QLD 4102\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Sorry I am not available today",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 11:59 am",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-28T00:35:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201673456",
+    "receivedAt": "2026-03-31T02:08:37.060Z",
+    "updatedAt": "2026-03-31T02:08:37.057Z"
+  }
+}

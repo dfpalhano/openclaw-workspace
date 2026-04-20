@@ -1,0 +1,34 @@
+{
+  "url": "https://flatmates.com.au/messages/201272352",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T03:48:33.731Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201272352",
+    "personName": "T",
+    "listingTitle": "Small single room at Kangaroo Point, Brisbane",
+    "propertyCode": "P1549189",
+    "roomId": "2522775",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi! I'm interested in small single room, may I know if 2 months rental is acceptable?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 3:17 am",
+        "sentAt": "2026-03-08T17:17:00.000Z"
+      },
+      {
+        "text": "Hi Tan! We have a room viewing at 606 Vulture St E, East Brisbane tonight Wednesday 11 March at 6pm. Would you like to come? 😊",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered\nToday 1:48 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-08T17:17:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201272352"
+  }
+}

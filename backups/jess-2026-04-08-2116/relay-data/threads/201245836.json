@@ -1,0 +1,41 @@
+{
+  "url": "https://flatmates.com.au/messages/201245836",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T07:06:43.967Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201245836",
+    "personName": null,
+    "listingTitle": "View Johanna's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess, I'm Johanna . I’m an international student currently working in hospitality. I’m easy-going, tidy, and clean, and I enjoy learning about different cultures. I’m also very respectful of everyone’s privacy.\nI’m interested in the room and would like to ask when it would be possible to inspect it.\nThank you very much.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Saturday 8:34 pm",
+        "sentAt": "2026-03-07T10:34:00.000Z"
+      },
+      {
+        "text": "Hi Johanna,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi , I saw a property in kangaroo point not Spring Hill",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 5:03 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-07T10:34:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201245836"
+  }
+}

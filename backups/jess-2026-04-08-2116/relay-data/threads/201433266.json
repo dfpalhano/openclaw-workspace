@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201433266",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0452 671 •••",
+    "messages": [
+      {
+        "text": "Hi I'm Riku.\nI am Japanese man and 22 years old.\nI'm looking for room in Surfers and I interested in your room.\nIs it possible to inspection?\nThank you",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "16 March 4:21 pm",
+        "sentAt": "2026-03-16T06:21:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-16T06:21:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201433266",
+    "receivedAt": "2026-03-23T19:56:48.359Z",
+    "updatedAt": "2026-03-23T19:56:48.356Z"
+  }
+}

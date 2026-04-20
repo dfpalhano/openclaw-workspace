@@ -1,0 +1,34 @@
+{
+  "url": "https://flatmates.com.au/messages/201166834",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T07:01:59.413Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201166834",
+    "personName": null,
+    "listingTitle": "View Sam's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0404 486 •••",
+    "messages": [
+      {
+        "text": "hi jess! i hope you’re well. i'm interested in this place if it’s still available please - i'd be looking for 3-4 months initially with the option to extend? happy to come and view the flat if that works for you?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "4 March 10:40 am",
+        "sentAt": "2026-03-04T00:40:00.000Z"
+      },
+      {
+        "text": "hi just wondered if this was still available?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 10:11 pm",
+        "sentAt": "2026-03-09T12:11:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-09T12:11:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201166834"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "url": "https://flatmates.com.au/messages/201200675",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T07:17:54.547Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201200675",
+    "personName": null,
+    "listingTitle": "View Jordy's listing",
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0423 367 •••",
+    "messages": [
+      {
+        "text": "Hi Jess ! I’m Jordy and I’m 27 yo. I read the description and sound perfect ! I’m a person with good vibes, tidy and respectful, I’m friendly and I like hearing stories. Also I have respect for the space of other. Pleas send me a message if I could do an inspection or if you have some question about me. Thank You !",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Thursday 6:17 pm",
+        "sentAt": "2026-03-05T08:17:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-05T08:17:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201200675"
+  }
+}

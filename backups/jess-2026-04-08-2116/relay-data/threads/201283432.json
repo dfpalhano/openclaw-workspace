@@ -1,0 +1,41 @@
+{
+  "url": "https://flatmates.com.au/messages/201283432",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T03:21:27.497Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201283432",
+    "personName": null,
+    "listingTitle": "Brisbane City, Brisbane",
+    "propertyCode": "P1362277",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0448 717 •••",
+    "messages": [
+      {
+        "text": "Hi Jess, my mate and I are looking for a room each as we have just moved From Melbourne and living out of air BnBs for the time being.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 3:16 pm",
+        "sentAt": "2026-03-09T05:16:00.000Z"
+      },
+      {
+        "text": "Contact no. 0448 717 372",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 12:15 pm",
+        "sentAt": null
+      },
+      {
+        "text": "371*",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 12:15 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-09T05:16:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201283432"
+  }
+}

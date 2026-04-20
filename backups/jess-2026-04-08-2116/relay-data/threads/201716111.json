@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201716111",
+    "personName": "Y",
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1868232",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1868232",
+    "propertyCode": "P1868232",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hello is it still available?\nI’m 27 female, working holiday maker, I’m working in the city and planning to stay till 21 Jun\nThank you",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 4:01 pm",
+        "sentAt": "2026-03-30T06:01:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-30T06:01:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201716111",
+    "receivedAt": "2026-03-31T00:48:49.875Z",
+    "updatedAt": "2026-03-31T00:48:49.872Z"
+  }
+}

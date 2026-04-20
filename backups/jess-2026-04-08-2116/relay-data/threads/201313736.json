@@ -1,0 +1,50 @@
+{
+  "url": "https://flatmates.com.au/messages/201313736",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-28T07:05:29.413Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201313736",
+    "personName": null,
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi,",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "10 March 7:52 pm",
+        "sentAt": "2026-03-10T09:52:00.000Z"
+      },
+      {
+        "text": "Hi Leo,\nThanks for reaching out. Would you like to come tonight at 18:45 for the inspection?\n40 Rosa St, Spring Hill QLD 4000\nEmilio will be there to assist you.\n+61 481 517 377 (WhatsApp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "hey yes",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "11 March 6:18 pm",
+        "sentAt": "2026-03-11T08:18:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 7:15pm.\nWould you like to come?\n📍 40 Rosa St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-11T08:18:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201313736"
+  }
+}

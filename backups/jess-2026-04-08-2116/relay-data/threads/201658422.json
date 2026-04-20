@@ -1,0 +1,36 @@
+{
+  "url": "https://flatmates.com.au/messages/201658422",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-28T07:07:42.454Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201658422",
+    "personName": null,
+    "listingTitle": "Fortitude Valley, Brisbane",
+    "listingId": "1868183",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-fortitude-valley-4006-P1868183",
+    "propertyCode": "P1868183",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey!\nI read your description and it felt like an amazing fit!\nMy partner and I (mid 20s) are currently looking for a place to rent and wanted to introduce ourselves 😊\nWe’re a pretty easygoing couple who like a clean, relaxed home and are always mindful of shared spaces. We’re reliable with rent and respectful of other people’s routines and privacy.\nMy girlfriend is a hairdresser (which has it's benefits) and is super social, she knows how to have a fun time! giving you guys a haircut or two. \nWe have lived with roommates before, so we know what is expected of us.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 12:38 pm",
+        "sentAt": "2026-03-27T02:38:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections tonight at 6:45pm.\nWould you like to come?\n📍 41 Park St, Spring Hill QLD 4000\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-27T02:38:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201658422"
+  }
+}

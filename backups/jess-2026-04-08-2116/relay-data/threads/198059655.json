@@ -1,0 +1,55 @@
+{
+  "thread": {
+    "threadId": "198059655",
+    "personName": null,
+    "listingTitle": "Garage room at Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189#room2394818",
+    "propertyCode": "P1549189",
+    "roomId": "2394818",
+    "waNumber": null,
+    "partialPhoneDisplay": "0451 769 •••",
+    "messages": [
+      {
+        "text": "Hii, i am a 20-year-old working in the cbd and want to move closer to the city as my current lease is ending in November and the location is very convenient for me",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "20 October 2:00 pm",
+        "sentAt": "2026-10-20T04:00:00.000Z"
+      },
+      {
+        "text": "Hi Tanish\nThese rooms are ready to be rented. If you’re looking for something down in the track, let me know about a week before you can move, so I can tell you which properties are available by then.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "sure",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "21 October 1:14 pm",
+        "sentAt": "2026-10-21T03:14:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Kangaroo Point, BrisbaneJess’s listing in Kangaroo Point, Brisbane is no longer available. But there are still plenty of great places available — take a look around!Seen24 October 8:45 am",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hii \nI am tanish, a 21year old who is currently living in a share house with 2 other females and an looking to move out whenever possible. A little about me i work full time as a chef in the city so public transport is necessary, i relax by spending time home or in a park i dont smoke and dont drink often. I like to keep my personal space but will always cook food and love to share it pls let me know if you have a day when i can do an inspection",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 5:04 pm",
+        "sentAt": "2026-03-27T07:04:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T07:04:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/198059655",
+    "receivedAt": "2026-03-28T06:05:43.033Z",
+    "updatedAt": "2026-03-28T06:05:43.030Z"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "url": "https://flatmates.com.au/messages/189551639",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T05:34:41.686Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "189551639",
+    "personName": "D",
+    "listingTitle": null,
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi, Jess. Does the prince is for couple or single possible? Thank youz",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 September 2024 3:31 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Deasy! $350 single and $420 couples",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Is it inckude bills?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "14 September 2024 3:52 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Yes it does",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Is it possible to have inspection?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 September 2024 11:52 am",
+        "sentAt": null
+      },
+      {
+        "text": "sure. Can you please talk a bit about yourselves?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Sure. My name is Deasy from Indonesia and already in Brisbane (or Australia in general) for 3 months. Currently holding Working holiday visa and work at 7-11 & one of the hotel in the city.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 September 2024 8:06 pm",
+        "sentAt": null
+      },
+      {
+        "text": "The room is available now, if you're keen to have a look and move asap, I can book you an inspection. If you really want for the 29th, send me a message about a week or less before you can actually move in and I'll tell you which properties I have available by then.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi. If the room is still available until Sunday, can I have an inspection on that day? Thank you.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "19 September 2024 10:22 pm",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Deasy! Would you be able to come tomorrow at 10am to have a look?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi. I'm working tomorrow at that time.. is it possible at 5:30pm?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "20 September 2024 9:57 pm",
+        "sentAt": null
+      },
+      {
+        "text": "I'll confirm another inspection time another day for you.",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi. How about tomorrow?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "23 September 2024 5:27 pm",
+        "sentAt": null
+      },
+      {
+        "text": "HI Deasy,\nWe will have an inspection tonight at 7pm. Can you come?",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      },
+      {
+        "text": "Hi. May I come for inspection please?",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Today 3:16 pm",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": null,
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/189551639"
+  }
+}

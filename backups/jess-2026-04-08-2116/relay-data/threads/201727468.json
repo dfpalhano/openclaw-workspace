@@ -1,0 +1,43 @@
+{
+  "url": "https://flatmates.com.au/messages/201727468",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-04-08T03:00:56.747Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201727468",
+    "personName": null,
+    "listingTitle": "Shower inside the room at Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878#room2499981",
+    "propertyCode": "P1773878",
+    "roomId": "2499981",
+    "waNumber": null,
+    "partialPhoneDisplay": "0485 583 •••",
+    "messages": [
+      {
+        "text": "Hi I am looking for a room \nI am Anas , I will arrive on 22 of April",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "31 March 5:56 am",
+        "sentAt": "2026-03-30T19:56:00.000Z"
+      },
+      {
+        "text": "Hi! We're doing inspections today at 1pm.\nWould you like to come?\n📍 4/44 Watson Esplanade, Surfers Paradise QLD 4217\nMathis will be there to assist you.\nMessage when you arrive: +61 411 590 261",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Jess\nCan we do it online \nI'm still at Egypt I will arrive 22April",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Thursday 5:57 pm",
+        "sentAt": "2026-04-02T07:57:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-04-02T07:57:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201727468"
+  }
+}

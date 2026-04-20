@@ -1,0 +1,27 @@
+{
+  "thread": {
+    "threadId": "201407958",
+    "personName": null,
+    "listingTitle": "Kangaroo Point, Brisbane",
+    "listingId": "1549189",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-kangaroo-point-4169-P1549189",
+    "propertyCode": "P1549189",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "006 77 ••• ••• •••",
+    "messages": [
+      {
+        "text": "Hi! Is your offer still available? I'm interested! Thanks in advance, Sacha",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "15 March 12:51 pm",
+        "sentAt": "2026-03-15T02:51:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-15T02:51:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201407958",
+    "receivedAt": "2026-03-23T19:56:17.563Z",
+    "updatedAt": "2026-03-23T19:56:17.560Z"
+  }
+}

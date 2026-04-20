@@ -1,0 +1,34 @@
+{
+  "thread": {
+    "threadId": "201606183",
+    "personName": null,
+    "listingTitle": "Surfers Paradise, Gold Coast",
+    "listingId": "1773878",
+    "listingUrl": "https://flatmates.com.au/share-house-gold-coast-surfers-paradise-4217-P1773878",
+    "propertyCode": "P1773878",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "0406 633 •••",
+    "messages": [
+      {
+        "text": "Hi! My name is Juliet, I have just arrived to Gold Coast. I’m from Argentina, I am looking for a furnished room near the beach, to have a quiet life in touch with nature. I’m an online psychologist, I have my sessions in the morning, after going for a run (I love sports!). I am also a photographer and videographer. I am tidy, quiet and respectful of others; I am a social person buy also love my alone time to recharge energy. \nI hope I could visit your place to see if we can make it work! Thank you so much ❤️",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Tuesday 9:00 pm",
+        "sentAt": "2026-03-24T11:00:00.000Z"
+      },
+      {
+        "text": "Hey! I was wondering if you saw my message, we are actually a few friends wanting to move together:)",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Friday 10:38 pm",
+        "sentAt": "2026-03-27T12:38:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-27T12:38:00.000Z",
+    "hasFollowUp": true,
+    "url": "https://flatmates.com.au/messages/201606183",
+    "receivedAt": "2026-03-28T06:05:17.679Z",
+    "updatedAt": "2026-03-28T06:05:17.676Z"
+  }
+}

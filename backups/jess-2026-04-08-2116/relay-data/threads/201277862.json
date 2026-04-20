@@ -1,0 +1,27 @@
+{
+  "url": "https://flatmates.com.au/messages/201277862",
+  "title": "Share Accommodation | Flatmates.com.au",
+  "timestamp": "2026-03-11T07:13:16.969Z",
+  "type": "thread",
+  "thread": {
+    "threadId": "201277862",
+    "personName": "R",
+    "listingTitle": null,
+    "propertyCode": null,
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi Jess!  I am interested in the room. I am currently working fulltime. Would love to inspect the place at your convenience. Thanks!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "Monday 11:23 am",
+        "sentAt": "2026-03-09T01:23:00.000Z"
+      }
+    ],
+    "lastMessageAt": "2026-03-09T01:23:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/201277862"
+  }
+}

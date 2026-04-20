@@ -1,0 +1,41 @@
+{
+  "thread": {
+    "threadId": "200650940",
+    "personName": "S",
+    "listingTitle": "Room 4 at Brisbane City, Brisbane",
+    "listingId": "1905616",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-brisbane-city-4000-P1905616#room2630534",
+    "propertyCode": "P1905616",
+    "roomId": "2630534",
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hi! I came across your post about the room for rent and I’m very interested. I’d love to come and view the room if possible, please let me know what times work for you. I’m 27 from London, and I’ll be starting a compliance officer role in the City on 16th February. I’m clean, respectful, and considerate of shared spaces.",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "10 February 8:21 pm",
+        "sentAt": "2026-02-10T10:21:00.000Z"
+      },
+      {
+        "text": "Hi Summer\nThanks for reaching out. Would you like to come on tonight at 6pm for the inspection?\n79 Albert St, Brisbane CBD, just wait in front of Subway.\nDee will be there to assist you\n+61 416 775 321 (whatsapp)",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!Seen21 February 5:05 am",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-02-10T10:21:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/200650940",
+    "receivedAt": "2026-03-28T06:06:19.251Z",
+    "updatedAt": "2026-03-28T06:06:19.248Z"
+  }
+}

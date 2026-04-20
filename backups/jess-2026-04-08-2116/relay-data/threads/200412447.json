@@ -1,0 +1,48 @@
+{
+  "thread": {
+    "threadId": "200412447",
+    "personName": "A",
+    "listingTitle": "Woolloongabba, Brisbane",
+    "listingId": "1661659",
+    "listingUrl": "https://flatmates.com.au/share-house-brisbane-woolloongabba-4102-P1661659",
+    "propertyCode": "P1661659",
+    "roomId": null,
+    "waNumber": null,
+    "partialPhoneDisplay": "Mobile withheld",
+    "messages": [
+      {
+        "text": "Hey! I really like your listing and would love to chat if you need any more info from me. Just moved to Brisbane from Sydney, work full-time, and I’m clean, tidy, respectful and easy to live with. Keen to check the place out — thanks!",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "1 February 8:03 pm",
+        "sentAt": "2026-02-01T10:03:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Woolloongabba, BrisbaneJess’s listing in Woolloongabba, Brisbane is no longer available. But there are still plenty of great places available — take a look around!Seen6 February 2:15 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Seen",
+        "sentAt": null
+      },
+      {
+        "text": "Hi Jess,\nI really like the room and would love to come inspect it. I work full-time, I’m clean, respectful, and easy to get along with. Let me know a time that suits you 😊",
+        "isMine": false,
+        "isFromEnquirer": true,
+        "timestamp": "18 March 1:42 pm",
+        "sentAt": "2026-03-18T03:42:00.000Z"
+      },
+      {
+        "text": "Jess has removed a listing in Brisbane City, BrisbaneJess’s listing in Brisbane City, Brisbane is no longer available. But there are still plenty of great places available — take a look around!DeliveredMonday 9:32 pm",
+        "isMine": true,
+        "isFromEnquirer": false,
+        "timestamp": "Delivered",
+        "sentAt": null
+      }
+    ],
+    "lastMessageAt": "2026-03-18T03:42:00.000Z",
+    "hasFollowUp": false,
+    "url": "https://flatmates.com.au/messages/200412447",
+    "receivedAt": "2026-03-31T00:47:33.765Z",
+    "updatedAt": "2026-03-31T00:47:33.761Z"
+  }
+}
